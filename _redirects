@@ -1,0 +1,3 @@
+# Repli SPA : les fichiers réels (assets, /legal/*.html, manifeste…) sont servis
+# en priorité ; tout chemin inconnu renvoie l'application.
+/*    /index.html    200

@@ -1,0 +1,17 @@
+{
+  "name": "L'Atelier des Maths",
+  "short_name": "Atelier Maths",
+  "description": "Cours, entraînement, exercices et examens de mathématiques du collège (6ᵉ→3ᵉ) à la Seconde.",
+  "lang": "fr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#e7e9e3",
+  "theme_color": "#10233b",
+  "categories": ["education"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "maskable" }
+  ]
+}
