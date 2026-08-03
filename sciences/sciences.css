@@ -1,0 +1,100 @@
+/* Section Sciences — style autonome (servi statiquement depuis /sciences/),
+   dans le même langage visuel que le reste de l'Atelier (papier millimétré,
+   thèmes clair/sombre, accent orange, bleu compas). */
+:root {
+  --paper: #e7e9e3; --ink: #10233b; --ink-soft: #566476; --accent: #ea8a0c;
+  --compas: #226c8e; --sheet: #f6f6f0; --edge: rgba(16, 35, 59, 0.16);
+  --ok: #2c7a4b; --mm: 7px;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --paper: #0c1826; --ink: #eaf0f5; --ink-soft: #92a6b6; --accent: #fab63f;
+    --compas: #63b4d4; --sheet: #12222f; --edge: rgba(160, 196, 220, 0.17);
+    --ok: #5fc98a; }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); background-color: var(--paper);
+  background-image:
+    linear-gradient(rgba(120,140,170,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(120,140,170,0.08) 1px, transparent 1px);
+  background-size: var(--mm) var(--mm);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.65;
+}
+.wrap { max-width: 820px; margin: 0 auto; padding: 24px 20px 80px; }
+a { color: var(--compas); }
+.back {
+  display: inline-flex; align-items: center; gap: 6px; font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.8rem; text-decoration: none; color: var(--ink-soft); margin-bottom: 24px;
+}
+.back:hover { color: var(--ink); }
+.eyebrow {
+  font-family: ui-monospace, Consolas, monospace; font-size: 0.72rem; text-transform: uppercase;
+  letter-spacing: 0.18em; color: var(--compas); margin: 0 0 8px;
+}
+h1 { font-size: clamp(1.8rem, 4vw, 2.4rem); letter-spacing: -0.02em; margin: 0 0 6px; }
+.updated { color: var(--ink-soft); font-size: 0.88rem; margin: 0 0 28px; }
+h2 { font-size: 1.3rem; margin: 2em 0 0.5em; padding-top: 0.5em; border-top: 1px solid var(--edge); }
+h2:first-of-type { border-top: none; }
+h3 { font-size: 1.05rem; margin: 1.4em 0 0.3em; }
+p, li { max-width: 70ch; }
+code { font-family: ui-monospace, Consolas, monospace; background: var(--sheet); padding: 1px 5px; border-radius: 4px; }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--edge); font-size: 0.85rem; color: var(--ink-soft); }
+
+/* — Cartes de chapitres (page d'accueil de la section) — */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 14px; margin: 14px 0; padding: 0; list-style: none; }
+.card {
+  background: var(--sheet); border: 1px solid var(--edge); border-radius: 10px;
+  padding: 14px 16px; display: flex; flex-direction: column; gap: 4px;
+}
+.card .lvl { font-family: ui-monospace, Consolas, monospace; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.14em; color: var(--compas); }
+.card a { font-weight: 600; text-decoration: none; }
+.card a:hover { text-decoration: underline; }
+.card .desc { font-size: 0.86rem; color: var(--ink-soft); margin: 0; }
+.card.soon { opacity: 0.62; }
+.card .soon-tag { font-size: 0.75rem; color: var(--ink-soft); font-style: italic; }
+
+/* — Blocs de cours — */
+.def, .prop, .methode {
+  background: var(--sheet); border: 1px solid var(--edge); border-radius: 6px;
+  padding: 12px 16px; margin: 14px 0;
+}
+.def { border-left: 3px solid var(--compas); }
+.prop { border-left: 3px solid var(--accent); }
+.methode { border-left: 3px solid var(--ok); }
+.def > .tag, .prop > .tag, .methode > .tag {
+  display: block; font-family: ui-monospace, Consolas, monospace; font-size: 0.7rem;
+  text-transform: uppercase; letter-spacing: 0.16em; margin-bottom: 4px;
+}
+.def > .tag { color: var(--compas); }
+.prop > .tag { color: var(--accent); }
+.methode > .tag { color: var(--ok); }
+.def p, .prop p, .methode p { margin: 0.3em 0; }
+
+table.tbl { border-collapse: collapse; margin: 14px 0; width: 100%; font-size: 0.94rem; }
+table.tbl th, table.tbl td { border: 1px solid var(--edge); padding: 7px 11px; text-align: left; }
+table.tbl th { background: var(--sheet); font-weight: 600; }
+
+/* — Exercices — */
+.exo {
+  background: var(--sheet); border: 1px solid var(--edge); border-radius: 10px;
+  padding: 14px 18px; margin: 16px 0;
+}
+.exo .head { display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap; margin-bottom: 6px; }
+.exo .num { font-weight: 700; }
+.exo .stars { color: var(--accent); letter-spacing: 2px; font-size: 0.9rem; }
+.exo details { margin-top: 10px; border-top: 1px dashed var(--edge); padding-top: 8px; }
+.exo summary {
+  cursor: pointer; color: var(--compas); font-weight: 600; font-size: 0.92rem;
+  list-style-position: inside;
+}
+.exo summary:hover { text-decoration: underline; }
+.exo details[open] summary { margin-bottom: 6px; }
+.correction { border-left: 3px solid var(--ok); padding-left: 12px; }
+.correction p { margin: 0.4em 0; }
+
+@media print {
+  body { background: #fff; color: #000; }
+  .back, footer { display: none; }
+  .exo details { display: none; }
+}
