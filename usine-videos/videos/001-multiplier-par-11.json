@@ -1,0 +1,63 @@
+{
+  "slug": "001-multiplier-par-11",
+  "titre": "[Astuce] Multiplier par 11 en 2 secondes 🤯",
+  "niveau": "Astuce de calcul",
+  "description": "Multiplie n'importe quel nombre à deux chiffres par 11, de tête, en 2 secondes. Exercices corrigés gratuits : https://guerchkarim.github.io",
+  "hashtags": ["#maths", "#astuce", "#calculmental", "#collège", "#apprendre", "#école", "#mathstiktok"],
+  "scenes": [
+    {
+      "narration": "23 fois 11 ? Réponse : 253. En deux secondes, de tête. Voici le secret.",
+      "lines": [
+        { "text": "23 × 11 = ?", "style": "math" },
+        { "text": "253", "style": "accent" },
+        { "text": "en 2 secondes, de tête ⚡", "style": "note" }
+      ]
+    },
+    {
+      "narration": "Prends 23, et écarte ses deux chiffres. Au milieu, écris leur somme : 2 plus 3, égale 5. Et voilà : 253.",
+      "lines": [
+        { "text": "ÉTAPE 1", "style": "kicker" },
+        { "text": "2 _ 3", "style": "math" },
+        { "text": "2 + 3 = 5", "style": "etape" },
+        { "text": "→ 253", "style": "accent" }
+      ]
+    },
+    {
+      "narration": "Un autre : 45 fois 11. J'écarte : 4 et 5. Au milieu : 4 plus 5, égale 9. Résultat : 495. C'est tout.",
+      "lines": [
+        { "text": "45 × 11", "style": "math" },
+        { "text": "4 + 5 = 9", "style": "etape" },
+        { "text": "→ 495", "style": "accent" }
+      ]
+    },
+    {
+      "narration": "Attention au piège ! 67 fois 11 : 6 plus 7, égale 13. On garde le 3 au milieu, et la retenue passe sur le 6. Résultat : 737.",
+      "lines": [
+        { "text": "LE PIÈGE ⚠️", "style": "kicker" },
+        { "text": "67 × 11", "style": "math" },
+        { "text": "6 + 7 = 13", "style": "etape" },
+        { "text": "6+1 ⌢ 3 ⌢ 7", "style": "etape" },
+        { "text": "→ 737", "style": "accent" }
+      ]
+    },
+    {
+      "narration": "À toi de jouer : combien font 52 fois 11 ? Réponds en commentaire !",
+      "pause": 0.8,
+      "lines": [
+        { "text": "À TOI 🎯", "style": "kicker" },
+        { "text": "52 × 11 = ?", "style": "math" },
+        { "text": "💬 Réponds en commentaire", "style": "note" }
+      ]
+    },
+    {
+      "narration": "Un jour, une notion. Abonne-toi, et retrouve les exercices corrigés gratuits sur le site.",
+      "pause": 1.2,
+      "lines": [
+        { "text": "∑", "style": "emoji" },
+        { "text": "L'Atelier des Maths", "style": "titre" },
+        { "text": "Un jour · une notion", "style": "note" },
+        { "text": "guerchkarim.github.io", "style": "etape" }
+      ]
+    }
+  ]
+}

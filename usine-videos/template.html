@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; }
+  body {
+    background: #0e1f38;
+    font-family: "DejaVu Sans", "Noto Sans", Arial, sans-serif;
+    color: #f4f7fb;
+    position: relative;
+  }
+  #fond {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 900px 700px at 50% 28%, rgba(58,110,190,.28), transparent 70%),
+      radial-gradient(ellipse 700px 500px at 50% 92%, rgba(240,177,42,.10), transparent 70%);
+  }
+  #grille {
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,.055) 2.5px, transparent 2.5px);
+    background-size: 72px 72px;
+  }
+  #entete {
+    position: absolute; top: 90px; left: 0; right: 0;
+    display: flex; align-items: center; justify-content: center; gap: 26px;
+  }
+  #logo {
+    width: 92px; height: 92px; border-radius: 26px;
+    background: linear-gradient(135deg, #f0b12a, #e8890c);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 54px; font-weight: 800; color: #0e1f38;
+  }
+  #marque { text-align: left; }
+  #marque .nom { font-size: 44px; font-weight: 800; letter-spacing: 1px; }
+  #marque .sous { font-size: 26px; letter-spacing: 6px; color: #9db4d4; text-transform: uppercase; margin-top: 6px; }
+  #niveau {
+    position: absolute; top: 250px; left: 0; right: 0; text-align: center;
+  }
+  #niveau span {
+    display: inline-block; padding: 14px 44px; border-radius: 999px;
+    border: 3px solid rgba(240,177,42,.85); color: #f0b12a;
+    font-size: 34px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+  }
+  #scene {
+    position: absolute; top: 380px; bottom: 320px; left: 70px; right: 70px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 54px; text-align: center;
+  }
+  .ligne { opacity: 0; will-change: transform, opacity; }
+  .ligne.kicker { font-size: 40px; letter-spacing: 8px; text-transform: uppercase; color: #9db4d4; font-weight: 700; }
+  .ligne.titre  { font-size: 92px;  font-weight: 800; line-height: 1.12; }
+  .ligne.math   { font-size: 150px; font-weight: 800; letter-spacing: 2px; font-variant-numeric: tabular-nums; }
+  .ligne.accent { font-size: 170px; font-weight: 800; color: #f0b12a; font-variant-numeric: tabular-nums; }
+  .ligne.etape  { font-size: 78px;  font-weight: 700; color: #cddcf2; font-variant-numeric: tabular-nums; }
+  .ligne.note   { font-size: 52px;  color: #9db4d4; line-height: 1.35; }
+  .ligne.emoji  { font-size: 150px; }
+  #pied {
+    position: absolute; bottom: 150px; left: 0; right: 0; text-align: center;
+    font-size: 36px; color: #9db4d4; letter-spacing: 2px;
+  }
+  #barre-fond {
+    position: absolute; bottom: 92px; left: 70px; right: 70px; height: 12px;
+    background: rgba(255,255,255,.14); border-radius: 999px;
+  }
+  #barre {
+    height: 100%; width: 0%; border-radius: 999px;
+    background: linear-gradient(90deg, #f0b12a, #e8890c);
+  }
+</style>
+</head>
+<body>
+  <div id="fond"></div>
+  <div id="grille"></div>
+  <div id="entete">
+    <div id="logo">&#8721;</div>
+    <div id="marque">
+      <div class="nom">L'Atelier des Maths</div>
+      <div class="sous">Un jour &middot; une notion</div>
+    </div>
+  </div>
+  <div id="niveau"><span id="niveau-txt"></span></div>
+  <div id="scene"></div>
+  <div id="pied">@latelierdesmaths</div>
+  <div id="barre-fond"><div id="barre"></div></div>
+
+<script>
+  // Rendu 100 % déterministe : l'état visuel ne dépend que de setTime(t),
+  // pour que la capture image par image soit exacte.
+  let SPEC = null;
+  const APPARITION = 0.5;   // durée du fondu d'apparition d'une ligne (s)
+  const SORTIE = 0.28;      // fondu de sortie d'une scène (s)
+
+  function initSpec(spec) {
+    SPEC = spec;
+    document.getElementById('niveau-txt').textContent = spec.niveau || 'Astuce';
+    setTime(0);
+  }
+
+  const easeOut = x => 1 - Math.pow(1 - x, 3);
+
+  function setTime(t) {
+    const conteneur = document.getElementById('scene');
+    document.getElementById('barre').style.width = (100 * Math.min(1, t / SPEC.total)) + '%';
+
+    let scene = SPEC.scenes[SPEC.scenes.length - 1];
+    for (const s of SPEC.scenes) {
+      if (t < s.start + s.dur) { scene = s; break; }
+    }
+
+    // Reconstruit le DOM de la scène si elle a changé
+    if (conteneur.dataset.scene !== String(scene.index)) {
+      conteneur.dataset.scene = String(scene.index);
+      conteneur.innerHTML = '';
+      for (const ligne of scene.lines) {
+        const div = document.createElement('div');
+        div.className = 'ligne ' + (ligne.style || 'titre');
+        div.textContent = ligne.text;
+        conteneur.appendChild(div);
+      }
+    }
+
+    const local = t - scene.start;
+    const finProche = Math.max(0, (scene.start + scene.dur - t) / SORTIE); // <1 en fin de scène
+    const fadeOut = scene.index < SPEC.scenes.length - 1 ? Math.min(1, finProche) : 1;
+
+    scene.lines.forEach((ligne, i) => {
+      const div = conteneur.children[i];
+      const debut = ligne.at;
+      const p = Math.max(0, Math.min(1, (local - debut) / APPARITION));
+      const e = easeOut(p);
+      const pop = (ligne.style === 'accent') ? (1 + 0.14 * (1 - e)) : 1;
+      div.style.opacity = (e * fadeOut).toFixed(3);
+      div.style.transform = `translateY(${(1 - e) * 46}px) scale(${pop.toFixed(3)})`;
+    });
+  }
+
+  window.initSpec = initSpec;
+  window.setTime = setTime;
+</script>
+</body>
+</html>

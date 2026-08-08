@@ -19,6 +19,8 @@ La création des comptes **ne peut pas être déléguée à un outil automatique
 
 Une fois les comptes créés, la **publication quotidienne, elle, s'automatise très bien** : voir `05-automatisation-publication.md`.
 
+En revanche, la **fabrication des vidéos est déjà automatisée** : le dossier [`../usine-videos/`](../usine-videos/) génère des vidéos complètes (animations + voix off française) à partir d'un simple fichier de scénario. La première vidéo, « Multiplier par 11 en 2 secondes », y est incluse en démonstration.
+
 ## Le principe de la chaîne
 
 - **Un format court par jour** (60–90 s, vertical 9:16) : une notion, un exemple, un mini-défi. La même vidéo part sur YouTube Shorts, TikTok, Instagram Reels et Facebook Reels.
