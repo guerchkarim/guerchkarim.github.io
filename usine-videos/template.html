@@ -3,94 +3,119 @@
 <head>
 <meta charset="utf-8" />
 <style>
+  @font-face { font-family: 'Ecriture'; src: url('polices/patrick.ttf'); }
+  @font-face { font-family: 'Manuscrit'; src: url('polices/caveat.ttf'); }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html, body { width: 1080px; height: 1920px; overflow: hidden; }
+
+  /* ===== Cahier d'écolier : papier crème + quadrillage Seyès + marge rouge ===== */
   body {
-    background: #0e1f38;
-    font-family: "DejaVu Sans", "Noto Sans", Arial, sans-serif;
-    color: #f4f7fb;
+    font-family: 'Ecriture', sans-serif;
+    color: #1a3a8f; /* encre bleue */
     position: relative;
+    background-color: #fbf7ec;
+    background-image:
+      linear-gradient(rgba(122,166,210,.42) 2px, transparent 2px),
+      linear-gradient(rgba(122,166,210,.16) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(160,140,200,.20) 1px, transparent 1px);
+    background-size: 100% 76px, 100% 19px, 76px 100%;
+    background-position: 0 14px, 0 14px, 38px 0;
   }
-  #fond {
-    position: absolute; inset: 0;
-    background:
-      radial-gradient(ellipse 900px 700px at 50% 28%, rgba(58,110,190,.28), transparent 70%),
-      radial-gradient(ellipse 700px 500px at 50% 92%, rgba(240,177,42,.10), transparent 70%);
+  #marge {
+    position: absolute; top: 0; bottom: 0; left: 128px;
+    width: 3px; background: rgba(224,49,49,.55);
   }
-  #grille {
-    position: absolute; inset: 0;
-    background-image: radial-gradient(rgba(255,255,255,.055) 2.5px, transparent 2.5px);
-    background-size: 72px 72px;
+  /* ombre de reliure à gauche */
+  #reliure {
+    position: absolute; top: 0; bottom: 0; left: 0; width: 46px;
+    background: linear-gradient(90deg, rgba(90,70,40,.18), transparent);
   }
-  #entete {
-    position: absolute; top: 90px; left: 0; right: 0;
-    display: flex; align-items: center; justify-content: center; gap: 26px;
+
+  /* ===== En-tête : titre souligné à la main + niveau surligné ===== */
+  #entete { position: absolute; top: 78px; left: 170px; right: 60px; }
+  #titre-cahier {
+    font-family: 'Manuscrit'; font-weight: 700; font-size: 88px; color: #16307a;
+    display: inline-block; line-height: 1; transform: rotate(-1.2deg);
   }
-  #logo {
-    width: 92px; height: 92px; border-radius: 26px;
-    background: linear-gradient(135deg, #f0b12a, #e8890c);
-    display: flex; align-items: center; justify-content: center;
-    font-size: 54px; font-weight: 800; color: #0e1f38;
-  }
-  #marque { text-align: left; }
-  #marque .nom { font-size: 44px; font-weight: 800; letter-spacing: 1px; }
-  #marque .sous { font-size: 26px; letter-spacing: 6px; color: #9db4d4; text-transform: uppercase; margin-top: 6px; }
-  #niveau {
-    position: absolute; top: 250px; left: 0; right: 0; text-align: center;
-  }
+  #titre-cahier svg { display: block; margin-top: 2px; }
+  #niveau { text-align: right; margin-top: 10px; }
   #niveau span {
-    display: inline-block; padding: 14px 44px; border-radius: 999px;
-    border: 3px solid rgba(240,177,42,.85); color: #f0b12a;
-    font-size: 34px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase;
+    display: inline-block; transform: rotate(1.4deg);
+    font-family: 'Manuscrit'; font-weight: 700; font-size: 54px; color: #7a4b12;
+    background: linear-gradient(104deg, transparent 4%, #ffe066 6%, #ffd43b 94%, transparent 96%);
+    padding: 2px 30px 8px;
   }
+
+  /* ===== Scène ===== */
   #scene {
-    position: absolute; top: 380px; bottom: 320px; left: 70px; right: 70px;
+    position: absolute; top: 400px; bottom: 300px; left: 170px; right: 70px;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    gap: 54px; text-align: center;
+    gap: 58px; text-align: center;
   }
-  .ligne { opacity: 0; will-change: transform, opacity; }
-  .ligne.kicker { font-size: 40px; letter-spacing: 8px; text-transform: uppercase; color: #9db4d4; font-weight: 700; }
-  .ligne.titre  { font-size: 92px;  font-weight: 800; line-height: 1.12; }
-  .ligne.math   { font-size: 150px; font-weight: 800; letter-spacing: 2px; font-variant-numeric: tabular-nums; }
-  .ligne.accent { font-size: 170px; font-weight: 800; color: #f0b12a; font-variant-numeric: tabular-nums; }
-  .ligne.etape  { font-size: 78px;  font-weight: 700; color: #cddcf2; font-variant-numeric: tabular-nums; }
-  .ligne.note   { font-size: 52px;  color: #9db4d4; line-height: 1.35; }
-  .ligne.emoji  { font-size: 150px; }
+  .ligne { opacity: 0; will-change: transform, opacity; position: relative; }
+
+  .ligne.kicker {
+    font-family: 'Manuscrit'; font-weight: 700; font-size: 64px; color: #7a4b12;
+    background: linear-gradient(100deg, transparent 3%, #ffe066 5%, #ffd43b 95%, transparent 97%);
+    padding: 0 30px 6px; transform-origin: center;
+  }
+  .ligne.titre { font-size: 96px; line-height: 1.15; color: #16307a; }
+  .ligne.math  { font-size: 150px; color: #16307a; letter-spacing: 4px; }
+  .ligne.etape { font-size: 86px; color: #3557b7; }
+  .ligne.note  { font-size: 58px; color: #6b7a99; line-height: 1.4; }
+  .ligne.emoji { font-size: 140px; }
+
+  /* résultat : encre rouge, entouré au stylo comme une correction */
+  .ligne.accent {
+    font-size: 160px; color: #d0342c; letter-spacing: 4px; padding: 6px 60px;
+  }
+  .ligne.accent::before {
+    content: ''; position: absolute; inset: -26px -18px;
+    border: 7px solid rgba(208,52,44,.85);
+    border-radius: 49% 51% 47% 53% / 60% 42% 58% 40%;
+    transform: rotate(-1.8deg);
+  }
+
+  /* ===== Pied : signature crayon + trait de progression ===== */
   #pied {
-    position: absolute; bottom: 150px; left: 0; right: 0; text-align: center;
-    font-size: 36px; color: #9db4d4; letter-spacing: 2px;
+    position: absolute; bottom: 128px; left: 0; right: 0; text-align: center;
+    font-family: 'Manuscrit'; font-size: 46px; color: #8a8578;
   }
-  #barre-fond {
-    position: absolute; bottom: 92px; left: 70px; right: 70px; height: 12px;
-    background: rgba(255,255,255,.14); border-radius: 999px;
-  }
+  #barre-zone { position: absolute; bottom: 74px; left: 170px; right: 90px; height: 20px; }
   #barre {
-    height: 100%; width: 0%; border-radius: 999px;
-    background: linear-gradient(90deg, #f0b12a, #e8890c);
+    height: 7px; width: 0%; border-radius: 4px;
+    background: repeating-linear-gradient(90deg, #5c5648 0 26px, #6e6858 26px 34px);
+    transform: rotate(-.25deg);
   }
+  #crayon { position: absolute; top: -26px; left: 0; font-size: 52px; transform: translateX(-14px) rotate(38deg); }
 </style>
 </head>
 <body>
-  <div id="fond"></div>
-  <div id="grille"></div>
+  <div id="reliure"></div>
+  <div id="marge"></div>
   <div id="entete">
-    <div id="logo">&#8721;</div>
-    <div id="marque">
-      <div class="nom">L'Atelier des Maths</div>
-      <div class="sous">Un jour &middot; une notion</div>
+    <div id="titre-cahier">L'Atelier des Maths
+      <svg width="620" height="20" viewBox="0 0 620 20">
+        <path d="M4 12 Q 150 4, 310 11 T 616 9" fill="none" stroke="#d0342c" stroke-width="6" stroke-linecap="round"/>
+      </svg>
     </div>
+    <div id="niveau"><span id="niveau-txt"></span></div>
   </div>
-  <div id="niveau"><span id="niveau-txt"></span></div>
   <div id="scene"></div>
-  <div id="pied">@latelierdesmaths</div>
-  <div id="barre-fond"><div id="barre"></div></div>
+  <div id="pied">@latelierdesmaths &nbsp;&middot;&nbsp; un jour, une notion</div>
+  <div id="barre-zone"><div id="barre"><span id="crayon">&#9999;&#65039;</span></div></div>
 
 <script>
-  // Rendu 100 % déterministe : l'état visuel ne dépend que de setTime(t),
-  // pour que la capture image par image soit exacte.
+  // Rendu 100 % déterministe : l'état visuel ne dépend que de setTime(t).
   let SPEC = null;
-  const APPARITION = 0.5;   // durée du fondu d'apparition d'une ligne (s)
-  const SORTIE = 0.28;      // fondu de sortie d'une scène (s)
+  const APPARITION = 0.5;
+  const SORTIE = 0.28;
+
+  // petite rotation "posée à la main", stable par ligne
+  function pente(sceneIdx, ligneIdx) {
+    const x = Math.sin(sceneIdx * 37.7 + ligneIdx * 91.3) * 10000;
+    return ((x - Math.floor(x)) - 0.5) * 2.4; // -1.2° à +1.2°
+  }
 
   function initSpec(spec) {
     SPEC = spec;
@@ -102,14 +127,15 @@
 
   function setTime(t) {
     const conteneur = document.getElementById('scene');
-    document.getElementById('barre').style.width = (100 * Math.min(1, t / SPEC.total)) + '%';
+    const barre = document.getElementById('barre');
+    barre.style.width = (100 * Math.min(1, t / SPEC.total)) + '%';
+    document.getElementById('crayon').style.left = '100%';
 
     let scene = SPEC.scenes[SPEC.scenes.length - 1];
     for (const s of SPEC.scenes) {
       if (t < s.start + s.dur) { scene = s; break; }
     }
 
-    // Reconstruit le DOM de la scène si elle a changé
     if (conteneur.dataset.scene !== String(scene.index)) {
       conteneur.dataset.scene = String(scene.index);
       conteneur.innerHTML = '';
@@ -122,17 +148,18 @@
     }
 
     const local = t - scene.start;
-    const finProche = Math.max(0, (scene.start + scene.dur - t) / SORTIE); // <1 en fin de scène
+    const finProche = Math.max(0, (scene.start + scene.dur - t) / SORTIE);
     const fadeOut = scene.index < SPEC.scenes.length - 1 ? Math.min(1, finProche) : 1;
 
     scene.lines.forEach((ligne, i) => {
       const div = conteneur.children[i];
-      const debut = ligne.at;
-      const p = Math.max(0, Math.min(1, (local - debut) / APPARITION));
+      const p = Math.max(0, Math.min(1, (local - ligne.at) / APPARITION));
       const e = easeOut(p);
-      const pop = (ligne.style === 'accent') ? (1 + 0.14 * (1 - e)) : 1;
+      const rot = pente(scene.index, i);
       div.style.opacity = (e * fadeOut).toFixed(3);
-      div.style.transform = `translateY(${(1 - e) * 46}px) scale(${pop.toFixed(3)})`;
+      // apparition "écrite" : balayage de gauche à droite + légère pose
+      div.style.clipPath = `inset(-60px ${(1 - e) * 100}% -60px -60px)`;
+      div.style.transform = `translateY(${(1 - e) * 14}px) rotate(${rot.toFixed(2)}deg)`;
     });
   }
 
