@@ -19,8 +19,10 @@ const FPS = 30;
 const PAUSE_DEFAUT = 0.55;   // silence après chaque scène (s)
 const AVANCE = 0.18;         // la scène s'affiche un peu avant que la voix parte (s)
 
-const VOIX_DIR = process.env.VOIX_DIR || '/root/.cache/atelier-voix/vits-piper-fr_FR-siwis-medium';
-const VOIX_URL = 'https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-fr_FR-siwis-medium.tar.bz2';
+// Voix par défaut : « Tom » (voix masculine française). Autre choix : fr_FR-siwis-medium (féminine).
+const VOIX = process.env.VOIX || 'fr_FR-tom-medium';
+const VOIX_DIR = process.env.VOIX_DIR || `/root/.cache/atelier-voix/vits-piper-${VOIX}`;
+const VOIX_URL = `https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/vits-piper-${VOIX}.tar.bz2`;
 
 function ffmpegPath() {
   return execFileSync('python3', ['-c', 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())'])
@@ -28,7 +30,7 @@ function ffmpegPath() {
 }
 
 function assurerVoix() {
-  if (existsSync(join(VOIX_DIR, 'fr_FR-siwis-medium.onnx'))) return;
+  if (existsSync(join(VOIX_DIR, VOIX + '.onnx'))) return;
   console.log('Téléchargement de la voix française (une seule fois)…');
   mkdirSync(dirname(VOIX_DIR), { recursive: true });
   execFileSync('bash', ['-c',
@@ -39,7 +41,7 @@ function assurerVoix() {
 // Synthétise un texte en WAV (PCM 16 bits mono 22050 Hz) et renvoie les échantillons.
 function synthese(texte, fichier) {
   execFileSync('bash', ['-c',
-    `echo ${JSON.stringify(texte)} | python3 -m piper -m "${join(VOIX_DIR, 'fr_FR-siwis-medium.onnx')}" -c "${join(VOIX_DIR, 'fr_FR-siwis-medium.onnx.json')}" -f "${fichier}"`],
+    `echo ${JSON.stringify(texte)} | python3 -m piper -m "${join(VOIX_DIR, VOIX + '.onnx')}" -c "${join(VOIX_DIR, VOIX + '.onnx.json')}" -f "${fichier}"`],
     { stdio: ['pipe', 'pipe', 'pipe'] });
   const buf = readFileSync(fichier);
   const dataIdx = buf.indexOf(Buffer.from('data'));

@@ -12,7 +12,7 @@ videos/001-multiplier-par-11.json   →   node generer.mjs videos/001-....json
 ```
 
 Chaîne technique, 100 % locale et gratuite :
-1. **Voix off** : synthèse vocale française [Piper](https://github.com/rhasspy/piper) (voix `fr_FR-siwis-medium`, téléchargée automatiquement au premier lancement).
+1. **Voix off** : synthèse vocale française [Piper](https://github.com/rhasspy/piper) (voix masculine `fr_FR-tom-medium` par défaut, téléchargée automatiquement au premier lancement ; voix féminine `fr_FR-siwis-medium` disponible via `VOIX=fr_FR-siwis-medium`).
 2. **Images** : chaque scène est une animation HTML/CSS (`template.html`) rendue image par image avec Chromium (Playwright), parfaitement synchronisée sur la durée réelle de la voix.
 3. **Assemblage** : ffmpeg encode le tout en MP4 H.264 + AAC, prêt à publier.
 
