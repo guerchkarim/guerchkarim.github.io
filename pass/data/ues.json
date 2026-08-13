@@ -1,0 +1,136 @@
+{
+  "app": "QCM Santé — PASS",
+  "objectifParChapitre": 100,
+  "ues": [
+    {
+      "id": "ue1",
+      "numero": "UE1",
+      "nom": "Chimie, biochimie et biologie moléculaire",
+      "couleur": "#e05252",
+      "chapitres": [
+        { "id": "ch01", "titre": "Structure de l'atome et liaisons chimiques" },
+        { "id": "ch02", "titre": "Thermodynamique et équilibres chimiques" },
+        { "id": "ch03", "titre": "Équilibres acido-basiques" },
+        { "id": "ch04", "titre": "Oxydoréduction" },
+        { "id": "ch05", "titre": "Glucides" },
+        { "id": "ch06", "titre": "Lipides" },
+        { "id": "ch07", "titre": "Acides aminés, peptides et protéines" },
+        { "id": "ch08", "titre": "Enzymologie" },
+        { "id": "ch09", "titre": "Acides nucléiques et génome" },
+        { "id": "ch10", "titre": "Réplication, transcription et traduction" },
+        { "id": "ch11", "titre": "Bioénergétique et métabolisme des glucides" },
+        { "id": "ch12", "titre": "Métabolisme des lipides et des acides aminés" }
+      ]
+    },
+    {
+      "id": "ue2",
+      "numero": "UE2",
+      "nom": "La cellule et les tissus",
+      "couleur": "#3f8efc",
+      "chapitres": [
+        { "id": "ch01", "titre": "Membrane plasmique et transports membranaires" },
+        { "id": "ch02", "titre": "Noyau, chromatine et chromosomes" },
+        { "id": "ch03", "titre": "Cytosquelette et adhérences cellulaires" },
+        { "id": "ch04", "titre": "Organites et trafic intracellulaire" },
+        { "id": "ch05", "titre": "Cycle cellulaire et mitose" },
+        { "id": "ch06", "titre": "Communication et signalisation cellulaires" },
+        { "id": "ch07", "titre": "Mort cellulaire et apoptose" },
+        { "id": "ch08", "titre": "Méiose et gamétogenèse" },
+        { "id": "ch09", "titre": "Fécondation et développement embryonnaire précoce" },
+        { "id": "ch10", "titre": "Épithéliums de revêtement et glandulaires" },
+        { "id": "ch11", "titre": "Tissus conjonctifs, cartilagineux et osseux" },
+        { "id": "ch12", "titre": "Tissus musculaire et nerveux" }
+      ]
+    },
+    {
+      "id": "ue3",
+      "numero": "UE3",
+      "nom": "Physique et biophysique",
+      "couleur": "#8d5bd4",
+      "chapitres": [
+        { "id": "ch01", "titre": "Grandeurs, unités et analyse dimensionnelle" },
+        { "id": "ch02", "titre": "États de la matière et changements d'état" },
+        { "id": "ch03", "titre": "Statique et dynamique des fluides — hémodynamique" },
+        { "id": "ch04", "titre": "Phénomènes de surface et diffusion" },
+        { "id": "ch05", "titre": "Compartiments liquidiens et osmose" },
+        { "id": "ch06", "titre": "Bioélectricité et potentiels de membrane" },
+        { "id": "ch07", "titre": "Ondes sonores et ultrasons — échographie" },
+        { "id": "ch08", "titre": "Optique et biophysique de la vision" },
+        { "id": "ch09", "titre": "Structure du noyau et radioactivité" },
+        { "id": "ch10", "titre": "Interactions rayonnements-matière" },
+        { "id": "ch11", "titre": "Imagerie médicale : radiologie, scintigraphie, IRM" },
+        { "id": "ch12", "titre": "Radioprotection et dosimétrie" }
+      ]
+    },
+    {
+      "id": "ue4",
+      "numero": "UE4",
+      "nom": "Biostatistiques et évaluation des méthodes d'analyse",
+      "couleur": "#2a9d8f",
+      "chapitres": [
+        { "id": "ch01", "titre": "Statistique descriptive" },
+        { "id": "ch02", "titre": "Probabilités : bases et conditionnement" },
+        { "id": "ch03", "titre": "Variables aléatoires et lois de probabilité" },
+        { "id": "ch04", "titre": "Fluctuations d'échantillonnage et estimation" },
+        { "id": "ch05", "titre": "Tests d'hypothèses : principes généraux" },
+        { "id": "ch06", "titre": "Tests de comparaison usuels" },
+        { "id": "ch07", "titre": "Corrélation et régression linéaire" },
+        { "id": "ch08", "titre": "Tests diagnostiques et dépistage" }
+      ]
+    },
+    {
+      "id": "ue5",
+      "numero": "UE5",
+      "nom": "Anatomie",
+      "couleur": "#e0913d",
+      "chapitres": [
+        { "id": "ch01", "titre": "Anatomie générale et terminologie" },
+        { "id": "ch02", "titre": "Ostéologie et arthrologie du membre supérieur" },
+        { "id": "ch03", "titre": "Ostéologie et arthrologie du membre inférieur" },
+        { "id": "ch04", "titre": "Rachis et cage thoracique" },
+        { "id": "ch05", "titre": "Cœur et gros vaisseaux" },
+        { "id": "ch06", "titre": "Appareil respiratoire" },
+        { "id": "ch07", "titre": "Appareil digestif" },
+        { "id": "ch08", "titre": "Appareil urinaire" },
+        { "id": "ch09", "titre": "Appareils génitaux et petit bassin" },
+        { "id": "ch10", "titre": "Tête et cou" },
+        { "id": "ch11", "titre": "Système nerveux central" },
+        { "id": "ch12", "titre": "Organes des sens" }
+      ]
+    },
+    {
+      "id": "ue6",
+      "numero": "UE6",
+      "nom": "Initiation à la connaissance du médicament",
+      "couleur": "#d4548f",
+      "chapitres": [
+        { "id": "ch01", "titre": "Histoire du médicament et définitions" },
+        { "id": "ch02", "titre": "Cadre juridique et cycle de vie du médicament" },
+        { "id": "ch03", "titre": "Formes galéniques et voies d'administration" },
+        { "id": "ch04", "titre": "Pharmacocinétique" },
+        { "id": "ch05", "titre": "Pharmacodynamie" },
+        { "id": "ch06", "titre": "Essais cliniques et évaluation du médicament" },
+        { "id": "ch07", "titre": "Pharmacovigilance et iatrogénie" },
+        { "id": "ch08", "titre": "Bon usage du médicament et prescription" }
+      ]
+    },
+    {
+      "id": "ue7",
+      "numero": "UE7",
+      "nom": "Santé, société, humanité",
+      "couleur": "#5aa469",
+      "chapitres": [
+        { "id": "ch01", "titre": "Concepts de santé et santé publique" },
+        { "id": "ch02", "titre": "Déterminants de la santé et inégalités sociales" },
+        { "id": "ch03", "titre": "Histoire de la médecine et des soins" },
+        { "id": "ch04", "titre": "Éthique médicale et bioéthique" },
+        { "id": "ch05", "titre": "Déontologie et responsabilité médicale" },
+        { "id": "ch06", "titre": "Droit de la santé et droits des patients" },
+        { "id": "ch07", "titre": "Psychologie de la santé et relation de soin" },
+        { "id": "ch08", "titre": "Sociologie de la santé et de la maladie" },
+        { "id": "ch09", "titre": "Handicap, vieillissement et dépendance" },
+        { "id": "ch10", "titre": "Organisation et économie du système de santé" }
+      ]
+    }
+  ]
+}
