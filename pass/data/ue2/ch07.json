@@ -1,0 +1,332 @@
+{
+  "ue": "ue2",
+  "chapitre": "ch07",
+  "titre": "Mort cellulaire et apoptose",
+  "questions": [
+    {
+      "id": "ue2-ch07-q01",
+      "enonce": "Concernant les caractères généraux de l'apoptose :",
+      "props": [
+        { "t": "L'apoptose est une mort cellulaire programmée nécessitant de l'énergie.", "v": true, "e": "L'apoptose est un processus actif, génétiquement programmé et ATP-dépendant." },
+        { "t": "L'apoptose s'accompagne d'une réaction inflammatoire importante.", "v": false, "e": "L'apoptose n'induit pas d'inflammation, contrairement à la nécrose qui libère le contenu cellulaire dans le milieu." },
+        { "t": "L'apoptose touche généralement des cellules isolées au sein d'un tissu.", "v": true, "e": "L'apoptose concerne des cellules isolées, alors que la nécrose touche des plages entières de cellules." },
+        { "t": "Au cours de l'apoptose, la membrane plasmique se rompt précocement.", "v": false, "e": "La membrane plasmique reste intègre jusqu'aux stades tardifs de l'apoptose ; sa rupture précoce caractérise la nécrose." },
+        { "t": "L'apoptose participe au développement embryonnaire normal.", "v": true, "e": "L'apoptose sculpte les tissus embryonnaires, par exemple en éliminant les espaces interdigitaux." }
+      ],
+      "notion": "Apoptose vs nécrose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q02",
+      "enonce": "Concernant les modifications morphologiques de la cellule apoptotique :",
+      "props": [
+        { "t": "La chromatine se condense en amas denses contre l'enveloppe nucléaire.", "v": true, "e": "La condensation chromatinienne (pycnose) en croissants périphériques est un signe morphologique classique de l'apoptose." },
+        { "t": "La cellule apoptotique augmente de volume par entrée d'eau.", "v": false, "e": "La cellule apoptotique se rétracte et diminue de volume ; le gonflement (oncose) est caractéristique de la nécrose." },
+        { "t": "La membrane plasmique forme des bourgeonnements aboutissant à des corps apoptotiques.", "v": true, "e": "Le bourgeonnement membranaire (blebbing) fragmente la cellule en corps apoptotiques entourés de membrane." },
+        { "t": "L'ADN est dégradé en fragments de tailles totalement aléatoires.", "v": false, "e": "L'ADN est clivé entre les nucléosomes en fragments multiples d'environ 180 pb, donnant un profil en échelle sur gel d'électrophorèse." },
+        { "t": "Les corps apoptotiques sont phagocytés par les macrophages ou les cellules voisines.", "v": true, "e": "Les corps apoptotiques sont éliminés par phagocytose, sans libération du contenu cellulaire ni inflammation." }
+      ],
+      "notion": "Apoptose vs nécrose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q03",
+      "enonce": "Concernant la nécrose :",
+      "props": [
+        { "t": "La nécrose est une mort cellulaire passive, dite accidentelle.", "v": true, "e": "La nécrose résulte d'une agression brutale (ischémie, toxique, traumatisme) subie passivement par la cellule." },
+        { "t": "La nécrose consomme de l'ATP pour se dérouler.", "v": false, "e": "La nécrose est un processus passif souvent déclenché par un effondrement des réserves d'ATP, contrairement à l'apoptose qui est ATP-dépendante." },
+        { "t": "La nécrose s'accompagne d'un gonflement cellulaire et mitochondrial.", "v": true, "e": "L'entrée d'eau provoque un gonflement de la cellule et de ses organites (oncose) au cours de la nécrose." },
+        { "t": "La rupture de la membrane plasmique libère le contenu cellulaire et déclenche une inflammation.", "v": true, "e": "La lyse membranaire de la nécrose libère des signaux de danger qui recrutent les cellules inflammatoires." },
+        { "t": "La nécrose aboutit à la formation de corps apoptotiques.", "v": false, "e": "Les corps apoptotiques sont propres à l'apoptose ; la nécrose aboutit à une lyse cellulaire désorganisée." }
+      ],
+      "notion": "Apoptose vs nécrose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q04",
+      "enonce": "Concernant les marqueurs et la détection de l'apoptose :",
+      "props": [
+        { "t": "La phosphatidylsérine est externalisée sur le feuillet externe de la membrane plasmique.", "v": true, "e": "L'externalisation de la phosphatidylsérine, normalement située sur le feuillet interne, sert de signal « mange-moi » aux phagocytes." },
+        { "t": "L'annexine V permet de détecter les cellules apoptotiques.", "v": true, "e": "L'annexine V se fixe à la phosphatidylsérine externalisée, ce qui en fait un marqueur classique de l'apoptose." },
+        { "t": "Le profil de migration de l'ADN en échelle est caractéristique de la nécrose.", "v": false, "e": "Le profil en échelle traduit la fragmentation internucléosomale de l'apoptose ; la nécrose donne une dégradation diffuse (smear)." },
+        { "t": "La technique TUNEL détecte les extrémités d'ADN fragmenté.", "v": true, "e": "La technique TUNEL marque les extrémités libres de l'ADN clivé, nombreuses dans les cellules apoptotiques." },
+        { "t": "La libération de lactate déshydrogénase dans le milieu est un marqueur précoce d'apoptose.", "v": false, "e": "La libération de LDH traduit la rupture membranaire de la nécrose, la membrane restant longtemps intègre en apoptose." }
+      ],
+      "notion": "Apoptose vs nécrose",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q05",
+      "enonce": "Concernant les autres formes de mort cellulaire :",
+      "props": [
+        { "t": "La nécroptose est une forme de nécrose programmée dépendant des kinases RIPK1 et RIPK3.", "v": true, "e": "La nécroptose est une mort programmée d'aspect nécrotique faisant intervenir RIPK1, RIPK3 et la protéine MLKL." },
+        { "t": "La pyroptose est une mort inflammatoire dépendant de la caspase-1.", "v": true, "e": "La pyroptose, déclenchée par l'inflammasome et la caspase-1, s'accompagne d'une forte libération de cytokines pro-inflammatoires." },
+        { "t": "L'autophagie correspond toujours à une mort cellulaire.", "v": false, "e": "L'autophagie est avant tout un mécanisme de survie par recyclage des constituants cellulaires, et ne conduit à la mort qu'en cas d'excès." },
+        { "t": "L'anoïkis est une apoptose déclenchée par la perte d'ancrage de la cellule à la matrice extracellulaire.", "v": true, "e": "L'anoïkis est l'apoptose induite par le détachement de la cellule de sa matrice extracellulaire." },
+        { "t": "La pyroptose se déroule sans aucune activation de caspase.", "v": false, "e": "La pyroptose dépend de caspases inflammatoires, en particulier la caspase-1 qui clive la gasdermine D." }
+      ],
+      "notion": "Apoptose vs nécrose",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q06",
+      "enonce": "Concernant les caspases :",
+      "props": [
+        { "t": "Les caspases sont des protéases à cystéine clivant leurs substrats après un résidu aspartate.", "v": true, "e": "Le nom caspase vient de « cysteinyl aspartate-specific protease » : cystéine au site actif et clivage après un aspartate." },
+        { "t": "Les caspases sont synthétisées sous forme de zymogènes inactifs.", "v": true, "e": "Les caspases sont produites en procaspases inactives, activées par clivage protéolytique ou par regroupement induit." },
+        { "t": "Les caspases sont des protéases à sérine.", "v": false, "e": "Les caspases possèdent une cystéine dans leur site actif, ce ne sont pas des protéases à sérine." },
+        { "t": "Une fois activées, les caspases effectrices peuvent activer d'autres procaspases.", "v": true, "e": "L'activation en cascade des caspases amplifie le signal apoptotique de façon irréversible." },
+        { "t": "Les caspases dégradent directement l'ADN nucléaire.", "v": false, "e": "La fragmentation de l'ADN est réalisée par l'endonucléase CAD, libérée après clivage de son inhibiteur ICAD par la caspase-3." }
+      ],
+      "notion": "Caspases",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q07",
+      "enonce": "Concernant les caspases initiatrices et effectrices :",
+      "props": [
+        { "t": "La caspase-8 est une caspase initiatrice de la voie extrinsèque.", "v": true, "e": "La procaspase-8 est recrutée au DISC des récepteurs de mort, ce qui en fait l'initiatrice de la voie extrinsèque." },
+        { "t": "La caspase-9 est une caspase effectrice.", "v": false, "e": "La caspase-9 est l'initiatrice de la voie intrinsèque, activée au sein de l'apoptosome." },
+        { "t": "La caspase-3 est une caspase effectrice commune aux deux voies apoptotiques.", "v": true, "e": "Les voies intrinsèque et extrinsèque convergent vers l'activation des caspases effectrices, dont la caspase-3." },
+        { "t": "Les caspases initiatrices possèdent un long prodomaine d'interaction protéique.", "v": true, "e": "Les caspases initiatrices portent des domaines DED ou CARD permettant leur recrutement sur des plateformes d'activation." },
+        { "t": "Les caspases effectrices sont activées par simple fixation du cytochrome c.", "v": false, "e": "Les caspases effectrices sont activées par clivage protéolytique par les caspases initiatrices ; le cytochrome c se fixe à Apaf-1." }
+      ],
+      "notion": "Caspases",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q08",
+      "enonce": "Concernant les substrats et effets des caspases effectrices :",
+      "props": [
+        { "t": "Le clivage d'ICAD libère l'endonucléase CAD responsable de la fragmentation de l'ADN.", "v": true, "e": "La caspase-3 clive ICAD, ce qui libère l'endonucléase CAD qui fragmente l'ADN entre les nucléosomes." },
+        { "t": "Le clivage des lamines nucléaires participe à la fragmentation du noyau.", "v": true, "e": "La protéolyse des lamines désorganise l'enveloppe nucléaire et contribue à la fragmentation nucléaire." },
+        { "t": "Les caspases effectrices réparent les protéines endommagées de la cellule.", "v": false, "e": "Les caspases effectrices clivent et inactivent leurs substrats ; elles démantèlent la cellule au lieu de la réparer." },
+        { "t": "Le clivage de protéines du cytosquelette contribue au bourgeonnement membranaire.", "v": true, "e": "La protéolyse de protéines du cytosquelette et l'activation de kinases associées entraînent le blebbing membranaire." },
+        { "t": "La PARP, enzyme de réparation de l'ADN, est un substrat classique des caspases.", "v": true, "e": "Le clivage de la PARP par la caspase-3 inactive la réparation de l'ADN et sert de marqueur biochimique d'apoptose." }
+      ],
+      "notion": "Caspases",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q09",
+      "enonce": "Concernant la régulation directe des caspases :",
+      "props": [
+        { "t": "Les protéines IAP inhibent les caspases.", "v": true, "e": "Les protéines IAP (inhibitors of apoptosis) se lient aux caspases et bloquent leur activité." },
+        { "t": "Smac/DIABLO renforce l'action inhibitrice des IAP.", "v": false, "e": "Smac/DIABLO, libéré par la mitochondrie, neutralise les IAP et lève ainsi l'inhibition des caspases." },
+        { "t": "La protéine FLIP inhibe l'activation de la caspase-8 au niveau du DISC.", "v": true, "e": "FLIP, homologue inactif de la caspase-8, entre en compétition avec elle au DISC et freine la voie extrinsèque." },
+        { "t": "L'activation des caspases effectrices est un processus facilement réversible.", "v": false, "e": "L'activation par clivage protéolytique est irréversible, ce qui rend la phase d'exécution de l'apoptose sans retour." },
+        { "t": "Smac/DIABLO est libéré de l'espace intermembranaire mitochondrial en même temps que le cytochrome c.", "v": true, "e": "La perméabilisation de la membrane externe mitochondriale libère simultanément le cytochrome c et Smac/DIABLO." }
+      ],
+      "notion": "Caspases",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q10",
+      "enonce": "Concernant la voie intrinsèque (mitochondriale) de l'apoptose :",
+      "props": [
+        { "t": "Elle est déclenchée par des stress intracellulaires comme les lésions de l'ADN.", "v": true, "e": "La voie intrinsèque répond aux stress internes : dommages de l'ADN, stress oxydatif, privation de facteurs de croissance." },
+        { "t": "Elle nécessite l'activation d'un récepteur membranaire de mort.", "v": false, "e": "Les récepteurs de mort caractérisent la voie extrinsèque ; la voie intrinsèque part de la mitochondrie." },
+        { "t": "Elle repose sur la perméabilisation de la membrane externe mitochondriale.", "v": true, "e": "La perméabilisation de la membrane externe mitochondriale par Bax et Bak est l'événement central de la voie intrinsèque." },
+        { "t": "Le cytochrome c libéré dans le cytosol participe à la formation de l'apoptosome.", "v": true, "e": "Le cytochrome c cytosolique se lie à Apaf-1 qui recrute la procaspase-9 pour former l'apoptosome." },
+        { "t": "Le cytochrome c est normalement localisé dans la matrice mitochondriale.", "v": false, "e": "Le cytochrome c réside dans l'espace intermembranaire mitochondrial, associé à la chaîne respiratoire." }
+      ],
+      "notion": "Voie intrinsèque",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q11",
+      "enonce": "Concernant l'apoptosome :",
+      "props": [
+        { "t": "L'apoptosome associe Apaf-1, le cytochrome c et la procaspase-9.", "v": true, "e": "L'apoptosome est une plateforme heptamérique formée d'Apaf-1 lié au cytochrome c, recrutant la procaspase-9." },
+        { "t": "L'assemblage de l'apoptosome nécessite du dATP ou de l'ATP.", "v": true, "e": "Le changement de conformation d'Apaf-1 requiert la fixation de dATP/ATP, illustrant le caractère énergie-dépendant de l'apoptose." },
+        { "t": "L'apoptosome active directement la caspase-8.", "v": false, "e": "L'apoptosome active la caspase-9, initiatrice de la voie intrinsèque ; la caspase-8 est activée au DISC de la voie extrinsèque." },
+        { "t": "La caspase-9 activée clive les procaspases effectrices comme la procaspase-3.", "v": true, "e": "La caspase-9 active les caspases effectrices 3 et 7, déclenchant la phase d'exécution." },
+        { "t": "L'apoptosome se forme dans le noyau.", "v": false, "e": "L'apoptosome s'assemble dans le cytosol, après libération du cytochrome c par la mitochondrie." }
+      ],
+      "notion": "Voie intrinsèque",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q12",
+      "enonce": "Concernant les événements mitochondriaux de l'apoptose :",
+      "props": [
+        { "t": "Bax et Bak forment des pores dans la membrane externe mitochondriale.", "v": true, "e": "Les protéines effectrices Bax et Bak s'oligomérisent et perméabilisent la membrane externe mitochondriale." },
+        { "t": "La perméabilisation mitochondriale s'accompagne d'une chute du potentiel de membrane mitochondrial.", "v": true, "e": "La dissipation du potentiel transmembranaire mitochondrial accompagne la perméabilisation et le découplage de la chaîne respiratoire." },
+        { "t": "Bcl-2 favorise l'oligomérisation de Bax à la membrane mitochondriale.", "v": false, "e": "Bcl-2 est anti-apoptotique : il séquestre Bax/Bak et les protéines BH3-only, empêchant la perméabilisation." },
+        { "t": "L'AIF libéré par la mitochondrie peut induire une condensation de la chromatine indépendante des caspases.", "v": true, "e": "L'AIF (apoptosis inducing factor) migre vers le noyau et induit condensation et fragmentation de la chromatine sans caspases." },
+        { "t": "La libération du cytochrome c stimule la production d'ATP par la cellule.", "v": false, "e": "La perte du cytochrome c interrompt la chaîne respiratoire et effondre la production mitochondriale d'ATP." }
+      ],
+      "notion": "Voie intrinsèque",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q13",
+      "enonce": "Concernant le déclenchement de la voie intrinsèque :",
+      "props": [
+        { "t": "La privation de facteurs de croissance peut déclencher la voie intrinsèque.", "v": true, "e": "Le retrait des facteurs de survie lève l'inhibition des protéines BH3-only comme Bad et déclenche la voie mitochondriale." },
+        { "t": "Des lésions irréparables de l'ADN activent la voie intrinsèque via p53.", "v": true, "e": "En cas de dommages irréparables, p53 induit des gènes pro-apoptotiques (Puma, Noxa, Bax) activant la voie mitochondriale." },
+        { "t": "La voie intrinsèque est systématiquement déclenchée par la fixation de FasL sur son récepteur.", "v": false, "e": "FasL/Fas déclenche la voie extrinsèque ; celle-ci ne recrute la mitochondrie que dans certaines cellules, via le clivage de Bid." },
+        { "t": "Un stress prolongé du réticulum endoplasmique peut aboutir à une apoptose.", "v": true, "e": "Lorsque la réponse UPR est débordée, le stress du réticulum endoplasmique déclenche l'apoptose de la cellule." },
+        { "t": "Les glucocorticoïdes peuvent induire l'apoptose des lymphocytes.", "v": true, "e": "Les glucocorticoïdes sont des inducteurs classiques d'apoptose lymphocytaire, utilisés en thérapeutique." }
+      ],
+      "notion": "Voie intrinsèque",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q14",
+      "enonce": "Concernant la voie extrinsèque de l'apoptose :",
+      "props": [
+        { "t": "Elle est initiée par la fixation d'un ligand sur un récepteur de mort membranaire.", "v": true, "e": "La voie extrinsèque débute par l'engagement de récepteurs de mort de la superfamille du TNF par leurs ligands." },
+        { "t": "Fas (CD95) est un récepteur de mort.", "v": true, "e": "Fas/CD95, activé par FasL, est le récepteur de mort prototypique de la voie extrinsèque." },
+        { "t": "Les récepteurs de mort activés recrutent l'adaptateur FADD.", "v": true, "e": "Le domaine de mort intracellulaire du récepteur recrute FADD, qui recrute à son tour la procaspase-8." },
+        { "t": "Le complexe DISC active la procaspase-9.", "v": false, "e": "Le DISC (death-inducing signaling complex) active la procaspase-8 ; la caspase-9 est activée par l'apoptosome." },
+        { "t": "La voie extrinsèque nécessite obligatoirement la libération de cytochrome c pour aboutir.", "v": false, "e": "Dans les cellules de type I, la caspase-8 active directement la caspase-3 sans passer par la mitochondrie." }
+      ],
+      "notion": "Voie extrinsèque",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q15",
+      "enonce": "Concernant les récepteurs de mort :",
+      "props": [
+        { "t": "Ils appartiennent à la superfamille des récepteurs du TNF.", "v": true, "e": "Fas, TNF-R1 et les récepteurs de TRAIL appartiennent à la superfamille des récepteurs du TNF." },
+        { "t": "Ils possèdent un domaine de mort dans leur région intracellulaire.", "v": true, "e": "Le death domain intracellulaire permet le recrutement des protéines adaptatrices comme FADD." },
+        { "t": "Ce sont des récepteurs à activité tyrosine kinase.", "v": false, "e": "Les récepteurs de mort n'ont aucune activité enzymatique propre ; ils fonctionnent par recrutement d'adaptateurs." },
+        { "t": "La fixation du ligand induit leur regroupement en trimères.", "v": true, "e": "Les ligands trimériques regroupent les récepteurs en trimères, condition de l'assemblage du DISC." },
+        { "t": "TRAIL est un ligand capable d'induire l'apoptose via ses récepteurs de mort.", "v": true, "e": "TRAIL induit l'apoptose via les récepteurs DR4 et DR5, préférentiellement dans les cellules tumorales." }
+      ],
+      "notion": "Voie extrinsèque",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q16",
+      "enonce": "Concernant les liens entre voies extrinsèque et intrinsèque :",
+      "props": [
+        { "t": "La caspase-8 peut cliver la protéine Bid en tBid.", "v": true, "e": "Le clivage de Bid par la caspase-8 génère tBid, qui migre vers la mitochondrie." },
+        { "t": "tBid active Bax et Bak à la membrane mitochondriale.", "v": true, "e": "tBid est une protéine BH3-only qui favorise l'oligomérisation de Bax/Bak et la perméabilisation mitochondriale." },
+        { "t": "Le clivage de Bid permet d'amplifier le signal apoptotique dans les cellules de type II.", "v": true, "e": "Dans les cellules de type II, le signal du DISC est trop faible et doit être amplifié par la boucle mitochondriale via tBid." },
+        { "t": "tBid inhibe la libération du cytochrome c.", "v": false, "e": "tBid favorise au contraire la perméabilisation mitochondriale et donc la libération du cytochrome c." },
+        { "t": "Les deux voies convergent vers l'activation des caspases effectrices.", "v": true, "e": "Voies intrinsèque et extrinsèque aboutissent toutes deux à l'activation des caspases effectrices 3, 6 et 7." }
+      ],
+      "notion": "Voie extrinsèque",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q17",
+      "enonce": "Concernant le système Fas/FasL :",
+      "props": [
+        { "t": "Le système Fas/FasL intervient dans l'élimination des lymphocytes auto-réactifs.", "v": true, "e": "L'apoptose Fas-dépendante élimine les lymphocytes auto-réactifs et termine la réponse immunitaire." },
+        { "t": "Les lymphocytes T cytotoxiques peuvent tuer leurs cibles via FasL.", "v": true, "e": "Les LT cytotoxiques induisent l'apoptose des cellules cibles via FasL et via la voie perforine/granzyme." },
+        { "t": "Le granzyme B introduit par les lymphocytes cytotoxiques peut activer directement des caspases.", "v": true, "e": "Le granzyme B, entré via les pores de perforine, clive directement des procaspases et Bid." },
+        { "t": "Une mutation inactivatrice de Fas provoque un excès d'apoptose lymphocytaire.", "v": false, "e": "L'inactivation de Fas provoque un défaut d'apoptose avec syndrome lymphoprolifératif auto-immun (ALPS)." },
+        { "t": "FADD est recruté sur Fas par interaction entre domaines de mort.", "v": true, "e": "L'interaction homotypique entre les death domains de Fas et de FADD assemble le DISC." }
+      ],
+      "notion": "Voie extrinsèque",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q18",
+      "enonce": "Concernant la famille Bcl-2 :",
+      "props": [
+        { "t": "La famille Bcl-2 comprend des membres pro-apoptotiques et anti-apoptotiques.", "v": true, "e": "La famille Bcl-2 regroupe des protéines anti-apoptotiques (Bcl-2, Bcl-xL) et pro-apoptotiques (Bax, Bak, BH3-only)." },
+        { "t": "Bcl-2 et Bcl-xL sont anti-apoptotiques.", "v": true, "e": "Bcl-2 et Bcl-xL protègent la membrane mitochondriale en séquestrant Bax, Bak et les BH3-only." },
+        { "t": "Bax et Bak sont des protéines anti-apoptotiques.", "v": false, "e": "Bax et Bak sont les effecteurs pro-apoptotiques qui perméabilisent la membrane externe mitochondriale." },
+        { "t": "Les protéines à domaine BH3 seul, comme Puma et Bad, favorisent l'apoptose.", "v": true, "e": "Les BH3-only (Bid, Bad, Puma, Noxa) activent Bax/Bak ou neutralisent les protéines anti-apoptotiques." },
+        { "t": "Le devenir de la cellule dépend de l'équilibre entre membres pro- et anti-apoptotiques.", "v": true, "e": "C'est le rapport entre protéines pro- et anti-apoptotiques de la famille Bcl-2 qui décide de la perméabilisation mitochondriale." }
+      ],
+      "notion": "Régulation Bcl-2 et p53",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q19",
+      "enonce": "Concernant la protéine p53 :",
+      "props": [
+        { "t": "p53 est un facteur de transcription activé par les lésions de l'ADN.", "v": true, "e": "p53, stabilisée après dommages de l'ADN, active la transcription de gènes d'arrêt du cycle et d'apoptose." },
+        { "t": "p53 peut induire un arrêt du cycle cellulaire via p21.", "v": true, "e": "p53 induit p21, inhibiteur des complexes cycline-CDK, provoquant un arrêt du cycle permettant la réparation." },
+        { "t": "p53 induit la transcription de gènes pro-apoptotiques comme Puma, Noxa et Bax.", "v": true, "e": "Si les lésions sont irréparables, p53 transactive Puma, Noxa et Bax, déclenchant la voie intrinsèque." },
+        { "t": "En l'absence de stress, p53 est stabilisée et très abondante dans la cellule.", "v": false, "e": "En conditions normales, p53 est maintenue à un taux faible par Mdm2 qui l'adresse au protéasome." },
+        { "t": "p53 active la transcription du gène Bcl-2.", "v": false, "e": "p53 réprime plutôt Bcl-2 et induit les gènes pro-apoptotiques ; elle ne stimule pas l'expression de Bcl-2." }
+      ],
+      "notion": "Régulation Bcl-2 et p53",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q20",
+      "enonce": "Concernant les facteurs de survie cellulaire :",
+      "props": [
+        { "t": "Les facteurs de croissance activent des voies de survie comme la voie PI3K/Akt.", "v": true, "e": "Les facteurs de croissance activent notamment PI3K/Akt, voie majeure de survie cellulaire." },
+        { "t": "La kinase Akt phosphoryle Bad et l'inactive.", "v": true, "e": "Bad phosphorylée par Akt est séquestrée par les protéines 14-3-3 et ne peut plus inhiber Bcl-2/Bcl-xL." },
+        { "t": "En l'absence de signaux de survie, la cellule est protégée de l'apoptose.", "v": false, "e": "La survie des cellules dépend de signaux permanents ; leur retrait déclenche l'apoptose « par défaut »." },
+        { "t": "La signalisation de survie augmente l'expression de protéines anti-apoptotiques.", "v": true, "e": "Les voies de survie induisent l'expression de Bcl-2, Bcl-xL et d'IAP." },
+        { "t": "La phosphorylation de Bad par Akt déclenche la libération du cytochrome c.", "v": false, "e": "La phosphorylation de Bad est au contraire protectrice, car elle empêche la neutralisation des protéines anti-apoptotiques." }
+      ],
+      "notion": "Régulation Bcl-2 et p53",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q21",
+      "enonce": "Concernant la régulation de l'apoptose et le cancer :",
+      "props": [
+        { "t": "Le gène TP53 est muté dans environ la moitié des cancers humains.", "v": true, "e": "TP53 est le gène suppresseur de tumeur le plus fréquemment muté, altéré dans près de 50 % des cancers." },
+        { "t": "Une surexpression de Bcl-2 favorise la survie des cellules tumorales.", "v": true, "e": "La surexpression de Bcl-2, observée dans certains lymphomes folliculaires, bloque la voie mitochondriale et favorise la survie tumorale." },
+        { "t": "La perte de p53 rend les cellules tumorales plus sensibles à l'apoptose induite par la chimiothérapie.", "v": false, "e": "La perte de p53 diminue au contraire l'apoptose induite par les agents génotoxiques et favorise la résistance aux traitements." },
+        { "t": "L'échappement à l'apoptose est une caractéristique des cellules cancéreuses.", "v": true, "e": "La résistance à la mort cellulaire fait partie des caractéristiques fondamentales (hallmarks) du cancer." },
+        { "t": "p53 est qualifiée de « gardien du génome ».", "v": true, "e": "En couplant détection des lésions de l'ADN, arrêt du cycle et apoptose, p53 protège l'intégrité du génome." }
+      ],
+      "notion": "Régulation Bcl-2 et p53",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q22",
+      "enonce": "Concernant les rôles physiologiques de l'apoptose :",
+      "props": [
+        { "t": "L'apoptose élimine les cellules situées entre les doigts au cours de l'embryogenèse.", "v": true, "e": "La disparition des espaces interdigitaux par apoptose individualise les doigts chez l'embryon." },
+        { "t": "L'apoptose participe à la sélection des lymphocytes T dans le thymus.", "v": true, "e": "Les thymocytes auto-réactifs ou incapables de reconnaître le CMH sont éliminés par apoptose (sélections négative et positive)." },
+        { "t": "L'apoptose maintient constant le nombre de cellules des tissus adultes.", "v": true, "e": "L'homéostasie tissulaire résulte de l'équilibre entre prolifération et apoptose." },
+        { "t": "Environ dix milliards de cellules meurent chaque jour par apoptose chez l'adulte.", "v": true, "e": "L'apoptose élimine quotidiennement un très grand nombre de cellules, de l'ordre de dizaines de milliards, compensé par les mitoses." },
+        { "t": "L'apoptose physiologique déclenche une inflammation locale nécessaire au remodelage tissulaire.", "v": false, "e": "L'apoptose est silencieuse sur le plan inflammatoire, les corps apoptotiques étant phagocytés avant toute fuite de contenu cellulaire." }
+      ],
+      "notion": "Rôles et pathologies",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch07-q23",
+      "enonce": "Concernant les pathologies liées à un excès d'apoptose :",
+      "props": [
+        { "t": "Les maladies neurodégénératives s'accompagnent d'une perte neuronale par apoptose.", "v": true, "e": "Dans les maladies d'Alzheimer ou de Parkinson, la mort neuronale fait notamment intervenir l'apoptose." },
+        { "t": "L'infection par le VIH entraîne une déplétion des lymphocytes T CD4 impliquant l'apoptose.", "v": true, "e": "La déplétion des LT CD4⁺ au cours du SIDA fait largement intervenir des mécanismes apoptotiques." },
+        { "t": "Le cancer est le prototype des maladies par excès d'apoptose.", "v": false, "e": "Le cancer illustre au contraire un défaut d'apoptose, avec accumulation de cellules anormales." },
+        { "t": "Au cours de l'ischémie-reperfusion, des cellules meurent par apoptose en périphérie de la zone nécrosée.", "v": true, "e": "Autour du foyer de nécrose ischémique, la zone de pénombre est le siège d'une mort cellulaire apoptotique." },
+        { "t": "Les hépatites fulminantes peuvent comporter une destruction massive des hépatocytes par apoptose Fas-dépendante.", "v": true, "e": "L'activation massive de Fas sur les hépatocytes participe aux hépatites fulminantes." }
+      ],
+      "notion": "Rôles et pathologies",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch07-q24",
+      "enonce": "Concernant les pathologies liées à un défaut d'apoptose :",
+      "props": [
+        { "t": "Un défaut d'apoptose favorise l'accumulation de cellules génétiquement anormales.", "v": true, "e": "Les cellules porteuses de lésions de l'ADN qui échappent à l'apoptose peuvent accumuler des mutations et se transformer." },
+        { "t": "Le syndrome lymphoprolifératif auto-immun (ALPS) est lié à des mutations de la voie Fas.", "v": true, "e": "L'ALPS résulte de mutations de Fas, FasL ou de la caspase-10, avec défaut d'élimination des lymphocytes." },
+        { "t": "Un défaut d'apoptose des lymphocytes auto-réactifs peut favoriser l'auto-immunité.", "v": true, "e": "La persistance de lymphocytes auto-réactifs non éliminés par apoptose favorise les maladies auto-immunes." },
+        { "t": "Les maladies neurodégénératives sont l'exemple type d'un défaut d'apoptose.", "v": false, "e": "Les maladies neurodégénératives relèvent d'un excès d'apoptose ; le défaut d'apoptose caractérise cancers et auto-immunité." },
+        { "t": "La translocation t(14;18) des lymphomes folliculaires surexprime Bax.", "v": false, "e": "La translocation t(14;18) place BCL2 sous contrôle du promoteur des chaînes lourdes d'immunoglobulines et surexprime Bcl-2, protéine anti-apoptotique." }
+      ],
+      "notion": "Rôles et pathologies",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch07-q25",
+      "enonce": "Concernant l'élimination des cellules apoptotiques :",
+      "props": [
+        { "t": "Les corps apoptotiques exposent des signaux de reconnaissance pour les phagocytes.", "v": true, "e": "La phosphatidylsérine externalisée et d'autres signaux « mange-moi » permettent la reconnaissance par les phagocytes." },
+        { "t": "La phagocytose des corps apoptotiques est rapide et évite la lyse secondaire.", "v": true, "e": "L'élimination rapide des corps apoptotiques prévient leur nécrose secondaire et la libération de contenu cellulaire." },
+        { "t": "La phagocytose des cellules apoptotiques déclenche la sécrétion massive de cytokines pro-inflammatoires.", "v": false, "e": "L'efferocytose est plutôt anti-inflammatoire, les macrophages sécrétant des médiateurs comme le TGF-β et l'IL-10." },
+        { "t": "Les cellules épithéliales voisines peuvent phagocyter des corps apoptotiques.", "v": true, "e": "Outre les macrophages, les cellules voisines non spécialisées participent à l'élimination des corps apoptotiques." },
+        { "t": "En culture, en l'absence de phagocytes, les cellules apoptotiques finissent par subir une nécrose secondaire.", "v": true, "e": "Sans phagocytose, les corps apoptotiques perdent leur intégrité membranaire : c'est la nécrose secondaire." }
+      ],
+      "notion": "Rôles et pathologies",
+      "diff": 2
+    }
+  ]
+}

@@ -1,0 +1,332 @@
+{
+  "ue": "ue2",
+  "chapitre": "ch02",
+  "titre": "Noyau, chromatine et chromosomes",
+  "questions": [
+    {
+      "id": "ue2-ch02-q01",
+      "enonce": "Concernant l'enveloppe nucléaire :",
+      "props": [
+        { "t": "L'enveloppe nucléaire est constituée de deux membranes concentriques.", "v": true, "e": "L'enveloppe nucléaire comprend une membrane interne et une membrane externe séparées par l'espace périnucléaire." },
+        { "t": "La membrane nucléaire externe est en continuité avec le réticulum endoplasmique rugueux.", "v": true, "e": "La membrane externe, qui peut porter des ribosomes, se prolonge par la membrane du réticulum endoplasmique." },
+        { "t": "L'espace périnucléaire communique avec la lumière du réticulum endoplasmique.", "v": true, "e": "La continuité membranaire fait de l'espace périnucléaire une extension de la lumière du réticulum." },
+        { "t": "La membrane nucléaire interne porte des ribosomes sur sa face nucléoplasmique.", "v": false, "e": "Seule la membrane externe porte des ribosomes ; la face interne est tapissée par la lamina nucléaire." },
+        { "t": "L'enveloppe nucléaire est présente et intacte pendant toute la mitose des cellules humaines.", "v": false, "e": "Chez les mammifères la mitose est « ouverte » : l'enveloppe nucléaire se désassemble en prophase et se reforme en télophase." }
+      ],
+      "notion": "Enveloppe nucléaire",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q02",
+      "enonce": "Concernant la lamina nucléaire :",
+      "props": [
+        { "t": "La lamina nucléaire est un réseau de filaments intermédiaires de lamines.", "v": true, "e": "Les lamines A, B et C sont des filaments intermédiaires formant un maillage sous la membrane interne." },
+        { "t": "La lamina est apposée contre la face externe de l'enveloppe nucléaire.", "v": false, "e": "La lamina tapisse la face nucléoplasmique de la membrane nucléaire interne." },
+        { "t": "La phosphorylation des lamines par le complexe cycline B-Cdk1 provoque la dissociation de la lamina en prophase.", "v": true, "e": "La phosphorylation des lamines par Cdk1 déclenche la dépolymérisation de la lamina et la rupture de l'enveloppe." },
+        { "t": "La lamina participe à l'organisation de la chromatine périphérique.", "v": true, "e": "La lamina ancre l'hétérochromatine à la périphérie du noyau et contribue à l'architecture nucléaire." },
+        { "t": "Des mutations du gène de la lamine A sont responsables de la progéria.", "v": true, "e": "La progéria de Hutchinson-Gilford est due à une lamine A anormale (progérine) qui déforme le noyau." }
+      ],
+      "notion": "Enveloppe nucléaire",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q03",
+      "enonce": "Concernant les pores nucléaires :",
+      "props": [
+        { "t": "Le complexe du pore nucléaire est constitué de protéines appelées nucléoporines.", "v": true, "e": "Le pore nucléaire est un édifice multiprotéique formé de multiples copies d'une trentaine de nucléoporines." },
+        { "t": "Le pore nucléaire traverse les deux membranes de l'enveloppe nucléaire.", "v": true, "e": "Le pore s'insère au niveau des zones de fusion entre membranes interne et externe." },
+        { "t": "Les ions et petites molécules diffusent librement à travers le pore nucléaire.", "v": true, "e": "Les molécules de petite taille (inférieures à environ 40 kDa) diffusent passivement par le pore." },
+        { "t": "Une protéine de 100 kDa diffuse passivement à travers le pore nucléaire.", "v": false, "e": "Au-delà d'environ 40 kDa, le passage exige un transport actif assisté par des récepteurs de transport (importines/exportines)." },
+        { "t": "Le nombre de pores nucléaires est identique dans toutes les cellules quel que soit leur niveau d'activité.", "v": false, "e": "Le nombre de pores augmente avec l'activité transcriptionnelle et les besoins d'échanges de la cellule." }
+      ],
+      "notion": "Pore nucléaire et transport",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q04",
+      "enonce": "Concernant l'import nucléaire des protéines :",
+      "props": [
+        { "t": "Les protéines importées dans le noyau portent une séquence NLS.", "v": true, "e": "Le signal de localisation nucléaire (NLS), riche en acides aminés basiques (lysine, arginine), est reconnu par les importines." },
+        { "t": "Le signal NLS est clivé après l'entrée de la protéine dans le noyau.", "v": false, "e": "Contrairement au peptide signal du réticulum, le NLS n'est pas clivé, ce qui permet des réimports après la mitose." },
+        { "t": "Les protéines nucléaires sont importées sous forme repliée.", "v": true, "e": "Le pore nucléaire laisse passer des protéines et complexes repliés, à la différence des translocons du réticulum ou des mitochondries." },
+        { "t": "Dans le noyau, Ran-GTP dissocie le complexe importine-cargo.", "v": true, "e": "La fixation de Ran-GTP sur l'importine libère le cargo dans le nucléoplasme." },
+        { "t": "Le facteur RanGEF, qui charge Ran en GTP, est localisé dans le cytosol.", "v": false, "e": "RanGEF est chromatinien, donc nucléaire, alors que RanGAP est cytosolique : ce dispositif crée le gradient de Ran-GTP qui donne le sens du transport." }
+      ],
+      "notion": "Pore nucléaire et transport",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q05",
+      "enonce": "Concernant l'export nucléaire :",
+      "props": [
+        { "t": "Les protéines exportées du noyau portent une séquence NES.", "v": true, "e": "Le signal d'export nucléaire (NES), riche en leucines, est reconnu par des exportines." },
+        { "t": "L'export d'un cargo nécessite la formation d'un complexe exportine-cargo-Ran-GTP dans le noyau.", "v": true, "e": "L'exportine ne lie efficacement son cargo qu'en présence de Ran-GTP nucléaire." },
+        { "t": "L'hydrolyse du GTP de Ran dans le cytosol libère le cargo exporté.", "v": true, "e": "RanGAP cytosolique stimule l'hydrolyse du GTP, ce qui dissocie le complexe d'export." },
+        { "t": "Les ARNm matures sortent du noyau avant l'excision de leurs introns.", "v": false, "e": "Seuls les ARNm matures, coiffés, épissés et polyadénylés, sont exportés vers le cytosol." },
+        { "t": "Les sous-unités ribosomiques sont assemblées dans le cytosol puis importées dans le noyau.", "v": false, "e": "C'est l'inverse : elles sont assemblées dans le nucléole puis exportées vers le cytosol où a lieu la traduction." }
+      ],
+      "notion": "Pore nucléaire et transport",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q06",
+      "enonce": "Concernant le nucléosome :",
+      "props": [
+        { "t": "Le cœur du nucléosome est un octamère d'histones.", "v": true, "e": "Le cœur nucléosomique comprend deux exemplaires de chacune des histones H2A, H2B, H3 et H4." },
+        { "t": "L'histone H1 fait partie de l'octamère du cœur nucléosomique.", "v": false, "e": "H1 est une histone de liaison (linker) externe à l'octamère, qui scelle l'ADN à l'entrée et à la sortie du nucléosome." },
+        { "t": "Environ 147 paires de bases d'ADN s'enroulent autour de l'octamère d'histones.", "v": true, "e": "L'ADN fait un peu moins de deux tours (≈147 pb) autour du cœur d'histones." },
+        { "t": "Les histones sont des protéines acides riches en aspartate et glutamate.", "v": false, "e": "Les histones sont basiques, riches en lysine et arginine, ce qui permet leur liaison à l'ADN chargé négativement." },
+        { "t": "L'histone H1 participe à la compaction en fibre de 30 nm.", "v": true, "e": "H1 favorise l'empilement des nucléosomes et la formation de la fibre chromatinienne de 30 nm." }
+      ],
+      "notion": "Chromatine",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q07",
+      "enonce": "Concernant les niveaux de compaction de l'ADN :",
+      "props": [
+        { "t": "Le premier niveau de compaction est le collier de perles de 11 nm.", "v": true, "e": "La fibre nucléosomique en collier de perles a un diamètre d'environ 11 nm." },
+        { "t": "La fibre de 30 nm résulte de l'empilement des nucléosomes.", "v": true, "e": "L'empilement hélicoïdal (modèle solénoïde ou zigzag) des nucléosomes forme la fibre de 30 nm." },
+        { "t": "Le chromosome métaphasique correspond au niveau de compaction maximal de la chromatine.", "v": true, "e": "En métaphase, la compaction atteint son maximum, avec un facteur de condensation de l'ordre de 10 000." },
+        { "t": "La chromatine est plus condensée en interphase qu'en mitose.", "v": false, "e": "C'est l'inverse : la condensation maximale a lieu en mitose, l'interphase étant compatible avec la transcription et la réplication." },
+        { "t": "Les condensines participent à la condensation des chromosomes mitotiques.", "v": true, "e": "Les complexes SMC de type condensine créent des boucles qui compactent les chromatides en mitose." }
+      ],
+      "notion": "Chromatine",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q08",
+      "enonce": "Concernant euchromatine et hétérochromatine :",
+      "props": [
+        { "t": "L'euchromatine est peu condensée et accessible à la machinerie de transcription.", "v": true, "e": "L'euchromatine, décondensée, contient les gènes potentiellement transcrits." },
+        { "t": "L'hétérochromatine est majoritairement localisée au centre du noyau, loin de l'enveloppe.", "v": false, "e": "L'hétérochromatine s'accumule surtout en périphérie du noyau, contre la lamina, et autour du nucléole." },
+        { "t": "L'hétérochromatine constitutive comprend les régions centromériques et télomériques.", "v": true, "e": "Les séquences répétées des centromères et télomères restent condensées dans tous les types cellulaires." },
+        { "t": "Le corpuscule de Barr est un exemple d'hétérochromatine facultative.", "v": true, "e": "Le chromosome X inactivé de la femme est une hétérochromatine facultative, active dans d'autres contextes." },
+        { "t": "Un gène situé dans l'hétérochromatine est fortement transcrit.", "v": false, "e": "L'hétérochromatine est transcriptionnellement silencieuse ; la transcription active se fait dans l'euchromatine." }
+      ],
+      "notion": "Chromatine",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q09",
+      "enonce": "Concernant les modifications épigénétiques de la chromatine :",
+      "props": [
+        { "t": "L'acétylation des histones par les HAT favorise la décondensation de la chromatine.", "v": true, "e": "L'acétylation des lysines neutralise leur charge positive, relâche l'interaction ADN-histones et active la transcription." },
+        { "t": "Les histones désacétylases (HDAC) sont associées à l'activation de la transcription.", "v": false, "e": "Les HDAC retirent les groupements acétyle et favorisent la condensation, donc la répression transcriptionnelle." },
+        { "t": "La méthylation des histones a toujours un effet répresseur.", "v": false, "e": "L'effet dépend du résidu : H3K9me3 est répressive alors que H3K4me3 marque les promoteurs actifs." },
+        { "t": "La méthylation de l'ADN porte sur les cytosines des îlots CpG.", "v": true, "e": "Les ADN méthyltransférases méthylent les cytosines en 5-méthylcytosine dans les dinucléotides CpG." },
+        { "t": "L'hyperméthylation du promoteur d'un gène en réprime la transcription.", "v": true, "e": "La méthylation des îlots CpG promoteurs recrute des répresseurs et éteint le gène, mécanisme observé pour des gènes suppresseurs de tumeur." }
+      ],
+      "notion": "Chromatine",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q10",
+      "enonce": "Concernant le nucléole :",
+      "props": [
+        { "t": "Le nucléole est délimité par une membrane propre.", "v": false, "e": "Le nucléole est un compartiment nucléaire sans membrane, formé par condensation autour des gènes d'ARNr." },
+        { "t": "Le nucléole est le site de transcription des ARN ribosomiques par l'ARN polymérase I.", "v": true, "e": "L'ARN polymérase I transcrit le pré-ARNr 45S dans le nucléole." },
+        { "t": "L'ARNr 5S est transcrit dans le nucléole par l'ARN polymérase I.", "v": false, "e": "L'ARNr 5S est transcrit hors du nucléole par l'ARN polymérase III, puis importé pour l'assemblage." },
+        { "t": "Le nucléole assure l'assemblage des sous-unités ribosomiques.", "v": true, "e": "ARNr et protéines ribosomiques importées y sont assemblés en sous-unités 40S et 60S." },
+        { "t": "La taille du nucléole augmente dans les cellules à forte synthèse protéique.", "v": true, "e": "Un nucléole volumineux reflète une biogenèse ribosomique intense, comme dans les cellules tumorales." }
+      ],
+      "notion": "Nucléole",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q11",
+      "enonce": "Concernant l'organisation du nucléole :",
+      "props": [
+        { "t": "Le nucléole s'organise autour des régions organisatrices nucléolaires (NOR).", "v": true, "e": "Les NOR, portées par les bras courts des chromosomes acrocentriques, contiennent les répétitions des gènes d'ARNr." },
+        { "t": "Chez l'humain, les NOR sont situées sur les chromosomes 13, 14, 15, 21 et 22.", "v": true, "e": "Les cinq paires de chromosomes acrocentriques portent les NOR sur leurs bras courts." },
+        { "t": "On distingue classiquement trois zones nucléolaires : centre fibrillaire, composant fibrillaire dense et composant granulaire.", "v": true, "e": "Ces trois régions correspondent aux étapes successives de la transcription et de la maturation des ARNr." },
+        { "t": "Le composant granulaire correspond au site initial de transcription du pré-ARNr.", "v": false, "e": "La transcription débute à l'interface centre fibrillaire/composant fibrillaire dense ; le composant granulaire contient les sous-unités en cours d'assemblage." },
+        { "t": "Le nucléole disparaît au début de la mitose et se reforme en télophase.", "v": true, "e": "Le nucléole se désassemble quand la transcription des ARNr s'arrête en prophase, puis se reconstitue autour des NOR en télophase." }
+      ],
+      "notion": "Nucléole",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch02-q12",
+      "enonce": "Concernant les chromosomes humains :",
+      "props": [
+        { "t": "Le caryotype humain normal comporte 46 chromosomes soit 23 paires.", "v": true, "e": "Il comprend 22 paires d'autosomes et une paire de gonosomes (XX ou XY)." },
+        { "t": "Un chromosome métacentrique possède un centromère proche d'une extrémité.", "v": false, "e": "Le métacentrique a un centromère médian ; c'est l'acrocentrique dont le centromère est proche de l'extrémité." },
+        { "t": "Le bras court d'un chromosome est noté p et le bras long q.", "v": true, "e": "Par convention, p (petit) désigne le bras court et q le bras long." },
+        { "t": "Un chromosome métaphasique est constitué de deux chromatides sœurs réunies au centromère.", "v": true, "e": "Après la réplication en phase S, chaque chromosome mitotique comporte deux chromatides sœurs identiques." },
+        { "t": "Les chromatides sœurs d'un chromosome métaphasique portent des allèles différents des mêmes gènes.", "v": false, "e": "Les chromatides sœurs sont des copies identiques issues de la réplication ; ce sont les chromosomes homologues qui peuvent porter des allèles différents." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch02-q13",
+      "enonce": "Concernant le centromère et le kinétochore :",
+      "props": [
+        { "t": "Le centromère est une région d'ADN répété sur laquelle s'assemble le kinétochore.", "v": true, "e": "Le centromère humain, riche en ADN satellite α, sert de plateforme d'assemblage au kinétochore." },
+        { "t": "Le kinétochore est le site d'attachement des microtubules du fuseau mitotique.", "v": true, "e": "Les microtubules kinétochoriens s'ancrent sur ce complexe protéique pour tirer les chromatides." },
+        { "t": "Chaque chromosome métaphasique possède un seul kinétochore.", "v": false, "e": "Chaque chromatide sœur porte son propre kinétochore, soit deux kinétochores par chromosome métaphasique." },
+        { "t": "Le variant d'histone CENP-A marque la chromatine centromérique.", "v": true, "e": "CENP-A, variant de H3, définit épigénétiquement l'identité du centromère." },
+        { "t": "Les cohésines maintiennent l'association des chromatides sœurs jusqu'à l'anaphase.", "v": true, "e": "Les anneaux de cohésine, mis en place en phase S, sont clivés par la séparase au début de l'anaphase." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q14",
+      "enonce": "Concernant les télomères :",
+      "props": [
+        { "t": "Les télomères sont constitués de répétitions de la séquence TTAGGG chez l'humain.", "v": true, "e": "Les extrémités chromosomiques humaines répètent le motif TTAGGG sur plusieurs kilobases." },
+        { "t": "Les télomères raccourcissent à chaque division dans les cellules somatiques.", "v": true, "e": "Le problème de la réplication des extrémités entraîne une érosion télomérique à chaque cycle." },
+        { "t": "La télomérase est fortement exprimée dans la plupart des cellules somatiques adultes.", "v": false, "e": "La télomérase est active surtout dans les cellules germinales, souches et la majorité des cellules cancéreuses, pas dans les somatiques différenciées." },
+        { "t": "La télomérase est une transcriptase inverse utilisant sa propre matrice d'ARN.", "v": true, "e": "La télomérase allonge le brin riche en G en recopiant la matrice de son ARN intégré (TERC)." },
+        { "t": "Un raccourcissement télomérique critique déclenche la sénescence réplicative.", "v": true, "e": "Des télomères trop courts sont perçus comme des cassures d'ADN et induisent l'arrêt du cycle via p53." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q15",
+      "enonce": "Concernant le caryotype et ses indications :",
+      "props": [
+        { "t": "Le caryotype s'établit sur des cellules bloquées en métaphase.", "v": true, "e": "La colchicine (ou colcémide) bloque les cellules en métaphase, stade de condensation maximale propice à l'analyse." },
+        { "t": "Le choc hypotonique appliqué aux cellules disperse les chromosomes pour faciliter leur étalement.", "v": true, "e": "Le choc hypotonique fait gonfler les cellules, ce qui disperse les chromosomes avant fixation et étalement." },
+        { "t": "Les bandes G sont obtenues après traitement à la trypsine et coloration au Giemsa.", "v": true, "e": "La dénaturation ménagée par la trypsine puis le Giemsa produit le patron de bandes G caractéristique de chaque paire." },
+        { "t": "Les bandes G sombres correspondent aux régions riches en gènes et répliquées précocement.", "v": false, "e": "Les bandes G sombres sont riches en AT, pauvres en gènes et de réplication tardive ; les bandes claires sont riches en gènes." },
+        { "t": "Le caryotype permet de détecter des mutations ponctuelles d'un gène.", "v": false, "e": "La résolution du caryotype (environ 5 à 10 Mb) ne détecte que les anomalies de nombre ou de structure, pas les mutations ponctuelles." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q16",
+      "enonce": "Concernant les anomalies chromosomiques de nombre :",
+      "props": [
+        { "t": "La trisomie 21 correspond à la formule chromosomique 47,XX,+21 ou 47,XY,+21.", "v": true, "e": "La trisomie 21 libre ajoute un chromosome 21 surnuméraire, soit 47 chromosomes." },
+        { "t": "Une monosomie est la présence de trois exemplaires d'un chromosome.", "v": false, "e": "La monosomie est l'absence d'un exemplaire (un seul chromosome au lieu de deux) ; trois exemplaires définissent une trisomie." },
+        { "t": "Le syndrome de Turner correspond au caryotype 45,X.", "v": true, "e": "La monosomie X (45,X) est la seule monosomie complète viable chez l'humain." },
+        { "t": "Les aneuploïdies résultent le plus souvent d'une non-disjonction méiotique.", "v": true, "e": "La non-disjonction, surtout en méiose I maternelle, est la cause principale des aneuploïdies." },
+        { "t": "La triploïdie (69 chromosomes) est une aneuploïdie.", "v": false, "e": "La triploïdie est une polyploïdie (multiple entier du lot haploïde), non une aneuploïdie qui ne concerne qu'un ou quelques chromosomes." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q17",
+      "enonce": "Concernant l'inactivation du chromosome X :",
+      "props": [
+        { "t": "L'inactivation du X se produit au hasard dans chaque cellule de l'embryon féminin.", "v": true, "e": "Le X paternel ou maternel est inactivé aléatoirement, puis ce choix est transmis clonalement." },
+        { "t": "L'ARN non codant XIST recouvre le chromosome X qu'il inactive.", "v": true, "e": "XIST, exprimé par le futur X inactif, le recouvre en cis et recrute la machinerie de répression." },
+        { "t": "Le corpuscule de Barr est visible dans les cellules somatiques masculines normales.", "v": false, "e": "L'homme 46,XY n'a qu'un X, actif ; il n'y a donc pas de corpuscule de Barr." },
+        { "t": "Une femme est une mosaïque fonctionnelle pour les gènes portés par le X.", "v": true, "e": "Selon les cellules, c'est le X paternel ou maternel qui s'exprime, créant une mosaïque d'expression." },
+        { "t": "Tous les gènes du X inactif sont totalement éteints.", "v": false, "e": "Une fraction des gènes, notamment dans les régions pseudo-autosomiques, échappe à l'inactivation." }
+      ],
+      "notion": "Chromatine",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch02-q18",
+      "enonce": "Concernant les territoires chromosomiques et l'organisation du noyau interphasique :",
+      "props": [
+        { "t": "En interphase, chaque chromosome occupe un territoire nucléaire défini.", "v": true, "e": "Les chromosomes décondensés ne se mélangent pas au hasard mais occupent des territoires distincts." },
+        { "t": "Les chromosomes riches en gènes tendent à se placer au centre du noyau.", "v": true, "e": "Les territoires riches en gènes sont plutôt centraux, les pauvres en gènes plutôt périphériques." },
+        { "t": "En interphase, les chromosomes sont individualisables en microscopie optique standard.", "v": false, "e": "Les chromosomes interphasiques décondensés ne sont pas visibles individuellement ; seule la mitose les individualise." },
+        { "t": "L'association d'un gène à la lamina périphérique favorise généralement sa répression.", "v": true, "e": "Les domaines associés à la lamina (LAD) constituent un environnement hétérochromatinien répressif." },
+        { "t": "Le nucléoplasme contient des corps nucléaires sans membrane, comme les corps de Cajal.", "v": true, "e": "Corps de Cajal, speckles et corps PML sont des condensats nucléaires dépourvus de membrane." }
+      ],
+      "notion": "Chromatine",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch02-q19",
+      "enonce": "Concernant les échanges nucléocytoplasmiques d'ARN :",
+      "props": [
+        { "t": "Les ARNm sont exportés du noyau associés à des protéines sous forme de particules ribonucléoprotéiques.", "v": true, "e": "Les mRNP formées de l'ARNm et de ses protéines associées franchissent le pore nucléaire." },
+        { "t": "La coiffe en 5′ et la queue poly(A) sont ajoutées dans le cytosol après export.", "v": false, "e": "Coiffe et polyadénylation sont des maturations nucléaires, co- ou post-transcriptionnelles, préalables à l'export." },
+        { "t": "Les ARNt sont exportés vers le cytosol après leur maturation nucléaire.", "v": true, "e": "Les ARNt transcrits par l'ARN polymérase III sont maturés dans le noyau puis exportés par une exportine dédiée." },
+        { "t": "La traduction des ARNm a lieu dans le noyau chez les eucaryotes.", "v": false, "e": "Chez les eucaryotes, transcription et traduction sont séparées : la traduction est cytosolique." },
+        { "t": "Un ARNm porteur d'un codon stop prématuré peut être dégradé par le système NMD après un premier tour de traduction.", "v": true, "e": "Le nonsense-mediated decay détecte les codons stop prématurés et dégrade ces ARNm aberrants." }
+      ],
+      "notion": "Pore nucléaire et transport",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch02-q20",
+      "enonce": "Concernant la dynamique de l'enveloppe nucléaire au cours de la mitose :",
+      "props": [
+        { "t": "La rupture de l'enveloppe nucléaire survient en fin de prophase (prométaphase).", "v": true, "e": "La rupture de l'enveloppe marque l'entrée en prométaphase et l'accès du fuseau aux chromosomes." },
+        { "t": "Les membranes de l'enveloppe nucléaire sont dégradées puis entièrement resynthétisées après la mitose.", "v": false, "e": "Les membranes sont résorbées dans le réticulum endoplasmique puis réutilisées pour reformer l'enveloppe en télophase." },
+        { "t": "La déphosphorylation des lamines permet la reformation de la lamina en télophase.", "v": true, "e": "Des phosphatases retirent les phosphates ajoutés par Cdk1, permettant la repolymérisation des lamines." },
+        { "t": "Les pores nucléaires se réassemblent sur l'enveloppe reformée autour des chromatides.", "v": true, "e": "Les nucléoporines dispersées en mitose se réassemblent en complexes de pore lors de la reformation de l'enveloppe." },
+        { "t": "Les protéines nucléaires portant un NLS sont réimportées dans les noyaux fils après la télophase.", "v": true, "e": "Le NLS non clivé permet la réimportation des protéines nucléaires dispersées pendant la mitose." }
+      ],
+      "notion": "Enveloppe nucléaire",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q21",
+      "enonce": "Concernant les anomalies chromosomiques de structure :",
+      "props": [
+        { "t": "Une translocation réciproque équilibrée est l'échange de segments entre deux chromosomes non homologues.", "v": true, "e": "La translocation réciproque échange des segments entre deux chromosomes sans perte de matériel si elle est équilibrée." },
+        { "t": "Un porteur de translocation équilibrée présente en règle générale un phénotype normal.", "v": true, "e": "Sans perte ni gain de matériel, le phénotype est habituellement normal, mais le risque de gamètes déséquilibrés est accru." },
+        { "t": "Une translocation robertsonienne concerne deux chromosomes métacentriques.", "v": false, "e": "La translocation robertsonienne fusionne les bras longs de deux chromosomes acrocentriques (13, 14, 15, 21, 22)." },
+        { "t": "Une délétion correspond à la perte d'un segment chromosomique.", "v": true, "e": "La délétion, terminale ou interstitielle, entraîne une monosomie partielle du segment perdu." },
+        { "t": "Le chromosome Philadelphie résulte d'une translocation t(9;22) créant le gène de fusion BCR-ABL.", "v": true, "e": "La t(9;22) de la leucémie myéloïde chronique fusionne BCR et ABL, produisant une tyrosine kinase constitutivement active." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch02-q22",
+      "enonce": "Concernant la compaction et l'accessibilité de l'ADN :",
+      "props": [
+        { "t": "Les complexes de remodelage de la chromatine utilisent l'ATP pour déplacer les nucléosomes.", "v": true, "e": "Les remodeleurs (famille SWI/SNF) font glisser ou éjectent les nucléosomes aux dépens de l'ATP." },
+        { "t": "Le code des histones désigne l'ensemble des modifications post-traductionnelles des queues d'histones.", "v": true, "e": "Les combinaisons d'acétylations, méthylations et phosphorylations des queues d'histones sont lues par des protéines effectrices." },
+        { "t": "Les modifications des histones portent principalement sur leurs queues N-terminales.", "v": true, "e": "Les queues N-terminales qui émergent du nucléosome sont les principaux sites de modification." },
+        { "t": "La phosphorylation de l'histone H3 sur la sérine 10 est un marqueur des cellules en mitose.", "v": true, "e": "H3S10 phosphorylée, associée à la condensation mitotique, sert de marqueur d'index mitotique." },
+        { "t": "Les marques épigénétiques modifient la séquence nucléotidique de l'ADN.", "v": false, "e": "L'épigénétique modifie l'expression des gènes sans changer la séquence de l'ADN." }
+      ],
+      "notion": "Chromatine",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q23",
+      "enonce": "Concernant les protéines nucléaires et leur adressage :",
+      "props": [
+        { "t": "Les protéines nucléaires sont synthétisées par des ribosomes libres du cytosol.", "v": true, "e": "Sans peptide signal d'entrée dans le réticulum, les protéines nucléaires sont traduites dans le cytosol puis importées." },
+        { "t": "La fusion expérimentale d'un NLS à une protéine cytosolique suffit à la faire entrer dans le noyau.", "v": true, "e": "Le NLS est un signal nécessaire et suffisant, comme démontré avec le NLS de l'antigène T de SV40." },
+        { "t": "L'import nucléaire peut être régulé par masquage du NLS.", "v": true, "e": "Le facteur NF-κB, par exemple, est retenu dans le cytosol par IκB qui masque son NLS jusqu'au signal activateur." },
+        { "t": "Une protéine dépourvue de NLS mais de petite taille (20 kDa) peut entrer dans le noyau.", "v": true, "e": "Sous le seuil d'environ 40 kDa, la diffusion passive à travers le pore reste possible sans NLS." },
+        { "t": "L'import nucléaire nécessite le déploiement (dépliement) complet de la protéine transportée.", "v": false, "e": "Le pore nucléaire accepte des protéines repliées, contrairement à l'import mitochondrial qui exige un dépliement." }
+      ],
+      "notion": "Pore nucléaire et transport",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q24",
+      "enonce": "Concernant l'ADN et le génome humain :",
+      "props": [
+        { "t": "Le génome nucléaire haploïde humain compte environ 3,2 milliards de paires de bases.", "v": true, "e": "Le génome haploïde représente environ 3,2 × 10⁹ pb réparties sur 23 chromosomes." },
+        { "t": "Les séquences codant des protéines représentent la majorité du génome humain.", "v": false, "e": "Les exons codants représentent moins de 2 % du génome ; la majorité est non codante (introns, séquences répétées)." },
+        { "t": "Le génome humain contient environ 20 000 gènes codant des protéines.", "v": true, "e": "L'estimation actuelle est d'environ 20 000 gènes codants, bien moins que les prédictions initiales." },
+        { "t": "L'ADN mitochondrial est transmis par les deux parents de façon équivalente.", "v": false, "e": "L'ADN mitochondrial est d'hérédité maternelle : les mitochondries du zygote proviennent de l'ovocyte." },
+        { "t": "Les séquences répétées dispersées (LINE, SINE, dont Alu) occupent une part importante du génome.", "v": true, "e": "Les éléments transposables et répétés représentent environ la moitié du génome humain." }
+      ],
+      "notion": "Chromosomes et caryotype",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch02-q25",
+      "enonce": "Concernant la structure générale du noyau interphasique :",
+      "props": [
+        { "t": "Le noyau est généralement le plus volumineux des organites de la cellule animale.", "v": true, "e": "Avec un diamètre de l'ordre de 5 à 10 µm, le noyau est l'organite le plus volumineux de la plupart des cellules." },
+        { "t": "Toutes les cellules humaines possèdent exactement un noyau.", "v": false, "e": "Les hématies matures sont anucléées et certaines cellules (ostéoclastes, fibres musculaires squelettiques) sont plurinucléées." },
+        { "t": "La forme du noyau peut être caractéristique du type cellulaire, comme le noyau polylobé des polynucléaires.", "v": true, "e": "La morphologie nucléaire (lobée, encochée, dense) est un critère d'identification cytologique." },
+        { "t": "La réplication de l'ADN a lieu dans le noyau pendant la phase S.", "v": true, "e": "La réplication est un événement nucléaire de la phase S de l'interphase." },
+        { "t": "Le rapport nucléocytoplasmique augmente dans de nombreuses cellules cancéreuses.", "v": true, "e": "Un rapport nucléocytoplasmique élevé, avec noyaux irréguliers, est un signe cytologique de malignité." }
+      ],
+      "notion": "Enveloppe nucléaire",
+      "diff": 1
+    }
+  ]
+}

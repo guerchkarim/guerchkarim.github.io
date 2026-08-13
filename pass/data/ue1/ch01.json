@@ -1,0 +1,332 @@
+{
+  "ue": "ue1",
+  "chapitre": "ch01",
+  "titre": "Structure de l'atome et liaisons chimiques",
+  "questions": [
+    {
+      "id": "ue1-ch01-q01",
+      "enonce": "Concernant les constituants de l'atome :",
+      "props": [
+        { "t": "Le numéro atomique Z correspond au nombre de protons contenus dans le noyau.", "v": true, "e": "Z est par définition le nombre de protons du noyau, il identifie l'élément chimique." },
+        { "t": "Le nombre de masse A est la somme du nombre de protons et du nombre d'électrons.", "v": false, "e": "A est la somme du nombre de protons et du nombre de neutrons (les nucléons)." },
+        { "t": "Un atome électriquement neutre possède autant d'électrons que de protons.", "v": true, "e": "La neutralité impose que les Z charges positives des protons soient compensées par Z électrons." },
+        { "t": "Le neutron porte une charge électrique négative.", "v": false, "e": "Le neutron est électriquement neutre ; c'est l'électron qui porte la charge négative." },
+        { "t": "La quasi-totalité de la masse de l'atome est concentrée dans son noyau.", "v": true, "e": "Protons et neutrons sont environ 1836 fois plus lourds que l'électron, donc le noyau concentre la masse." }
+      ],
+      "notion": "Structure de l'atome",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q02",
+      "enonce": "Concernant les isotopes :",
+      "props": [
+        { "t": "Deux isotopes d'un même élément diffèrent par leur nombre de neutrons.", "v": true, "e": "Les isotopes ont le même Z mais des nombres de masse A différents, donc des nombres de neutrons différents." },
+        { "t": "Deux isotopes d'un même élément diffèrent par leur numéro atomique Z.", "v": false, "e": "Les isotopes ont par définition le même Z ; c'est A qui change." },
+        { "t": "Les isotopes d'un même élément ont des propriétés chimiques très voisines.", "v": true, "e": "La réactivité chimique dépend du cortège électronique, identique pour tous les isotopes d'un élément." },
+        { "t": "Le carbone 14 (¹⁴C, Z = 6) possède 8 protons.", "v": false, "e": "Le ¹⁴C possède 6 protons (Z = 6) et 8 neutrons (A − Z = 14 − 6)." },
+        { "t": "La masse molaire atomique d'un élément tient compte de l'abondance naturelle de ses différents isotopes.", "v": true, "e": "C'est une moyenne des masses des isotopes pondérée par leurs abondances naturelles." }
+      ],
+      "notion": "Structure de l'atome",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q03",
+      "enonce": "Concernant les ions et les ordres de grandeur atomiques :",
+      "props": [
+        { "t": "L'ion chlorure Cl⁻ (Z = 17) possède 18 électrons.", "v": true, "e": "L'anion Cl⁻ résulte du gain d'un électron, soit 17 + 1 = 18 électrons." },
+        { "t": "L'ion Ca²⁺ (Z = 20) possède 22 électrons.", "v": false, "e": "Ca²⁺ résulte de la perte de 2 électrons et en possède 20 − 2 = 18." },
+        { "t": "La masse de l'électron est environ 1836 fois plus faible que celle du proton.", "v": true, "e": "Le rapport des masses proton/électron vaut environ 1836, d'où la masse négligeable du cortège électronique." },
+        { "t": "Un cation résulte d'un gain d'un ou plusieurs électrons.", "v": false, "e": "Un cation résulte d'une perte d'électrons ; c'est l'anion qui résulte d'un gain." },
+        { "t": "Le rayon d'un atome est de l'ordre de 10⁻¹⁰ m alors que celui de son noyau est de l'ordre de 10⁻¹⁵ m.", "v": true, "e": "L'atome (≈ 1 Å = 10⁻¹⁰ m) est environ 100 000 fois plus grand que son noyau (≈ 10⁻¹⁵ m), d'où sa structure lacunaire." }
+      ],
+      "notion": "Structure de l'atome",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q04",
+      "enonce": "Concernant les nombres quantiques :",
+      "props": [
+        { "t": "Le nombre quantique principal n prend des valeurs entières strictement positives (n = 1, 2, 3…).", "v": true, "e": "n est un entier non nul qui définit la couche électronique." },
+        { "t": "Le nombre quantique secondaire ℓ peut prendre toutes les valeurs entières de 0 à n.", "v": false, "e": "ℓ varie de 0 à n − 1 inclus, jamais jusqu'à n." },
+        { "t": "Le nombre quantique magnétique mℓ prend les valeurs entières de −ℓ à +ℓ.", "v": true, "e": "mℓ varie de −ℓ à +ℓ, soit 2ℓ + 1 valeurs correspondant aux orbitales de la sous-couche." },
+        { "t": "Le nombre quantique de spin d'un électron vaut +½ ou −½.", "v": true, "e": "Le spin ms ne peut prendre que les deux valeurs +½ et −½." },
+        { "t": "Le nombre n caractérise principalement la taille et l'énergie de l'orbitale.", "v": true, "e": "Plus n est grand, plus l'orbitale est étendue et d'énergie élevée (moins liée au noyau)." }
+      ],
+      "notion": "Nombres quantiques et orbitales",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q05",
+      "enonce": "Concernant les combinaisons de nombres quantiques et les sous-couches :",
+      "props": [
+        { "t": "Le triplet (n = 2, ℓ = 1, mℓ = 0) est permis.", "v": true, "e": "Pour n = 2, ℓ peut valoir 0 ou 1, et mℓ = 0 appartient bien à l'intervalle [−1 ; +1] : c'est une orbitale 2p." },
+        { "t": "Le triplet (n = 2, ℓ = 2, mℓ = 1) est permis.", "v": false, "e": "ℓ doit rester inférieur ou égal à n − 1, donc ℓ = 2 est impossible pour n = 2." },
+        { "t": "Le triplet (n = 3, ℓ = 0, mℓ = −1) est permis.", "v": false, "e": "Pour ℓ = 0, mℓ ne peut valoir que 0 ; mℓ = −1 est interdit." },
+        { "t": "Une orbitale 2d ne peut pas exister.", "v": true, "e": "Une sous-couche d correspond à ℓ = 2, ce qui exige n ≥ 3 : la première sous-couche d est la 3d." },
+        { "t": "Pour n = 3, il existe au total 9 orbitales.", "v": true, "e": "La couche n = 3 comporte 3s (1) + 3p (3) + 3d (5) = 9 orbitales, soit n² orbitales." }
+      ],
+      "notion": "Nombres quantiques et orbitales",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q06",
+      "enonce": "Concernant les orbitales atomiques :",
+      "props": [
+        { "t": "Une orbitale s présente une symétrie sphérique autour du noyau.", "v": true, "e": "Les orbitales s (ℓ = 0) sont sphériques, quelle que soit la valeur de n." },
+        { "t": "Dans un atome isolé, les trois orbitales d'une même sous-couche p ont la même énergie.", "v": true, "e": "Les orbitales px, py et pz sont dégénérées (même énergie) en l'absence de champ extérieur." },
+        { "t": "Une sous-couche d peut accueillir au maximum 6 électrons.", "v": false, "e": "Une sous-couche d comporte 5 orbitales, soit un maximum de 10 électrons." },
+        { "t": "La couche n = 2 peut contenir au maximum 8 électrons.", "v": true, "e": "La capacité maximale d'une couche vaut 2n², soit 2 × 2² = 8 électrons pour n = 2." },
+        { "t": "La sous-couche 4f comporte 7 orbitales et peut accueillir 14 électrons.", "v": true, "e": "Pour ℓ = 3, il y a 2ℓ + 1 = 7 orbitales, chacune contenant au plus 2 électrons." }
+      ],
+      "notion": "Nombres quantiques et orbitales",
+      "diff": 3
+    },
+    {
+      "id": "ue1-ch01-q07",
+      "enonce": "Concernant les règles de remplissage électronique :",
+      "props": [
+        { "t": "La règle de Klechkowski donne l'ordre de remplissage des sous-couches par (n + ℓ) croissant.", "v": true, "e": "On remplit par (n + ℓ) croissant, et à (n + ℓ) égal par n croissant." },
+        { "t": "Le principe d'exclusion de Pauli interdit à deux électrons d'un même atome d'avoir leurs quatre nombres quantiques identiques.", "v": true, "e": "Deux électrons d'une même orbitale doivent différer au moins par leur spin." },
+        { "t": "La règle de Hund impose d'apparier au maximum les électrons dans une sous-couche incomplète.", "v": false, "e": "La règle de Hund impose au contraire d'occuper d'abord le maximum d'orbitales avec des spins parallèles avant tout appariement." },
+        { "t": "Une orbitale contient au maximum deux électrons, de spins opposés.", "v": true, "e": "C'est une conséquence directe du principe de Pauli." },
+        { "t": "La sous-couche 4s se remplit avant la sous-couche 3d.", "v": true, "e": "4s (n + ℓ = 4) précède 3d (n + ℓ = 5) dans l'ordre de Klechkowski." }
+      ],
+      "notion": "Configuration électronique",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q08",
+      "enonce": "Concernant les configurations électroniques à l'état fondamental :",
+      "props": [
+        { "t": "Le chlore (Z = 17) a pour configuration 1s² 2s² 2p⁶ 3s² 3p⁵.", "v": true, "e": "Les 17 électrons se répartissent selon Klechkowski jusqu'à 3p⁵." },
+        { "t": "L'oxygène (Z = 8) possède deux électrons célibataires.", "v": true, "e": "La configuration 2p⁴ laisse, d'après la règle de Hund, deux orbitales p avec un électron célibataire chacune." },
+        { "t": "Le sodium (Z = 11) possède 7 électrons de valence.", "v": false, "e": "Le sodium a pour configuration externe 3s¹ : il possède 1 seul électron de valence." },
+        { "t": "L'azote (Z = 7) présente une couche de valence 2s² 2p³ avec trois électrons célibataires.", "v": true, "e": "Les trois électrons 2p occupent chacun une orbitale distincte avec des spins parallèles (règle de Hund)." },
+        { "t": "Le magnésium (Z = 12) a pour configuration externe 3s¹.", "v": false, "e": "Le magnésium possède 12 électrons et sa configuration externe est 3s²." }
+      ],
+      "notion": "Configuration électronique",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q09",
+      "enonce": "Concernant les exceptions de remplissage et les configurations des ions :",
+      "props": [
+        { "t": "Le chrome (Z = 24) a pour configuration externe 3d⁵ 4s¹.", "v": true, "e": "La stabilité particulière de la sous-couche 3d à demi remplie explique cette exception à Klechkowski." },
+        { "t": "Le cuivre (Z = 29) a pour configuration externe 3d⁹ 4s².", "v": false, "e": "Le cuivre est une exception : sa configuration externe est 3d¹⁰ 4s¹ (sous-couche d totalement remplie)." },
+        { "t": "Pour former l'ion Fe²⁺ (Z = 26), on retire d'abord les deux électrons 4s.", "v": true, "e": "Dans un cation de métal de transition, les électrons 4s sont arrachés avant les électrons 3d." },
+        { "t": "L'ion Fe³⁺ a pour configuration externe 3d⁵.", "v": true, "e": "Fe : [Ar] 3d⁶ 4s² ; le retrait des deux électrons 4s puis d'un électron 3d donne [Ar] 3d⁵, configuration stable." },
+        { "t": "Les ions Na⁺ et F⁻ sont isoélectroniques.", "v": true, "e": "Tous deux possèdent 10 électrons, comme le néon." }
+      ],
+      "notion": "Configuration électronique",
+      "diff": 3
+    },
+    {
+      "id": "ue1-ch01-q10",
+      "enonce": "Concernant les électrons de valence et les propriétés magnétiques :",
+      "props": [
+        { "t": "Un atome est paramagnétique s'il possède au moins un électron célibataire.", "v": true, "e": "La présence d'électrons non appariés confère un moment magnétique : c'est la définition du paramagnétisme." },
+        { "t": "Le zinc (Z = 30), de configuration externe 3d¹⁰ 4s², est diamagnétique.", "v": true, "e": "Tous ses électrons sont appariés, il est donc diamagnétique." },
+        { "t": "Les électrons de valence sont ceux de la couche de n le plus élevé et des sous-couches en cours de remplissage.", "v": true, "e": "Ce sont ces électrons externes qui gouvernent la réactivité chimique." },
+        { "t": "Le carbone (Z = 6) possède 6 électrons de valence.", "v": false, "e": "Le carbone a pour couche de valence 2s² 2p², soit 4 électrons de valence." },
+        { "t": "Le passage d'un atome à un état excité s'effectue sans apport d'énergie.", "v": false, "e": "Un état excité est d'énergie supérieure à l'état fondamental : il nécessite une absorption d'énergie." }
+      ],
+      "notion": "Configuration électronique",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q11",
+      "enonce": "Concernant l'organisation de la classification périodique :",
+      "props": [
+        { "t": "Les éléments y sont classés par numéro atomique Z croissant.", "v": true, "e": "La classification moderne ordonne les éléments selon Z croissant, et non selon la masse atomique." },
+        { "t": "Une ligne du tableau périodique est appelée une période.", "v": true, "e": "Les lignes sont les périodes, les colonnes sont les groupes (ou familles)." },
+        { "t": "Les éléments d'une même colonne ont des propriétés chimiques voisines.", "v": true, "e": "Ils possèdent la même configuration électronique de valence, d'où des propriétés analogues." },
+        { "t": "Le numéro de la période correspond à la valeur de n de la couche de valence.", "v": true, "e": "Les éléments de la période 3, par exemple, remplissent leur couche de valence n = 3." },
+        { "t": "Les éléments sont classés par masse atomique croissante.", "v": false, "e": "C'était le critère historique de Mendeleïev ; le critère actuel est le numéro atomique Z." }
+      ],
+      "notion": "Classification périodique",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q12",
+      "enonce": "Concernant l'électronégativité :",
+      "props": [
+        { "t": "L'électronégativité augmente de gauche à droite le long d'une période.", "v": true, "e": "La charge nucléaire effective croît le long d'une période, ce qui augmente l'attraction sur les électrons de liaison." },
+        { "t": "L'électronégativité augmente de haut en bas dans une colonne.", "v": false, "e": "Elle diminue en descendant une colonne, car les électrons de valence s'éloignent du noyau." },
+        { "t": "Le fluor est l'élément le plus électronégatif de la classification.", "v": true, "e": "Le fluor a l'électronégativité maximale (≈ 4 sur l'échelle de Pauling)." },
+        { "t": "Un élément très électronégatif attire fortement vers lui les électrons d'une liaison.", "v": true, "e": "C'est la définition même de l'électronégativité." },
+        { "t": "Le césium est plus électronégatif que le lithium.", "v": false, "e": "Le césium, plus bas dans la colonne des alcalins, est moins électronégatif que le lithium." }
+      ],
+      "notion": "Classification périodique",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q13",
+      "enonce": "Concernant le rayon atomique et l'énergie d'ionisation :",
+      "props": [
+        { "t": "L'énergie de première ionisation augmente globalement de gauche à droite le long d'une période.", "v": true, "e": "Les électrons étant de plus en plus retenus, il faut davantage d'énergie pour les arracher." },
+        { "t": "Le rayon atomique augmente de gauche à droite le long d'une période.", "v": false, "e": "Il diminue le long d'une période, car la charge nucléaire effective croissante contracte le nuage électronique." },
+        { "t": "Le rayon atomique augmente de haut en bas dans une colonne.", "v": true, "e": "Chaque période ajoute une couche électronique, ce qui augmente la taille de l'atome." },
+        { "t": "Un cation est plus petit que l'atome neutre dont il dérive.", "v": true, "e": "La perte d'électrons diminue les répulsions électroniques et contracte le cortège restant." },
+        { "t": "L'énergie d'ionisation est l'énergie libérée lors de la capture d'un électron par l'atome.", "v": false, "e": "C'est l'énergie à fournir pour arracher un électron ; l'énergie mise en jeu lors d'une capture est l'affinité électronique." }
+      ],
+      "notion": "Classification périodique",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q14",
+      "enonce": "Concernant les grandes familles d'éléments :",
+      "props": [
+        { "t": "Les métaux alcalins (colonne 1) donnent facilement des cations monovalents M⁺.", "v": true, "e": "Leur configuration ns¹ leur permet d'atteindre la structure du gaz noble précédent en perdant un seul électron." },
+        { "t": "Les halogènes ont une configuration de valence ns² np⁵.", "v": true, "e": "Avec 7 électrons de valence, les halogènes captent facilement un électron pour donner des anions X⁻." },
+        { "t": "Les gaz nobles sont des éléments très réactifs.", "v": false, "e": "Leur couche de valence saturée les rend chimiquement très stables et quasi inertes." },
+        { "t": "L'hélium appartient aux gaz nobles bien que sa configuration soit 1s².", "v": true, "e": "Sa couche n = 1 est saturée à 2 électrons (règle du duet), ce qui lui confère l'inertie des gaz nobles." },
+        { "t": "Les alcalino-terreux (colonne 2) forment préférentiellement des ions M³⁺.", "v": false, "e": "Leur configuration ns² conduit à des cations divalents M²⁺, comme Ca²⁺ ou Mg²⁺." }
+      ],
+      "notion": "Classification périodique",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q15",
+      "enonce": "Concernant le modèle de Lewis de la liaison chimique :",
+      "props": [
+        { "t": "Une liaison covalente résulte de la mise en commun d'un doublet d'électrons entre deux atomes.", "v": true, "e": "Chaque liaison covalente correspond à une paire d'électrons partagée." },
+        { "t": "Dans une structure de Lewis, on représente aussi les doublets non liants des atomes.", "v": true, "e": "La représentation de Lewis fait figurer doublets liants et doublets non liants de la couche de valence." },
+        { "t": "Selon la règle de l'octet, les atomes tendent à s'entourer de huit électrons de valence.", "v": true, "e": "Les atomes des 2e et 3e périodes tendent vers la configuration stable du gaz noble le plus proche." },
+        { "t": "Dans la molécule d'eau, l'atome d'oxygène porte deux doublets non liants.", "v": true, "e": "L'oxygène engage 2 de ses 6 électrons de valence dans les liaisons O–H et conserve 2 doublets libres." },
+        { "t": "Une liaison ionique repose sur un partage équitable des électrons entre les deux atomes.", "v": false, "e": "La liaison ionique résulte d'un transfert d'électrons suivi d'une attraction électrostatique entre ions." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q16",
+      "enonce": "Concernant les liaisons σ et π :",
+      "props": [
+        { "t": "Une liaison simple est constituée d'une liaison σ.", "v": true, "e": "Toute liaison simple correspond à un recouvrement axial, c'est-à-dire à une liaison σ." },
+        { "t": "Une double liaison est constituée de deux liaisons π.", "v": false, "e": "Une double liaison comporte une liaison σ et une liaison π." },
+        { "t": "La liaison π bloque la libre rotation autour de l'axe de la liaison.", "v": true, "e": "Le recouvrement latéral serait rompu par une rotation, d'où l'isomérie Z/E des alcènes." },
+        { "t": "Une triple liaison comporte une liaison σ et deux liaisons π.", "v": true, "e": "C'est le cas de l'acétylène : un recouvrement axial et deux recouvrements latéraux perpendiculaires." },
+        { "t": "Une liaison σ est en général plus faible qu'une liaison π.", "v": false, "e": "Le recouvrement axial σ est plus efficace : la liaison σ est plus forte que la liaison π." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q17",
+      "enonce": "Concernant la polarité des liaisons et des molécules :",
+      "props": [
+        { "t": "Une liaison entre deux atomes d'électronégativités différentes est polarisée.", "v": true, "e": "La dissymétrie du partage du doublet crée des charges partielles δ+ et δ−." },
+        { "t": "La molécule de CO₂ est polaire car ses deux liaisons C=O sont polarisées.", "v": false, "e": "CO₂ étant linéaire, les deux moments dipolaires de liaison s'annulent : la molécule est apolaire." },
+        { "t": "La molécule d'eau possède un moment dipolaire non nul.", "v": true, "e": "Sa géométrie coudée empêche la compensation des moments des liaisons O–H : l'eau est polaire." },
+        { "t": "Dans la molécule H–Cl, l'hydrogène porte une charge partielle δ+.", "v": true, "e": "Le chlore, plus électronégatif, attire le doublet et porte δ−, laissant δ+ sur l'hydrogène." },
+        { "t": "Une différence d'électronégativité très élevée entre deux atomes confère à la liaison un caractère ionique.", "v": true, "e": "Au-delà d'une forte différence d'électronégativité (≈ 1,7 sur l'échelle de Pauling), la liaison est considérée comme majoritairement ionique." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q18",
+      "enonce": "Concernant la géométrie des molécules (méthode VSEPR) :",
+      "props": [
+        { "t": "Le méthane CH₄ est tétraédrique avec des angles d'environ 109,5°.", "v": true, "e": "De type AX₄, le méthane adopte la géométrie tétraédrique régulière." },
+        { "t": "L'ammoniac NH₃, de type AX₃E₁, est une pyramide à base triangulaire.", "v": true, "e": "Le doublet non liant occupe un sommet du tétraèdre, la molécule est pyramidale (angle ≈ 107°)." },
+        { "t": "La molécule d'eau est linéaire.", "v": false, "e": "De type AX₂E₂, l'eau est coudée avec un angle d'environ 104,5°." },
+        { "t": "Les doublets non liants sont plus répulsifs que les doublets liants, ce qui referme les angles de liaison.", "v": true, "e": "La répulsion accrue des doublets libres explique la fermeture des angles : 109,5° (CH₄) > 107° (NH₃) > 104,5° (H₂O)." },
+        { "t": "BF₃ est une molécule plane triangulaire avec des angles de 120°.", "v": true, "e": "De type AX₃ sans doublet libre sur le bore, BF₃ est trigonale plane." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q19",
+      "enonce": "Concernant l'hybridation des orbitales atomiques :",
+      "props": [
+        { "t": "Un carbone hybridé sp³ adopte une géométrie tétraédrique.", "v": true, "e": "Les quatre orbitales hybrides sp³ pointent vers les sommets d'un tétraèdre (≈ 109,5°)." },
+        { "t": "Dans l'éthylène C₂H₄, les atomes de carbone sont hybridés sp².", "v": true, "e": "Chaque carbone forme trois liaisons σ dans un plan et une liaison π avec son orbitale p restante." },
+        { "t": "Dans l'acétylène C₂H₂, les atomes de carbone sont hybridés sp³.", "v": false, "e": "Les carbones de l'acétylène sont hybridés sp, ce qui rend la molécule linéaire." },
+        { "t": "Un atome hybridé sp² conserve une orbitale p pure perpendiculaire au plan des orbitales hybrides.", "v": true, "e": "Cette orbitale p non hybridée assure le recouvrement latéral de la liaison π." },
+        { "t": "L'angle entre deux orbitales hybrides sp est de 120°.", "v": false, "e": "Les deux orbitales sp sont opposées à 180°, d'où la géométrie linéaire ; 120° correspond à sp²." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 3
+    },
+    {
+      "id": "ue1-ch01-q20",
+      "enonce": "Concernant la liaison dative et les écarts à la règle de l'octet :",
+      "props": [
+        { "t": "Dans l'ion ammonium NH₄⁺, l'une des liaisons N–H se forme par apport des deux électrons par l'azote.", "v": true, "e": "Le doublet libre de l'azote de NH₃ est donné au proton H⁺ : c'est une liaison dative (de coordination)." },
+        { "t": "Une fois formée, une liaison dative est indiscernable des autres liaisons covalentes de la molécule.", "v": true, "e": "Les quatre liaisons N–H de NH₄⁺ sont strictement équivalentes." },
+        { "t": "Dans BF₃, l'atome de bore respecte la règle de l'octet.", "v": false, "e": "Le bore de BF₃ ne s'entoure que de 6 électrons : il est hypovalent (lacune électronique)." },
+        { "t": "À partir de la 3ᵉ période, des éléments comme le phosphore ou le soufre peuvent s'entourer de plus de huit électrons.", "v": true, "e": "L'hypervalence (PCl₅, SF₆, sulfates, phosphates) est possible pour les éléments de la 3ᵉ période et au-delà." },
+        { "t": "L'atome d'hydrogène suit la règle du duet.", "v": true, "e": "L'hydrogène se stabilise avec 2 électrons, configuration de l'hélium." }
+      ],
+      "notion": "Liaison covalente et géométrie",
+      "diff": 3
+    },
+    {
+      "id": "ue1-ch01-q21",
+      "enonce": "Concernant la hiérarchie des interactions chimiques :",
+      "props": [
+        { "t": "Les liaisons covalentes sont plus fortes que les liaisons hydrogène.", "v": true, "e": "Une liaison covalente (≈ 200 à 800 kJ/mol) est bien plus énergétique qu'une liaison hydrogène (≈ 10 à 40 kJ/mol)." },
+        { "t": "Les forces de van der Waals sont des interactions de faible énergie.", "v": true, "e": "Elles mettent en jeu quelques kJ/mol, très en dessous des liaisons covalentes." },
+        { "t": "Une liaison hydrogène a une énergie du même ordre de grandeur qu'une liaison covalente.", "v": false, "e": "Elle est environ 10 à 20 fois plus faible qu'une liaison covalente." },
+        { "t": "Les interactions de London existent entre toutes les molécules, y compris apolaires.", "v": true, "e": "Les dipôles instantanés induits existent dans toute molécule, ce qui explique la liquéfaction des gaz apolaires." },
+        { "t": "Les interactions faibles participent à la cohésion des liquides et des solides moléculaires.", "v": true, "e": "Ce sont elles qui maintiennent les molécules entre elles dans les états condensés." }
+      ],
+      "notion": "Interactions faibles",
+      "diff": 1
+    },
+    {
+      "id": "ue1-ch01-q22",
+      "enonce": "Concernant la liaison hydrogène :",
+      "props": [
+        { "t": "Elle nécessite un atome d'hydrogène lié par covalence à un atome très électronégatif (F, O ou N).", "v": true, "e": "Seul un H fortement déplété en électrons (lié à F, O ou N) peut établir une liaison hydrogène." },
+        { "t": "Elle implique également un doublet non liant porté par un atome électronégatif accepteur.", "v": true, "e": "La liaison hydrogène s'établit entre le H donneur et un doublet libre d'un atome accepteur (F, O, N)." },
+        { "t": "Le méthane CH₄ peut établir des liaisons hydrogène.", "v": false, "e": "Le carbone n'est pas assez électronégatif : les H du méthane ne forment pas de liaisons hydrogène." },
+        { "t": "Une liaison hydrogène peut être intramoléculaire.", "v": true, "e": "Elle peut relier deux groupements d'une même molécule, comme dans certaines conformations de protéines." },
+        { "t": "La liaison hydrogène est une liaison covalente entre l'hydrogène et l'atome accepteur.", "v": false, "e": "C'est une interaction essentiellement électrostatique de faible énergie, non une liaison covalente." }
+      ],
+      "notion": "Interactions faibles",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q23",
+      "enonce": "Concernant les conséquences physiques des interactions faibles :",
+      "props": [
+        { "t": "Le point d'ébullition anormalement élevé de l'eau s'explique par son réseau de liaisons hydrogène.", "v": true, "e": "Chaque molécule d'eau peut engager jusqu'à quatre liaisons hydrogène, d'où une forte cohésion du liquide." },
+        { "t": "H₂S bout à température plus élevée que H₂O.", "v": false, "e": "H₂S, incapable de former des liaisons hydrogène efficaces, bout vers −60 °C, bien en dessous de l'eau (100 °C)." },
+        { "t": "Les forces de London augmentent avec la taille et la polarisabilité des molécules.", "v": true, "e": "Un nuage électronique plus volumineux se déforme plus facilement, d'où des dipôles induits plus intenses." },
+        { "t": "Les interactions de Keesom s'exercent entre deux dipôles permanents.", "v": true, "e": "Keesom : dipôle permanent–dipôle permanent ; c'est l'interaction dominante entre molécules polaires." },
+        { "t": "L'éthanol a un point d'ébullition plus élevé que son isomère le diméthyléther grâce aux liaisons hydrogène.", "v": true, "e": "Le groupe O–H de l'éthanol permet des liaisons hydrogène intermoléculaires impossibles pour l'éther." }
+      ],
+      "notion": "Interactions faibles",
+      "diff": 2
+    },
+    {
+      "id": "ue1-ch01-q24",
+      "enonce": "Concernant les différentes interactions non covalentes :",
+      "props": [
+        { "t": "L'interaction de Debye s'exerce entre un dipôle permanent et un dipôle induit.", "v": true, "e": "Un dipôle permanent polarise une molécule voisine et interagit avec le dipôle qu'il y induit." },
+        { "t": "L'énergie des interactions de van der Waals décroît très rapidement avec la distance (en 1/r⁶).", "v": true, "e": "Ce sont des interactions de très courte portée, efficaces seulement au contact des molécules." },
+        { "t": "L'effet hydrophobe correspond à une attraction forte entre les molécules d'eau et les molécules apolaires.", "v": false, "e": "Il traduit au contraire le regroupement des groupements apolaires exclus du réseau de liaisons hydrogène de l'eau." },
+        { "t": "Les interactions ioniques (ponts salins) participent à la stabilisation de la structure des protéines.", "v": true, "e": "Les attractions entre chaînes latérales chargées de signes opposés stabilisent la conformation native." },
+        { "t": "Les deux brins de la double hélice d'ADN sont reliés entre eux par des liaisons covalentes.", "v": false, "e": "L'appariement des bases repose sur des liaisons hydrogène (2 entre A et T, 3 entre G et C)." }
+      ],
+      "notion": "Interactions faibles",
+      "diff": 3
+    },
+    {
+      "id": "ue1-ch01-q25",
+      "enonce": "Concernant la solubilité et les phénomènes de solvatation :",
+      "props": [
+        { "t": "Les composés polaires sont généralement solubles dans les solvants polaires.", "v": true, "e": "« Qui se ressemble se dissout » : les interactions soluté-solvant compensent alors la cohésion du soluté." },
+        { "t": "La dissolution de NaCl dans l'eau s'explique par la solvatation des ions par les molécules d'eau.", "v": true, "e": "Les dipôles de l'eau entourent les ions (hydratation), ce qui compense l'énergie du réseau cristallin." },
+        { "t": "Une molécule amphiphile possède à la fois une partie hydrophile et une partie hydrophobe.", "v": true, "e": "C'est la définition d'un amphiphile, comme les phospholipides ou les savons." },
+        { "t": "Une molécule apolaire est généralement très soluble dans l'eau.", "v": false, "e": "Les molécules apolaires, incapables d'interagir favorablement avec l'eau, y sont très peu solubles." },
+        { "t": "En milieu aqueux, la formation de micelles par les molécules amphiphiles est défavorisée.", "v": false, "e": "Elle est au contraire favorisée par l'effet hydrophobe, qui regroupe les queues apolaires à l'abri de l'eau." }
+      ],
+      "notion": "Interactions faibles",
+      "diff": 2
+    }
+  ]
+}

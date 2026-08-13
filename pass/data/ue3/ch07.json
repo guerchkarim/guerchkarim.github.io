@@ -1,0 +1,332 @@
+{
+  "ue": "ue3",
+  "chapitre": "ch07",
+  "titre": "Ondes sonores et ultrasons — échographie",
+  "questions": [
+    {
+      "id": "ue3-ch07-q01",
+      "enonce": "Concernant la nature des ondes sonores :",
+      "props": [
+        { "t": "Le son est une onde mécanique longitudinale.", "v": true, "e": "Le son correspond à des compressions-dilatations du milieu, parallèles à la direction de propagation." },
+        { "t": "Une onde sonore peut se propager dans le vide.", "v": false, "e": "Étant une onde mécanique, le son exige un milieu matériel et ne se propage pas dans le vide." },
+        { "t": "La célérité du son dans les tissus mous est d'environ 1540 m/s.", "v": true, "e": "La valeur moyenne retenue en échographie pour les tissus mous est ≈ 1540 m/s." },
+        { "t": "Les ultrasons sont des ondes de fréquence inférieure à 20 Hz.", "v": false, "e": "Les ultrasons ont une fréquence supérieure à 20 kHz ; en dessous de 20 Hz on parle d'infrasons." },
+        { "t": "La célérité du son dans l'air est d'environ 340 m/s.", "v": true, "e": "Dans l'air, le son se propage à environ 340 m/s, bien plus lentement que dans les tissus." }
+      ],
+      "notion": "Propagation des ondes",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q02",
+      "enonce": "Concernant les domaines de fréquences acoustiques :",
+      "props": [
+        { "t": "Le domaine audible s'étend environ de 20 Hz à 20 kHz.", "v": true, "e": "L'oreille humaine perçoit les sons entre environ 20 Hz et 20 kHz." },
+        { "t": "Les infrasons ont une fréquence inférieure à 20 Hz.", "v": true, "e": "Par définition, les infrasons sont en dessous du domaine audible, soit sous 20 Hz." },
+        { "t": "Les sondes d'échographie médicale émettent typiquement entre 2 et 15 MHz.", "v": true, "e": "Les fréquences échographiques usuelles vont d'environ 2 MHz (profond) à 15 MHz (superficiel)." },
+        { "t": "Une onde de 5 kHz est un ultrason.", "v": false, "e": "5 kHz appartient au domaine audible ; les ultrasons commencent au-delà de 20 kHz." },
+        { "t": "Le son est une onde électromagnétique de basse fréquence.", "v": false, "e": "Le son est une onde mécanique, de nature totalement différente des ondes électromagnétiques." }
+      ],
+      "notion": "Propagation des ondes",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q03",
+      "enonce": "Concernant la longueur d'onde des ultrasons dans les tissus mous (c ≈ 1540 m/s) :",
+      "props": [
+        { "t": "La longueur d'onde est donnée par λ = c/f.", "v": true, "e": "Pour toute onde périodique, λ = c/f relie longueur d'onde, célérité et fréquence." },
+        { "t": "À 1,54 MHz, la longueur d'onde est d'environ 1 mm.", "v": true, "e": "λ = 1540/(1,54×10⁶) = 10⁻³ m, soit 1 mm." },
+        { "t": "À 3,08 MHz, la longueur d'onde est d'environ 2 mm.", "v": false, "e": "En doublant la fréquence, λ est divisée par deux : elle vaut 0,5 mm et non 2 mm." },
+        { "t": "La longueur d'onde diminue quand la fréquence augmente.", "v": true, "e": "À célérité constante, λ = c/f est inversement proportionnelle à la fréquence." },
+        { "t": "Quand l'onde change de milieu, sa fréquence change.", "v": false, "e": "La fréquence est imposée par la source et reste invariante ; ce sont la célérité et λ qui changent." }
+      ],
+      "notion": "Propagation des ondes",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q04",
+      "enonce": "Concernant l'impédance acoustique :",
+      "props": [
+        { "t": "L'impédance acoustique d'un milieu vaut Z = ρ × c.", "v": true, "e": "Z est le produit de la masse volumique ρ par la célérité c du son dans le milieu." },
+        { "t": "L'impédance acoustique de l'air est très supérieure à celle des tissus mous.", "v": false, "e": "C'est l'inverse : l'air a une impédance très faible devant celle des tissus, d'où une réflexion quasi totale à l'interface." },
+        { "t": "L'os a une impédance acoustique plus élevée que les tissus mous.", "v": true, "e": "L'os, plus dense et à célérité élevée, a une impédance nettement supérieure à celle des tissus mous." },
+        { "t": "Deux milieux de même impédance donnent une interface très échogène.", "v": false, "e": "Si Z₁ = Z₂, il n'y a aucune réflexion : l'interface est invisible en échographie." },
+        { "t": "La réflexion d'une onde ultrasonore se produit aux interfaces entre milieux d'impédances différentes.", "v": true, "e": "C'est la différence d'impédance entre deux milieux qui génère l'écho à l'interface." }
+      ],
+      "notion": "Impédance et réflexion",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q05",
+      "enonce": "Concernant le coefficient de réflexion en incidence normale entre deux milieux d'impédances Z₁ et Z₂ :",
+      "props": [
+        { "t": "Le coefficient de réflexion en intensité vaut R = ((Z₂ − Z₁)/(Z₂ + Z₁))².", "v": true, "e": "En incidence normale, la fraction d'intensité réfléchie est R = ((Z₂−Z₁)/(Z₂+Z₁))²." },
+        { "t": "Si Z₂ = 3Z₁, alors R = 25 %.", "v": true, "e": "R = ((3−1)/(3+1))² = (2/4)² = 0,25, soit 25 % de l'intensité réfléchie." },
+        { "t": "Le coefficient de transmission en intensité vaut T = 1 − R.", "v": true, "e": "Par conservation de l'énergie à l'interface, T = 1 − R." },
+        { "t": "R dépend fortement de la fréquence de l'onde.", "v": false, "e": "Dans ce modèle, R ne dépend que des impédances des deux milieux, pas de la fréquence." },
+        { "t": "Une interface tissu mou/os réfléchit moins qu'une interface foie/rein.", "v": false, "e": "L'écart d'impédance tissu/os est bien plus grand que foie/rein, donc la réflexion y est plus forte." }
+      ],
+      "notion": "Impédance et réflexion",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q06",
+      "enonce": "Concernant le couplage sonde-peau en échographie :",
+      "props": [
+        { "t": "Le gel échographique sert à éliminer la lame d'air entre la sonde et la peau.", "v": true, "e": "Le gel chasse l'air, dont l'impédance très faible provoquerait une réflexion quasi totale." },
+        { "t": "Sans gel, la quasi-totalité de l'énergie ultrasonore serait réfléchie à l'interface air/peau.", "v": true, "e": "L'écart d'impédance air/tissu est tel que plus de 99 % de l'intensité est réfléchie." },
+        { "t": "Le gel a une impédance proche de celle des tissus mous.", "v": true, "e": "Le gel réalise une adaptation d'impédance entre la sonde et la peau." },
+        { "t": "Le gel sert principalement à refroidir la sonde.", "v": false, "e": "Son rôle est l'adaptation d'impédance acoustique, pas la thermorégulation." },
+        { "t": "L'air digestif facilite l'exploration échographique des organes situés derrière lui.", "v": false, "e": "L'air réfléchit presque tout le faisceau et masque au contraire les structures sous-jacentes." }
+      ],
+      "notion": "Impédance et réflexion",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q07",
+      "enonce": "Concernant le niveau sonore exprimé en décibels :",
+      "props": [
+        { "t": "Le niveau sonore vaut L = 10 log(I/I₀).", "v": true, "e": "Le niveau en dB est défini par 10 fois le logarithme décimal du rapport des intensités." },
+        { "t": "L'intensité de référence I₀ vaut 10⁻¹² W/m².", "v": true, "e": "I₀ = 10⁻¹² W/m² correspond au seuil d'audition à 1 kHz." },
+        { "t": "Une augmentation de 3 dB correspond à un doublement de l'intensité.", "v": true, "e": "10 log 2 ≈ 3 dB, donc +3 dB équivaut à multiplier l'intensité par 2." },
+        { "t": "Une augmentation de 20 dB correspond à une intensité multipliée par 20.", "v": false, "e": "+20 dB correspond à une intensité multipliée par 100, l'échelle étant logarithmique." },
+        { "t": "L'échelle des décibels est une échelle linéaire de l'intensité.", "v": false, "e": "C'est une échelle logarithmique, adaptée à la grande dynamique de l'oreille." }
+      ],
+      "notion": "Intensité et décibels",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q08",
+      "enonce": "Concernant les calculs de niveaux sonores :",
+      "props": [
+        { "t": "Un son de 60 dB est 100 fois plus intense qu'un son de 40 dB.", "v": true, "e": "Un écart de 20 dB correspond à un facteur 10²⁰/¹⁰ = 100 sur l'intensité." },
+        { "t": "Doubler l'amplitude de pression ajoute environ 6 dB.", "v": true, "e": "L'intensité varie comme le carré de la pression, donc 20 log 2 ≈ 6 dB." },
+        { "t": "Deux sources identiques de 50 dB chacune produisent ensemble 100 dB.", "v": false, "e": "Les intensités s'ajoutent, pas les décibels : on obtient 50 + 3 = 53 dB." },
+        { "t": "Le seuil de douleur se situe vers 120 dB.", "v": true, "e": "Vers 120 dB (1 W/m²), la sensation sonore devient douloureuse." },
+        { "t": "Une atténuation de 3 dB divise l'intensité par 2.", "v": true, "e": "−3 dB correspond à I/I₀ = 10⁻⁰·³ ≈ 1/2." }
+      ],
+      "notion": "Intensité et décibels",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q09",
+      "enonce": "Un signal ultrasonore voit son intensité divisée par 1000 lors de la traversée d'un tissu. On peut affirmer que :",
+      "props": [
+        { "t": "L'atténuation subie est de 30 dB.", "v": true, "e": "10 log(1000) = 30 dB d'atténuation pour une division par 1000." },
+        { "t": "L'atténuation subie est de 60 dB.", "v": false, "e": "60 dB correspondrait à une division par 10⁶ ; ici c'est 30 dB." },
+        { "t": "Si l'intensité était divisée par 100, l'atténuation serait de 20 dB.", "v": true, "e": "10 log(100) = 20 dB, soit un facteur 100." },
+        { "t": "Une atténuation supplémentaire de 3 dB laisserait 1/2000 de l'intensité initiale.", "v": true, "e": "3 dB de plus divise encore par 2 : 1/1000 × 1/2 = 1/2000." },
+        { "t": "Une division par 1000 de l'intensité correspond à une division par 1000 de l'amplitude de pression.", "v": false, "e": "L'intensité variant comme le carré de la pression, l'amplitude n'est divisée que par √1000 ≈ 32." }
+      ],
+      "notion": "Intensité et décibels",
+      "diff": 3
+    },
+    {
+      "id": "ue3-ch07-q10",
+      "enonce": "Concernant l'atténuation des ultrasons dans les tissus :",
+      "props": [
+        { "t": "L'intensité décroît exponentiellement avec la profondeur traversée.", "v": true, "e": "L'atténuation suit une loi exponentielle décroissante avec l'épaisseur de tissu." },
+        { "t": "L'atténuation augmente avec la fréquence des ultrasons.", "v": true, "e": "Le coefficient d'atténuation croît avec la fréquence, environ 0,5 à 1 dB/cm/MHz dans les tissus mous." },
+        { "t": "L'absorption transforme une partie de l'énergie ultrasonore en chaleur.", "v": true, "e": "L'absorption convertit l'énergie mécanique de l'onde en énergie thermique dans le tissu." },
+        { "t": "Les ultrasons de haute fréquence pénètrent plus profondément que ceux de basse fréquence.", "v": false, "e": "C'est l'inverse : plus la fréquence est élevée, plus l'atténuation est forte et plus la pénétration diminue." },
+        { "t": "L'atténuation est identique dans tous les tissus biologiques.", "v": false, "e": "Elle varie selon le tissu : très faible dans les liquides, très forte dans l'os et le poumon." }
+      ],
+      "notion": "Atténuation",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q11",
+      "enonce": "Concernant le choix de la fréquence d'une sonde d'échographie :",
+      "props": [
+        { "t": "Une sonde de haute fréquence offre une meilleure résolution spatiale.", "v": true, "e": "La résolution s'améliore quand la longueur d'onde diminue, donc quand la fréquence augmente." },
+        { "t": "Une sonde de 12 MHz convient à l'exploration de structures superficielles comme la thyroïde.", "v": true, "e": "Les hautes fréquences, peu pénétrantes mais très résolutives, sont adaptées aux organes superficiels." },
+        { "t": "Une sonde de 3,5 MHz est adaptée à l'échographie abdominale profonde.", "v": true, "e": "Les basses fréquences pénètrent davantage et permettent d'atteindre les organes profonds." },
+        { "t": "Le choix de la fréquence résulte d'un compromis entre résolution et profondeur d'exploration.", "v": true, "e": "Augmenter la fréquence améliore la résolution mais réduit la pénétration, d'où un compromis." },
+        { "t": "Il faut augmenter la fréquence pour explorer plus profondément.", "v": false, "e": "C'est l'inverse : l'exploration profonde impose de diminuer la fréquence pour limiter l'atténuation." }
+      ],
+      "notion": "Atténuation",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q12",
+      "enonce": "Concernant la compensation de l'atténuation en échographie :",
+      "props": [
+        { "t": "Les échos provenant des structures profondes sont plus faibles que ceux des structures superficielles.", "v": true, "e": "L'atténuation croît avec la profondeur, affaiblissant les échos profonds." },
+        { "t": "L'appareil amplifie davantage les échos tardifs pour compenser l'atténuation.", "v": true, "e": "La compensation de gain en profondeur (TGC) amplifie d'autant plus que l'écho revient tard." },
+        { "t": "Les échos tardifs proviennent des structures les plus superficielles.", "v": false, "e": "Le temps de retour croît avec la profondeur : les échos tardifs viennent des structures profondes." },
+        { "t": "Sans compensation de gain, les zones profondes apparaîtraient trop sombres.", "v": true, "e": "Les échos profonds atténués donneraient un signal faible, donc une image sombre en profondeur." },
+        { "t": "La compensation de gain supprime physiquement l'atténuation dans les tissus.", "v": false, "e": "Elle ne fait que corriger électroniquement le signal reçu ; l'atténuation physique persiste." }
+      ],
+      "notion": "Atténuation",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q13",
+      "enonce": "Concernant l'effet Doppler en échographie :",
+      "props": [
+        { "t": "L'effet Doppler est un changement de fréquence de l'onde lié au mouvement du réflecteur.", "v": true, "e": "Le mouvement relatif entre la source et le réflecteur modifie la fréquence perçue." },
+        { "t": "En médecine, l'effet Doppler sert surtout à mesurer la vitesse du sang.", "v": true, "e": "Les hématies en mouvement rétrodiffusent les ultrasons avec un décalage de fréquence proportionnel à leur vitesse." },
+        { "t": "Un flux se rapprochant de la sonde augmente la fréquence de l'écho reçu.", "v": true, "e": "Un réflecteur qui se rapproche produit un décalage Doppler positif (fréquence reçue plus élevée)." },
+        { "t": "Un flux s'éloignant de la sonde produit un décalage Doppler positif.", "v": false, "e": "Un réflecteur qui s'éloigne diminue la fréquence reçue : le décalage est négatif." },
+        { "t": "L'effet Doppler nécessite l'injection d'un produit de contraste.", "v": false, "e": "Le Doppler repose sur la rétrodiffusion par les hématies, sans produit de contraste obligatoire." }
+      ],
+      "notion": "Effet Doppler",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q14",
+      "enonce": "Concernant la formule du décalage Doppler Δf = 2 f v cosθ / c :",
+      "props": [
+        { "t": "Le décalage Doppler est proportionnel à la vitesse du flux sanguin.", "v": true, "e": "Δf est directement proportionnel à v, ce qui permet de mesurer la vitesse." },
+        { "t": "Le décalage Doppler est maximal quand le faisceau est perpendiculaire au vaisseau.", "v": false, "e": "À θ = 90°, cosθ = 0 et le décalage est nul ; il est maximal quand le faisceau est aligné avec le flux." },
+        { "t": "Le facteur 2 traduit le trajet aller-retour de l'onde.", "v": true, "e": "L'effet Doppler s'applique deux fois : à la réception par l'hématie puis à sa réémission vers la sonde." },
+        { "t": "Le décalage Doppler est proportionnel à la fréquence d'émission.", "v": true, "e": "Δf croît linéairement avec la fréquence f de la sonde." },
+        { "t": "À θ = 60°, le décalage vaut la moitié de sa valeur à θ = 0°.", "v": true, "e": "cos 60° = 0,5, donc Δf est divisé par deux par rapport à l'alignement parfait." }
+      ],
+      "notion": "Effet Doppler",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q15",
+      "enonce": "Une sonde Doppler émet à 4 MHz dans l'axe d'un vaisseau (cosθ = 1) où le sang circule à 0,5 m/s vers la sonde (c = 1540 m/s). On peut affirmer que :",
+      "props": [
+        { "t": "Le décalage Doppler vaut environ 2,6 kHz.", "v": true, "e": "Δf = 2 × 4×10⁶ × 0,5/1540 ≈ 2600 Hz, soit ≈ 2,6 kHz." },
+        { "t": "Le décalage Doppler vaut environ 2,6 MHz.", "v": false, "e": "Le décalage est de l'ordre du kHz, très petit devant la fréquence d'émission de 4 MHz." },
+        { "t": "Ce décalage appartient au domaine audible.", "v": true, "e": "2,6 kHz est dans le domaine audible, ce qui permet une restitution sonore du signal Doppler." },
+        { "t": "Si la vitesse doublait, le décalage doublerait.", "v": true, "e": "Δf est proportionnel à v : à 1 m/s, le décalage serait ≈ 5,2 kHz." },
+        { "t": "Le signe du décalage est négatif car le flux se rapproche.", "v": false, "e": "Un flux qui se rapproche donne un décalage positif ; il serait négatif pour un flux qui s'éloigne." }
+      ],
+      "notion": "Effet Doppler",
+      "diff": 3
+    },
+    {
+      "id": "ue3-ch07-q16",
+      "enonce": "Concernant le principe de formation de l'image échographique :",
+      "props": [
+        { "t": "L'échographie repose sur l'analyse des échos réfléchis par les interfaces tissulaires.", "v": true, "e": "L'image est construite à partir des ultrasons réfléchis vers la sonde par les interfaces." },
+        { "t": "La profondeur d'une interface est calculée à partir du temps de retour de l'écho.", "v": true, "e": "Connaissant la célérité, le temps aller-retour donne la profondeur : d = c × t/2." },
+        { "t": "La profondeur se calcule par d = c × t, où t est le temps aller-retour.", "v": false, "e": "Il faut diviser par deux car t correspond à l'aller-retour : d = c × t/2." },
+        { "t": "En mode B, la brillance de chaque point traduit l'amplitude de l'écho.", "v": true, "e": "Le mode B (brillance) code l'amplitude des échos en niveaux de gris." },
+        { "t": "L'échographie utilise des rayonnements ionisants.", "v": false, "e": "Les ultrasons sont des ondes mécaniques non ionisantes, sans risque d'irradiation." }
+      ],
+      "notion": "Image échographique",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q17",
+      "enonce": "Un écho revient à la sonde 100 µs après l'émission (c = 1540 m/s dans les tissus). On peut affirmer que :",
+      "props": [
+        { "t": "L'interface se situe à environ 7,7 cm de profondeur.", "v": true, "e": "d = 1540 × 100×10⁻⁶/2 = 0,077 m ≈ 7,7 cm." },
+        { "t": "L'interface se situe à environ 15,4 cm de profondeur.", "v": false, "e": "15,4 cm correspondrait à l'oubli du facteur 1/2 lié à l'aller-retour ; la bonne valeur est 7,7 cm." },
+        { "t": "Un écho revenant à 50 µs proviendrait d'une interface deux fois moins profonde.", "v": true, "e": "La profondeur est proportionnelle au temps de retour : 50 µs correspond à ≈ 3,85 cm." },
+        { "t": "Ce calcul suppose une célérité uniforme dans les tissus traversés.", "v": true, "e": "L'appareil suppose c = 1540 m/s partout, ce qui peut créer des artefacts si la célérité réelle diffère." },
+        { "t": "Le temps de retour est indépendant de la profondeur de l'interface.", "v": false, "e": "Le temps de retour est proportionnel à la profondeur, c'est le principe même de l'écholocalisation." }
+      ],
+      "notion": "Image échographique",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q18",
+      "enonce": "Concernant l'échogénicité des structures anatomiques :",
+      "props": [
+        { "t": "Un liquide simple (kyste, vessie pleine) apparaît anéchogène.", "v": true, "e": "Un liquide homogène ne contient pas d'interface réfléchissante et apparaît noir." },
+        { "t": "La corticale osseuse est hyperéchogène et s'accompagne d'un cône d'ombre postérieur.", "v": true, "e": "L'os réfléchit et atténue fortement le faisceau, créant un écho intense puis une ombre acoustique." },
+        { "t": "On visualise parfaitement les structures situées derrière une interface osseuse.", "v": false, "e": "Le cône d'ombre postérieur empêche l'exploration des structures situées derrière l'os." },
+        { "t": "Un renforcement postérieur s'observe en arrière des structures liquidiennes.", "v": true, "e": "Le liquide atténuant peu, les échos d'aval paraissent renforcés par rapport au voisinage." },
+        { "t": "Le poumon aéré est une structure facilement explorable en échographie.", "v": false, "e": "L'air pulmonaire réfléchit la quasi-totalité du faisceau, rendant le parenchyme aéré inexplorable." }
+      ],
+      "notion": "Image échographique",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q19",
+      "enonce": "Concernant la sonde échographique et l'effet piézoélectrique :",
+      "props": [
+        { "t": "Les céramiques piézoélectriques convertissent un signal électrique en vibration mécanique.", "v": true, "e": "L'effet piézoélectrique inverse permet de générer l'onde ultrasonore à partir d'une tension." },
+        { "t": "Les mêmes éléments piézoélectriques peuvent servir à la réception des échos.", "v": true, "e": "L'effet piézoélectrique direct convertit la vibration reçue en signal électrique." },
+        { "t": "La sonde émet des ultrasons en continu pendant toute l'acquisition de l'image.", "v": false, "e": "En imagerie, la sonde fonctionne en mode pulsé : elle émet de brèves impulsions puis écoute les échos." },
+        { "t": "La fréquence de résonance dépend de l'épaisseur de la céramique.", "v": true, "e": "L'épaisseur du transducteur détermine la fréquence de résonance des ultrasons émis." },
+        { "t": "La sonde contient une source radioactive scellée.", "v": false, "e": "Aucune source radioactive n'intervient : les ultrasons sont produits électriquement par piézoélectricité." }
+      ],
+      "notion": "Image échographique",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q20",
+      "enonce": "Concernant la célérité du son dans différents milieux :",
+      "props": [
+        { "t": "Le son se propage plus vite dans l'os que dans les tissus mous.", "v": true, "e": "Dans l'os compact, la célérité atteint 3000 à 4000 m/s, contre ≈ 1540 m/s dans les tissus mous." },
+        { "t": "Le son se propage plus vite dans l'air que dans l'eau.", "v": false, "e": "C'est l'inverse : ≈ 340 m/s dans l'air contre ≈ 1500 m/s dans l'eau." },
+        { "t": "La célérité dépend de la masse volumique et de la compressibilité du milieu.", "v": true, "e": "c = 1/√(ρχ) : la célérité croît quand la compressibilité χ diminue." },
+        { "t": "La célérité dans l'eau est proche de celle des tissus mous.", "v": true, "e": "L'eau (≈ 1480 m/s) et les tissus mous (≈ 1540 m/s) ont des célérités voisines, les tissus étant riches en eau." },
+        { "t": "Plus un milieu est rigide (peu compressible), plus la célérité y est faible.", "v": false, "e": "C'est l'inverse : la rigidité (faible compressibilité) augmente la célérité, d'où les valeurs élevées dans l'os." }
+      ],
+      "notion": "Propagation des ondes",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q21",
+      "enonce": "Soit une interface entre un tissu mou (Z₁ ≈ 1,5×10⁶ kg·m⁻²·s⁻¹) et l'air (Z₂ ≈ 4×10² kg·m⁻²·s⁻¹). On peut affirmer que :",
+      "props": [
+        { "t": "Le coefficient de réflexion en intensité est proche de 100 %.", "v": true, "e": "Avec Z₂ ≪ Z₁, ((Z₂−Z₁)/(Z₂+Z₁))² ≈ 1 : la réflexion est quasi totale (> 99,9 %)." },
+        { "t": "Presque aucune énergie ultrasonore ne pénètre dans l'air.", "v": true, "e": "La transmission T = 1 − R est quasi nulle à une interface tissu/air." },
+        { "t": "Le coefficient de réflexion est proche de 50 %.", "v": false, "e": "L'écart d'impédance est si grand que R dépasse 99 %, très loin de 50 %." },
+        { "t": "L'unité de l'impédance acoustique est le kg·m⁻²·s⁻¹.", "v": true, "e": "Z = ρc s'exprime en kg·m⁻²·s⁻¹, unité aussi appelée rayl." },
+        { "t": "Cette réflexion quasi totale explique la nécessité du gel de couplage.", "v": true, "e": "Le gel supprime la lame d'air qui réfléchirait la quasi-totalité du faisceau avant l'entrée dans le corps." }
+      ],
+      "notion": "Impédance et réflexion",
+      "diff": 3
+    },
+    {
+      "id": "ue3-ch07-q22",
+      "enonce": "Concernant les modes Doppler continu et Doppler pulsé :",
+      "props": [
+        { "t": "Le Doppler continu utilise un élément émetteur et un élément récepteur distincts.", "v": true, "e": "En émission continue, un cristal émet en permanence pendant qu'un autre reçoit." },
+        { "t": "Le Doppler continu permet de localiser la profondeur d'origine du signal.", "v": false, "e": "L'émission continue ne donne aucune résolution en profondeur ; c'est le Doppler pulsé qui localise." },
+        { "t": "Le Doppler pulsé permet de sélectionner un volume de mesure à une profondeur choisie.", "v": true, "e": "La fenêtre temporelle d'écoute du mode pulsé sélectionne la profondeur d'analyse." },
+        { "t": "Le Doppler pulsé est limité dans la mesure des vitesses élevées par le phénomène d'aliasing.", "v": true, "e": "Au-delà de la limite de Nyquist (PRF/2), le mode pulsé sous-estime ou inverse les vitesses (aliasing)." },
+        { "t": "Le Doppler continu est incapable de mesurer les vitesses élevées.", "v": false, "e": "C'est au contraire son avantage : le mode continu mesure sans ambiguïté les vitesses élevées." }
+      ],
+      "notion": "Effet Doppler",
+      "diff": 2
+    },
+    {
+      "id": "ue3-ch07-q23",
+      "enonce": "Concernant l'échographie parmi les techniques d'imagerie :",
+      "props": [
+        { "t": "L'échographie n'expose pas le patient aux rayonnements ionisants.", "v": true, "e": "Les ultrasons sont des ondes mécaniques non ionisantes." },
+        { "t": "L'échographie est utilisable chez la femme enceinte.", "v": true, "e": "L'absence de rayonnement ionisant en fait l'examen de première intention pendant la grossesse." },
+        { "t": "L'échographie est une imagerie en temps réel.", "v": true, "e": "La cadence d'images élevée permet de suivre les mouvements des structures en direct." },
+        { "t": "L'échographie utilise le même principe physique que la radiographie.", "v": false, "e": "La radiographie repose sur l'atténuation de rayons X ; l'échographie sur la réflexion d'ultrasons." },
+        { "t": "L'image échographique dépend de l'opérateur et de la fenêtre acoustique.", "v": true, "e": "La qualité dépend du positionnement de la sonde et des obstacles (air, os), d'où une opérateur-dépendance." }
+      ],
+      "notion": "Image échographique",
+      "diff": 1
+    },
+    {
+      "id": "ue3-ch07-q24",
+      "enonce": "Un tissu atténue les ultrasons de 1 dB/cm/MHz. Une sonde de 5 MHz explore une cible située à 4 cm de profondeur. On peut affirmer que :",
+      "props": [
+        { "t": "L'atténuation sur le trajet aller-retour est d'environ 40 dB.", "v": true, "e": "1 × 5 MHz × 8 cm (aller-retour) = 40 dB." },
+        { "t": "L'atténuation sur le trajet aller-retour est d'environ 20 dB.", "v": false, "e": "20 dB correspondrait au seul trajet aller ; l'écho parcourt 8 cm au total, soit 40 dB." },
+        { "t": "L'intensité de l'écho est environ 10 000 fois plus faible que celle émise.", "v": true, "e": "40 dB d'atténuation correspondent à un facteur 10⁴ sur l'intensité." },
+        { "t": "Avec une sonde de 10 MHz, l'atténuation aller-retour serait d'environ 80 dB.", "v": true, "e": "L'atténuation étant proportionnelle à la fréquence, elle double à 10 MHz." },
+        { "t": "Diminuer la fréquence augmenterait l'atténuation subie.", "v": false, "e": "C'est l'inverse : l'atténuation diminue avec la fréquence, d'où le choix de basses fréquences en profondeur." }
+      ],
+      "notion": "Atténuation",
+      "diff": 3
+    },
+    {
+      "id": "ue3-ch07-q25",
+      "enonce": "Concernant la résolution spatiale en échographie :",
+      "props": [
+        { "t": "La résolution axiale est la capacité à distinguer deux points situés le long de l'axe du faisceau.", "v": true, "e": "La résolution axiale sépare deux interfaces alignées dans l'axe de propagation." },
+        { "t": "La résolution axiale s'améliore quand la durée de l'impulsion diminue.", "v": true, "e": "Une impulsion courte, donc une haute fréquence, permet de séparer des échos rapprochés." },
+        { "t": "La résolution latérale dépend de la largeur du faisceau ultrasonore.", "v": true, "e": "Deux points côte à côte ne sont séparés que si le faisceau est plus étroit que leur écart, d'où l'intérêt de la focalisation." },
+        { "t": "La résolution axiale est de l'ordre du micromètre en échographie standard.", "v": false, "e": "Elle est de l'ordre de la fraction de millimètre, la longueur d'onde étant proche du millimètre." },
+        { "t": "Augmenter la fréquence dégrade la résolution axiale.", "v": false, "e": "C'est l'inverse : la résolution axiale s'améliore avec la fréquence car λ diminue." }
+      ],
+      "notion": "Image échographique",
+      "diff": 3
+    }
+  ]
+}

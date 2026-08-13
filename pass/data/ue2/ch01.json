@@ -1,0 +1,332 @@
+{
+  "ue": "ue2",
+  "chapitre": "ch01",
+  "titre": "Membrane plasmique et transports membranaires",
+  "questions": [
+    {
+      "id": "ue2-ch01-q01",
+      "enonce": "Concernant la composition lipidique de la membrane plasmique :",
+      "props": [
+        { "t": "Les phospholipides sont des molécules amphiphiles.", "v": true, "e": "Les phospholipides possèdent une tête polaire hydrophile et deux queues d'acides gras hydrophobes." },
+        { "t": "Les têtes polaires des phospholipides sont orientées vers l'intérieur hydrophobe de la bicouche.", "v": false, "e": "Les têtes polaires sont orientées vers les milieux aqueux extracellulaire et cytosolique, les queues hydrophobes vers l'intérieur de la bicouche." },
+        { "t": "Le cholestérol est présent dans les deux feuillets de la membrane plasmique.", "v": true, "e": "Le cholestérol s'intercale entre les phospholipides des deux feuillets de la bicouche." },
+        { "t": "Les glycolipides sont localisés exclusivement sur le feuillet externe de la membrane plasmique.", "v": true, "e": "Les glycolipides, ajoutés dans la lumière du Golgi, se retrouvent uniquement sur le feuillet exoplasmique." },
+        { "t": "La phosphatidylsérine est majoritairement située sur le feuillet externe d'une cellule saine.", "v": false, "e": "La phosphatidylsérine est normalement confinée au feuillet interne ; son externalisation est un signal d'apoptose." }
+      ],
+      "notion": "Bicouche lipidique",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q02",
+      "enonce": "Concernant l'asymétrie membranaire :",
+      "props": [
+        { "t": "L'asymétrie de répartition des phospholipides entre les deux feuillets est entretenue par des enzymes appelées flippases.", "v": true, "e": "Les flippases transfèrent activement certains phospholipides, dont la phosphatidylsérine, vers le feuillet cytosolique." },
+        { "t": "Le mouvement de flip-flop spontané des phospholipides est très fréquent.", "v": false, "e": "Le flip-flop spontané est très rare car la tête polaire doit traverser le cœur hydrophobe de la bicouche." },
+        { "t": "La sphingomyéline est enrichie dans le feuillet externe de la membrane plasmique.", "v": true, "e": "La sphingomyéline et la phosphatidylcholine prédominent dans le feuillet exoplasmique." },
+        { "t": "Le glycocalyx est présent sur la face cytosolique de la membrane.", "v": false, "e": "Le glycocalyx, formé des chaînes glucidiques des glycoprotéines et glycolipides, recouvre la face extracellulaire." },
+        { "t": "L'externalisation de la phosphatidylsérine sert de signal de reconnaissance pour les macrophages.", "v": true, "e": "La phosphatidylsérine exposée sur le feuillet externe est un signal « mange-moi » reconnu par les macrophages lors de l'apoptose." }
+      ],
+      "notion": "Bicouche lipidique",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q03",
+      "enonce": "Concernant la fluidité membranaire :",
+      "props": [
+        { "t": "La fluidité membranaire augmente avec la température.", "v": true, "e": "L'agitation thermique accroît les mouvements latéraux des lipides, donc la fluidité." },
+        { "t": "Des acides gras riches en doubles liaisons insaturées diminuent la fluidité membranaire.", "v": false, "e": "Les insaturations en cis créent des coudes qui écartent les phospholipides et augmentent la fluidité." },
+        { "t": "Des chaînes d'acides gras longues favorisent une membrane plus rigide.", "v": true, "e": "Les chaînes longues établissent davantage d'interactions hydrophobes, ce qui rigidifie la membrane." },
+        { "t": "À température physiologique, le cholestérol limite les mouvements des phospholipides et modère la fluidité.", "v": true, "e": "Le cholestérol s'intercale entre les phospholipides et joue un rôle de tampon de fluidité, la limitant à 37 °C." },
+        { "t": "La diffusion latérale des phospholipides dans un même feuillet est un mouvement rare.", "v": false, "e": "La diffusion latérale est au contraire très rapide et fréquente ; c'est le flip-flop qui est rare." }
+      ],
+      "notion": "Fluidité membranaire",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q04",
+      "enonce": "Concernant les protéines membranaires :",
+      "props": [
+        { "t": "Les protéines transmembranaires traversent la bicouche une ou plusieurs fois.", "v": true, "e": "Les protéines transmembranaires peuvent être à passage unique ou à passages multiples." },
+        { "t": "Les segments transmembranaires sont le plus souvent organisés en hélices α composées d'acides aminés hydrophobes.", "v": true, "e": "L'hélice α d'environ 20 acides aminés hydrophobes est la structure transmembranaire la plus fréquente." },
+        { "t": "Les protéines périphériques sont extraites de la membrane uniquement à l'aide de détergents.", "v": false, "e": "Les protéines périphériques se détachent par des traitements doux (variation de pH ou de force ionique) ; les détergents sont nécessaires pour les protéines intégrales." },
+        { "t": "Une protéine à ancre GPI est fixée sur le feuillet interne de la membrane plasmique.", "v": false, "e": "L'ancre GPI (glycosylphosphatidylinositol) attache la protéine au feuillet externe de la membrane." },
+        { "t": "Certaines protéines membranaires ont une mobilité latérale restreinte par leur ancrage au cytosquelette.", "v": true, "e": "L'ancrage au cortex de spectrine ou d'actine limite la diffusion latérale de nombreuses protéines membranaires." }
+      ],
+      "notion": "Protéines membranaires",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q05",
+      "enonce": "Concernant les radeaux lipidiques (rafts) :",
+      "props": [
+        { "t": "Les radeaux lipidiques sont enrichis en cholestérol et en sphingolipides.", "v": true, "e": "Les rafts sont des microdomaines épaissis riches en cholestérol et en sphingolipides." },
+        { "t": "Les radeaux lipidiques sont plus fluides que le reste de la membrane.", "v": false, "e": "Les rafts sont au contraire plus ordonnés et plus rigides que la membrane environnante." },
+        { "t": "Les radeaux lipidiques regroupent des protéines impliquées dans la signalisation.", "v": true, "e": "Les rafts servent de plateformes concentrant récepteurs et protéines de signalisation." },
+        { "t": "Les cavéoles sont des invaginations membranaires apparentées aux radeaux lipidiques.", "v": true, "e": "Les cavéoles sont des radeaux invaginés stabilisés par la cavéoline." },
+        { "t": "Les protéines à ancre GPI sont exclues des radeaux lipidiques.", "v": false, "e": "Les protéines à ancre GPI sont au contraire préférentiellement associées aux rafts." }
+      ],
+      "notion": "Bicouche lipidique",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch01-q06",
+      "enonce": "Concernant la perméabilité de la bicouche lipidique :",
+      "props": [
+        { "t": "L'O₂ et le CO₂ traversent librement la bicouche lipidique.", "v": true, "e": "Les petites molécules apolaires diffusent librement à travers la bicouche." },
+        { "t": "Le glucose traverse librement la bicouche lipidique par diffusion simple.", "v": false, "e": "Le glucose, polaire et volumineux, nécessite un transporteur (GLUT) pour traverser la membrane." },
+        { "t": "Les ions Na⁺ et K⁺ traversent la bicouche sans protéine de transport.", "v": false, "e": "Les ions, chargés, sont incapables de traverser le cœur hydrophobe sans canal ou transporteur." },
+        { "t": "L'eau peut traverser la bicouche lentement par diffusion simple.", "v": true, "e": "L'eau, petite molécule polaire non chargée, diffuse lentement à travers la bicouche, plus vite via les aquaporines." },
+        { "t": "L'éthanol, petite molécule liposoluble, diffuse à travers la membrane sans transporteur.", "v": true, "e": "Les petites molécules polaires non chargées et liposolubles comme l'éthanol traversent la bicouche par diffusion simple." }
+      ],
+      "notion": "Transport passif",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q07",
+      "enonce": "Concernant la diffusion facilitée :",
+      "props": [
+        { "t": "La diffusion facilitée nécessite une hydrolyse d'ATP.", "v": false, "e": "La diffusion facilitée est un transport passif qui suit le gradient sans consommation d'ATP." },
+        { "t": "La diffusion facilitée s'effectue toujours dans le sens du gradient électrochimique.", "v": true, "e": "Comme tout transport passif, la diffusion facilitée suit le gradient électrochimique du soluté." },
+        { "t": "Le transport par transporteur (perméase) est saturable.", "v": true, "e": "Le nombre limité de transporteurs impose une vitesse maximale (saturation), contrairement à la diffusion simple." },
+        { "t": "La vitesse de la diffusion simple est proportionnelle au gradient de concentration, sans saturation.", "v": true, "e": "La diffusion simple n'implique aucune protéine : sa vitesse croît linéairement avec le gradient." },
+        { "t": "Un canal ionique transporte les ions plus lentement qu'une perméase.", "v": false, "e": "Les canaux permettent un flux très rapide (10⁶ à 10⁸ ions/s), bien supérieur à celui des transporteurs." }
+      ],
+      "notion": "Transport passif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q08",
+      "enonce": "Concernant les canaux ioniques :",
+      "props": [
+        { "t": "Les canaux ioniques sont sélectifs vis-à-vis des ions qu'ils laissent passer.", "v": true, "e": "Un filtre de sélectivité fait discriminer les ions selon leur taille et leur charge." },
+        { "t": "Les canaux voltage-dépendants s'ouvrent en réponse à la fixation d'un ligand extracellulaire.", "v": false, "e": "Les canaux voltage-dépendants s'ouvrent lors d'une variation du potentiel de membrane ; ce sont les canaux ligand-dépendants qui répondent à un ligand." },
+        { "t": "Le récepteur nicotinique de l'acétylcholine est un canal ligand-dépendant.", "v": true, "e": "Le récepteur nicotinique est un canal cationique qui s'ouvre à la fixation de l'acétylcholine." },
+        { "t": "Un canal ionique ouvert transporte les ions contre leur gradient électrochimique.", "v": false, "e": "Un canal ne fait que laisser diffuser les ions dans le sens de leur gradient électrochimique." },
+        { "t": "Certains canaux, dits mécanosensibles, s'ouvrent sous l'effet d'une contrainte mécanique.", "v": true, "e": "Les canaux mécanosensibles répondent à l'étirement de la membrane, par exemple dans les cellules ciliées de l'oreille interne." }
+      ],
+      "notion": "Transport passif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q09",
+      "enonce": "Concernant les aquaporines :",
+      "props": [
+        { "t": "Les aquaporines accélèrent le passage transmembranaire de l'eau.", "v": true, "e": "Les aquaporines sont des canaux hydriques augmentant fortement la perméabilité à l'eau." },
+        { "t": "Les aquaporines transportent l'eau contre son gradient osmotique grâce à l'ATP.", "v": false, "e": "Le passage de l'eau par les aquaporines est passif, dicté uniquement par le gradient osmotique." },
+        { "t": "Les aquaporines laissent passer librement les protons H⁺.", "v": false, "e": "La structure du pore exclut les ions, y compris les protons, assurant une sélectivité stricte pour l'eau." },
+        { "t": "Les aquaporines sont abondantes dans le tubule rénal.", "v": true, "e": "Les aquaporines (dont AQP2 régulée par l'ADH) sont essentielles à la réabsorption d'eau dans le rein." },
+        { "t": "Une cellule placée dans un milieu hypotonique tend à gonfler.", "v": true, "e": "En milieu hypotonique, l'eau entre dans la cellule par osmose, provoquant son gonflement." }
+      ],
+      "notion": "Transport passif",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q10",
+      "enonce": "Concernant la pompe Na⁺/K⁺-ATPase :",
+      "props": [
+        { "t": "La pompe Na⁺/K⁺ fait sortir 3 Na⁺ et entrer 2 K⁺ par cycle.", "v": true, "e": "Chaque cycle d'hydrolyse d'un ATP expulse 3 Na⁺ et importe 2 K⁺." },
+        { "t": "La pompe Na⁺/K⁺ est un exemple de transport actif secondaire.", "v": false, "e": "La pompe Na⁺/K⁺ hydrolyse directement l'ATP : c'est un transport actif primaire." },
+        { "t": "La pompe Na⁺/K⁺ est électrogénique.", "v": true, "e": "Le bilan d'une charge positive expulsée par cycle contribue à la négativité du potentiel de membrane." },
+        { "t": "L'inhibition de la pompe Na⁺/K⁺ par l'ouabaïne fait chuter la concentration intracellulaire de Na⁺.", "v": false, "e": "L'inhibition de la pompe fait au contraire augmenter le Na⁺ intracellulaire, qui n'est plus expulsé." },
+        { "t": "La pompe Na⁺/K⁺ entretient le gradient de Na⁺ utilisé par les transports actifs secondaires.", "v": true, "e": "Le gradient de Na⁺ créé par la pompe fournit l'énergie des symports et antiports sodium-dépendants." }
+      ],
+      "notion": "Transport actif",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q11",
+      "enonce": "Concernant le transport actif secondaire :",
+      "props": [
+        { "t": "Le transport actif secondaire utilise directement l'hydrolyse de l'ATP.", "v": false, "e": "Le transport actif secondaire utilise l'énergie d'un gradient ionique préétabli, non l'ATP directement." },
+        { "t": "Le cotransporteur SGLT1 fait entrer le glucose avec le Na⁺ dans l'entérocyte.", "v": true, "e": "SGLT1 est un symport Na⁺/glucose apical qui utilise le gradient de Na⁺ pour concentrer le glucose." },
+        { "t": "Dans un antiport, les deux solutés sont transportés dans le même sens.", "v": false, "e": "L'antiport transporte les deux solutés en sens opposés ; c'est le symport qui les transporte dans le même sens." },
+        { "t": "L'échangeur Na⁺/Ca²⁺ contribue à maintenir une concentration cytosolique de Ca²⁺ très basse.", "v": true, "e": "L'antiport Na⁺/Ca²⁺ expulse le Ca²⁺ grâce au gradient entrant de Na⁺, maintenant un Ca²⁺ cytosolique d'environ 10⁻⁷ M." },
+        { "t": "Un symport peut accumuler un soluté contre son gradient de concentration.", "v": true, "e": "C'est le principe même du transport actif secondaire : le gradient favorable d'un ion tire le soluté contre son propre gradient." }
+      ],
+      "notion": "Transport actif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q12",
+      "enonce": "Concernant les transporteurs de glucose GLUT :",
+      "props": [
+        { "t": "Les transporteurs GLUT effectuent une diffusion facilitée du glucose.", "v": true, "e": "Les GLUT sont des uniports passifs qui laissent le glucose suivre son gradient de concentration." },
+        { "t": "GLUT4 est transloqué à la membrane plasmique sous l'effet de l'insuline.", "v": true, "e": "Dans le muscle et le tissu adipeux, l'insuline provoque l'exocytose de vésicules contenant GLUT4." },
+        { "t": "GLUT2, présent dans les hépatocytes, possède une forte affinité pour le glucose.", "v": false, "e": "GLUT2 a au contraire une faible affinité (Km élevé), lui permettant de fonctionner proportionnellement à la glycémie." },
+        { "t": "Les GLUT peuvent transporter le glucose contre son gradient de concentration.", "v": false, "e": "Les GLUT sont des transporteurs passifs ; seul un transport actif comme SGLT peut concentrer le glucose." },
+        { "t": "Dans l'entérocyte, le glucose entre au pôle apical par SGLT1 et sort au pôle basolatéral par GLUT2.", "v": true, "e": "Ce couplage symport apical / uniport basolatéral assure le transfert transépithélial du glucose vers le sang." }
+      ],
+      "notion": "Transport actif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q13",
+      "enonce": "Concernant les pompes de type ABC et les autres ATPases :",
+      "props": [
+        { "t": "Les transporteurs ABC utilisent l'hydrolyse de l'ATP pour transporter leurs substrats.", "v": true, "e": "Les transporteurs ABC (ATP-Binding Cassette) sont des transporteurs actifs primaires." },
+        { "t": "La protéine MDR1 (glycoprotéine P) expulse des médicaments hors des cellules tumorales.", "v": true, "e": "MDR1, un transporteur ABC, contribue à la résistance multiple aux agents anticancéreux." },
+        { "t": "La protéine CFTR, mutée dans la mucoviscidose, est un canal Cl⁻ de la famille ABC.", "v": true, "e": "CFTR est un canal chlorure apparenté aux transporteurs ABC dont la mutation cause la mucoviscidose." },
+        { "t": "La pompe SERCA fait sortir le Ca²⁺ du réticulum vers le cytosol.", "v": false, "e": "SERCA pompe au contraire le Ca²⁺ du cytosol vers la lumière du réticulum sarco-endoplasmique." },
+        { "t": "La pompe à protons H⁺/K⁺-ATPase de l'estomac est une ATPase de type V.", "v": false, "e": "La H⁺/K⁺-ATPase gastrique est une ATPase de type P ; les ATPases de type V acidifient les lysosomes et endosomes." }
+      ],
+      "notion": "Transport actif",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch01-q14",
+      "enonce": "Concernant le potentiel de membrane :",
+      "props": [
+        { "t": "Au repos, la face cytosolique de la membrane est électriquement négative par rapport à la face externe.", "v": true, "e": "Le potentiel de repos est négatif, typiquement de l'ordre de −70 mV dans un neurone." },
+        { "t": "Le potentiel de repos dépend principalement de la perméabilité au K⁺.", "v": true, "e": "La fuite de K⁺ par les canaux de fuite rapproche le potentiel de repos du potentiel d'équilibre du K⁺." },
+        { "t": "Le K⁺ est plus concentré dans le milieu extracellulaire que dans le cytosol.", "v": false, "e": "C'est l'inverse : le K⁺ est concentré dans le cytosol (≈140 mM) et le Na⁺ dans le milieu extracellulaire." },
+        { "t": "L'ouverture de canaux Na⁺ voltage-dépendants provoque une dépolarisation membranaire.", "v": true, "e": "L'entrée de Na⁺ rend le potentiel moins négatif : c'est la dépolarisation du potentiel d'action." },
+        { "t": "L'ouverture de canaux K⁺ supplémentaires dépolarise la membrane.", "v": false, "e": "La sortie de K⁺ rend le potentiel plus négatif : c'est une hyperpolarisation ou une repolarisation." }
+      ],
+      "notion": "Transport passif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q15",
+      "enonce": "Concernant l'endocytose par récepteurs :",
+      "props": [
+        { "t": "L'endocytose par récepteurs fait intervenir des puits recouverts de clathrine.", "v": true, "e": "Les récepteurs chargés de leur ligand se concentrent dans des puits tapissés de clathrine." },
+        { "t": "L'adaptateur AP2 relie les récepteurs membranaires au manteau de clathrine.", "v": true, "e": "AP2 est le complexe adaptateur de la membrane plasmique qui recrute la clathrine sur les récepteurs." },
+        { "t": "La dynamine permet la scission de la vésicule d'endocytose.", "v": true, "e": "La dynamine, une GTPase, s'enroule autour du col de la vésicule et le sectionne en hydrolysant le GTP." },
+        { "t": "Le manteau de clathrine persiste jusqu'à la fusion de la vésicule avec l'endosome.", "v": false, "e": "La clathrine est rapidement dépolymérisée après la scission, avant la fusion avec l'endosome précoce." },
+        { "t": "L'internalisation du LDL par son récepteur est un exemple d'endocytose par récepteurs.", "v": true, "e": "La capture des LDL via le récepteur au LDL est l'exemple classique d'endocytose médiée par la clathrine." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q16",
+      "enonce": "Concernant la phagocytose et la pinocytose :",
+      "props": [
+        { "t": "La phagocytose concerne l'internalisation de grosses particules comme les bactéries.", "v": true, "e": "La phagocytose internalise des particules de grande taille (> 0,5 µm) telles que bactéries ou débris cellulaires." },
+        { "t": "La phagocytose est réalisée par toutes les cellules de l'organisme avec la même efficacité.", "v": false, "e": "La phagocytose est surtout le fait de cellules spécialisées : macrophages, neutrophiles, cellules dendritiques." },
+        { "t": "La phagocytose dépend de la polymérisation de l'actine.", "v": true, "e": "L'émission de pseudopodes autour de la particule nécessite la polymérisation d'actine." },
+        { "t": "La pinocytose correspond à l'ingestion non spécifique de liquide extracellulaire.", "v": true, "e": "La pinocytose internalise en continu du fluide et des solutés dissous de façon non sélective." },
+        { "t": "Le phagosome fusionne avec un lysosome pour former un phagolysosome.", "v": true, "e": "La dégradation du contenu phagocyté a lieu dans le phagolysosome issu de cette fusion." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q17",
+      "enonce": "Concernant le devenir des récepteurs après endocytose :",
+      "props": [
+        { "t": "Le récepteur au LDL est recyclé vers la membrane plasmique après dissociation de son ligand.", "v": true, "e": "Le pH acide de l'endosome dissocie le LDL de son récepteur, qui retourne à la membrane." },
+        { "t": "Le pH acide de l'endosome favorise la dissociation ligand-récepteur.", "v": true, "e": "L'acidification par la pompe à protons de type V (pH ≈ 6) diminue l'affinité des récepteurs pour leurs ligands." },
+        { "t": "Le récepteur de l'EGF est majoritairement recyclé après stimulation prolongée par son ligand.", "v": false, "e": "Le récepteur de l'EGF activé est surtout dirigé vers le lysosome pour dégradation (down-regulation)." },
+        { "t": "L'ubiquitination d'un récepteur peut l'adresser vers la voie de dégradation lysosomale.", "v": true, "e": "L'ubiquitination sert de signal de tri vers les corps multivésiculaires puis le lysosome." },
+        { "t": "La transferrine et son récepteur sont dégradés dans le lysosome après chaque cycle.", "v": false, "e": "Le récepteur de la transferrine et l'apotransferrine sont recyclés vers la membrane après libération du fer dans l'endosome." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch01-q18",
+      "enonce": "Concernant l'exocytose :",
+      "props": [
+        { "t": "L'exocytose constitutive existe dans toutes les cellules.", "v": true, "e": "La voie constitutive, permanente et non régulée, assure le renouvellement de la membrane et la sécrétion basale." },
+        { "t": "L'exocytose régulée nécessite le plus souvent une élévation du Ca²⁺ cytosolique.", "v": true, "e": "Dans la sécrétion régulée, le signal déclenchant est classiquement une augmentation du Ca²⁺ intracellulaire." },
+        { "t": "Les protéines SNARE assurent la fusion de la vésicule avec la membrane plasmique.", "v": true, "e": "L'appariement des v-SNARE vésiculaires et des t-SNARE cibles rapproche les membranes et permet leur fusion." },
+        { "t": "L'exocytose diminue la surface de la membrane plasmique.", "v": false, "e": "L'exocytose ajoute de la membrane à la surface cellulaire ; c'est l'endocytose qui en retire." },
+        { "t": "La libération des neurotransmetteurs à la synapse est un exemple d'exocytose constitutive.", "v": false, "e": "La libération synaptique est une exocytose régulée, déclenchée par l'entrée de Ca²⁺ lors du potentiel d'action." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q19",
+      "enonce": "Concernant les mouvements de l'eau et l'osmose :",
+      "props": [
+        { "t": "L'osmose est le mouvement d'eau du compartiment le moins concentré en solutés vers le plus concentré.", "v": true, "e": "L'eau diffuse vers le compartiment de plus forte osmolarité pour équilibrer les concentrations." },
+        { "t": "Une hématie placée dans une solution de NaCl à 9 g/L (sérum physiologique) se lyse.", "v": false, "e": "Le sérum physiologique est isotonique au plasma : l'hématie garde son volume normal." },
+        { "t": "Une hématie placée dans de l'eau pure se lyse par entrée d'eau.", "v": true, "e": "En milieu très hypotonique, l'entrée massive d'eau provoque l'hémolyse." },
+        { "t": "En milieu hypertonique, la cellule se plisse par sortie d'eau (crénelure).", "v": true, "e": "L'eau quitte la cellule vers le milieu plus concentré, entraînant une rétraction cellulaire." },
+        { "t": "L'osmose à travers la membrane requiert de l'énergie fournie par l'ATP.", "v": false, "e": "L'osmose est un phénomène passif dicté par le gradient osmotique, sans consommation d'ATP." }
+      ],
+      "notion": "Transport passif",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch01-q20",
+      "enonce": "Concernant les caractéristiques comparées des transports membranaires :",
+      "props": [
+        { "t": "La diffusion facilitée et le transport actif sont tous deux saturables.", "v": true, "e": "Tout transport protéo-dépendant (perméase ou pompe) présente une cinétique saturable de type Michaelis-Menten." },
+        { "t": "Le transport actif primaire peut créer un gradient de concentration, contrairement au transport passif.", "v": true, "e": "Seul un transport actif, couplé à une source d'énergie, peut établir un gradient contre l'équilibre." },
+        { "t": "Un uniport transporte simultanément deux solutés différents.", "v": false, "e": "L'uniport ne transporte qu'un seul type de soluté ; les cotransports (symport, antiport) en déplacent deux." },
+        { "t": "La diffusion simple est inhibable de façon compétitive par un analogue structural.", "v": false, "e": "Sans site de liaison protéique, la diffusion simple ne peut pas subir d'inhibition compétitive ; c'est le cas des transports protéo-dépendants." },
+        { "t": "Un même transporteur peut fonctionner dans les deux sens selon les gradients.", "v": true, "e": "Les transporteurs passifs comme les GLUT sont réversibles : le sens net dépend du gradient de substrat." }
+      ],
+      "notion": "Transport passif",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch01-q21",
+      "enonce": "Concernant le cholestérol membranaire :",
+      "props": [
+        { "t": "Le cholestérol possède un noyau stérol rigide et une courte queue hydrocarbonée.", "v": true, "e": "Le cholestérol comporte un groupe hydroxyle polaire, quatre cycles rigides et une queue aliphatique courte." },
+        { "t": "À basse température, le cholestérol empêche la cristallisation (gélification) des phospholipides.", "v": true, "e": "En s'intercalant, le cholestérol évite l'empilement compact des chaînes d'acides gras et maintient la fluidité au froid." },
+        { "t": "Le cholestérol représente une fraction négligeable des lipides de la membrane plasmique.", "v": false, "e": "Le cholestérol est très abondant dans la membrane plasmique, où il peut approcher une molécule pour une molécule de phospholipide." },
+        { "t": "Le cholestérol est un phospholipide.", "v": false, "e": "Le cholestérol est un stérol, distinct des phospholipides et des sphingolipides." },
+        { "t": "Le cholestérol membranaire provient en partie de l'endocytose des LDL.", "v": true, "e": "L'endocytose des LDL par leur récepteur apporte du cholestérol estérifié, hydrolysé dans le lysosome." }
+      ],
+      "notion": "Fluidité membranaire",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q22",
+      "enonce": "Concernant les protéines d'ancrage lipidique et l'organisation de la membrane :",
+      "props": [
+        { "t": "Une protéine peut être ancrée au feuillet interne par un groupement lipidique (myristoylation, prénylation).", "v": true, "e": "Les protéines myristoylées, palmitoylées ou prénylées s'attachent au feuillet cytosolique via leur lipide." },
+        { "t": "Les protéines Ras sont associées au feuillet cytosolique de la membrane par un ancrage lipidique.", "v": true, "e": "Ras est prénylée (farnésylée), ce qui l'ancre à la face interne de la membrane plasmique." },
+        { "t": "Le modèle de la mosaïque fluide décrit une membrane où protéines et lipides sont totalement immobiles.", "v": false, "e": "Le modèle de Singer et Nicolson décrit au contraire des protéines mobiles dans une bicouche lipidique fluide." },
+        { "t": "L'expérience de fusion cellulaire en hétérocaryon (Frye et Edidin) a démontré la diffusion latérale des protéines membranaires.", "v": true, "e": "Après fusion de cellules humaine et murine, les protéines membranaires marquées se mélangent en moins d'une heure, prouvant leur diffusion latérale." },
+        { "t": "Les jonctions serrées empêchent la diffusion des protéines entre les domaines apical et basolatéral d'une cellule épithéliale.", "v": true, "e": "Les jonctions serrées forment une barrière (fonction de clôture) qui maintient la polarité des domaines membranaires." }
+      ],
+      "notion": "Protéines membranaires",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch01-q23",
+      "enonce": "Concernant les gradients ioniques transmembranaires d'une cellule animale au repos :",
+      "props": [
+        { "t": "La concentration de Na⁺ est plus élevée dans le milieu extracellulaire que dans le cytosol.", "v": true, "e": "Le Na⁺ extracellulaire est d'environ 140 mM contre 5 à 15 mM dans le cytosol." },
+        { "t": "La concentration cytosolique de Ca²⁺ libre est de l'ordre de 10⁻⁷ M.", "v": true, "e": "Le Ca²⁺ cytosolique libre (≈100 nM) est environ 10 000 fois plus faible que le Ca²⁺ extracellulaire (≈1 à 2 mM)." },
+        { "t": "Le Cl⁻ est plus concentré dans le cytosol que dans le milieu extracellulaire.", "v": false, "e": "Le Cl⁻ est majoritairement extracellulaire ; sa concentration cytosolique est faible." },
+        { "t": "Le maintien de ces gradients dépend de l'activité de pompes consommant de l'ATP.", "v": true, "e": "La Na⁺/K⁺-ATPase et les pompes à Ca²⁺ maintiennent en permanence ces gradients aux dépens de l'ATP." },
+        { "t": "À la mort cellulaire, les gradients ioniques se maintiennent durablement.", "v": false, "e": "Sans production d'ATP, les pompes s'arrêtent et les gradients s'effondrent par diffusion passive." }
+      ],
+      "notion": "Transport actif",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q24",
+      "enonce": "Concernant les jonctions communicantes (gap junctions) et le passage direct entre cellules :",
+      "props": [
+        { "t": "Les jonctions communicantes permettent le passage direct de petites molécules entre cytoplasmes de cellules voisines.", "v": true, "e": "Les jonctions gap laissent passer ions et petites molécules de moins d'environ 1 kDa entre cellules adjacentes." },
+        { "t": "Un connexon est un hexamère de connexines.", "v": true, "e": "Six connexines s'assemblent en un connexon ; deux connexons en regard forment le canal jonctionnel." },
+        { "t": "Les jonctions communicantes laissent passer les protéines et les ARNm.", "v": false, "e": "Les macromolécules sont trop volumineuses ; seuls ions et petits métabolites (AMPc, Ca²⁺, glucose) transitent." },
+        { "t": "Une élévation importante du Ca²⁺ cytosolique ferme les jonctions communicantes.", "v": true, "e": "La fermeture des connexons par le Ca²⁺ (ou l'acidification) isole une cellule lésée de ses voisines." },
+        { "t": "Les jonctions communicantes participent au couplage électrique des cardiomyocytes.", "v": true, "e": "Le passage direct des ions par les jonctions gap synchronise la dépolarisation du myocarde." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch01-q25",
+      "enonce": "Concernant l'hypercholestérolémie familiale et le récepteur au LDL :",
+      "props": [
+        { "t": "L'hypercholestérolémie familiale peut résulter d'une mutation du récepteur au LDL.", "v": true, "e": "Le défaut du récepteur au LDL empêche la capture hépatique des LDL et élève le cholestérol plasmatique." },
+        { "t": "Une mutation empêchant la liaison du récepteur au LDL à l'adaptateur AP2 bloque son internalisation.", "v": true, "e": "Sans interaction avec la machinerie à clathrine, le récepteur fixe le LDL mais ne l'internalise pas." },
+        { "t": "Dans cette maladie, la concentration plasmatique de LDL diminue.", "v": false, "e": "Le défaut de capture cellulaire fait au contraire s'accumuler les LDL dans le plasma." },
+        { "t": "Le cholestérol des LDL internalisées est libéré après hydrolyse des esters dans le lysosome.", "v": true, "e": "La lipase acide lysosomale hydrolyse les esters de cholestérol du LDL, libérant du cholestérol libre." },
+        { "t": "L'excès de cholestérol intracellulaire stimule l'enzyme HMG-CoA réductase.", "v": false, "e": "Le cholestérol libre exerce un rétrocontrôle négatif : il inhibe la HMG-CoA réductase et la synthèse du récepteur au LDL." }
+      ],
+      "notion": "Endocytose et exocytose",
+      "diff": 3
+    }
+  ]
+}

@@ -1,0 +1,832 @@
+{
+  "ue": "ue2",
+  "chapitre": "ch08",
+  "titre": "Méiose et gamétogenèse",
+  "questions": [
+    {
+      "id": "ue2-ch08-q01",
+      "enonce": "Concernant les caractères généraux de la méiose :",
+      "props": [
+        {
+          "t": "La méiose comporte deux divisions successives précédées d'une seule réplication de l'ADN.",
+          "v": true,
+          "e": "Une unique phase S précède les deux divisions méiotiques, d'où la réduction de la quantité d'ADN."
+        },
+        {
+          "t": "La méiose produit quatre cellules haploïdes à partir d'une cellule diploïde.",
+          "v": true,
+          "e": "Les deux divisions méiotiques aboutissent à quatre cellules à n chromosomes à partir d'une cellule à 2n."
+        },
+        {
+          "t": "La méiose ne concerne que les cellules de la lignée germinale.",
+          "v": true,
+          "e": "Seules les cellules germinales réalisent la méiose ; les cellules somatiques se divisent par mitose."
+        },
+        {
+          "t": "Une réplication de l'ADN a lieu entre la première et la deuxième division méiotique.",
+          "v": false,
+          "e": "L'intervalle entre méiose I et méiose II (intercinèse) ne comporte pas de phase S."
+        },
+        {
+          "t": "Les cellules issues de la méiose sont génétiquement identiques entre elles.",
+          "v": false,
+          "e": "Les brassages intra- et interchromosomiques rendent les quatre cellules filles génétiquement différentes."
+        }
+      ],
+      "notion": "Divisions méiotiques",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q02",
+      "enonce": "Concernant la première division de méiose :",
+      "props": [
+        {
+          "t": "La méiose I est dite réductionnelle.",
+          "v": true,
+          "e": "La méiose I fait passer la cellule de 2n à n chromosomes : elle est réductionnelle."
+        },
+        {
+          "t": "En anaphase I, les chromatides sœurs de chaque chromosome se séparent.",
+          "v": false,
+          "e": "En anaphase I, ce sont les chromosomes homologues qui se séparent ; les chromatides sœurs restent unies au centromère."
+        },
+        {
+          "t": "En métaphase I, les bivalents s'alignent sur la plaque équatoriale.",
+          "v": true,
+          "e": "Les paires de chromosomes homologues (bivalents ou tétrades) s'alignent à l'équateur en métaphase I."
+        },
+        {
+          "t": "À l'issue de la méiose I, chaque cellule fille contient n chromosomes à deux chromatides.",
+          "v": true,
+          "e": "Les cellules issues de la méiose I sont haploïdes mais chaque chromosome conserve ses deux chromatides."
+        },
+        {
+          "t": "La répartition des homologues paternels et maternels en anaphase I se fait au hasard.",
+          "v": true,
+          "e": "La ségrégation indépendante des homologues en anaphase I constitue le brassage interchromosomique."
+        }
+      ],
+      "notion": "Divisions méiotiques",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q03",
+      "enonce": "Concernant la deuxième division de méiose :",
+      "props": [
+        {
+          "t": "La méiose II est dite équationnelle.",
+          "v": true,
+          "e": "La méiose II sépare les chromatides sœurs sans modifier le nombre n de chromosomes : elle est équationnelle."
+        },
+        {
+          "t": "La méiose II est précédée d'une phase S.",
+          "v": false,
+          "e": "Aucune réplication n'a lieu avant la méiose II, ce qui permet la réduction de la quantité d'ADN à c par gamète."
+        },
+        {
+          "t": "L'anaphase II sépare les chromatides sœurs de chaque chromosome.",
+          "v": true,
+          "e": "En anaphase II, la disjonction des chromatides sœurs donne des cellules à n chromosomes à une chromatide."
+        },
+        {
+          "t": "Le déroulement de la méiose II ressemble à celui d'une mitose.",
+          "v": true,
+          "e": "La méiose II est mécaniquement comparable à une mitose, mais s'effectue sur des cellules haploïdes."
+        },
+        {
+          "t": "À l'issue de la méiose II, chaque cellule contient 2n chromosomes.",
+          "v": false,
+          "e": "Les cellules issues de la méiose II sont haploïdes : n chromosomes à une seule chromatide."
+        }
+      ],
+      "notion": "Divisions méiotiques",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q04",
+      "enonce": "Concernant l'évolution de la quantité d'ADN au cours de la méiose (q = quantité d'ADN d'un lot haploïde non répliqué) :",
+      "props": [
+        {
+          "t": "Avant la phase S préméiotique, la cellule germinale contient 2q d'ADN.",
+          "v": true,
+          "e": "La cellule diploïde non répliquée contient 2n chromosomes et 2q d'ADN."
+        },
+        {
+          "t": "En prophase I, la cellule contient 4q d'ADN.",
+          "v": true,
+          "e": "Après la réplication préméiotique, la cellule entre en prophase I avec 2n chromosomes bichromatidiens, soit 4q."
+        },
+        {
+          "t": "À l'issue de la méiose I, chaque cellule contient q d'ADN.",
+          "v": false,
+          "e": "Après la méiose I, chaque cellule contient n chromosomes à deux chromatides, soit 2q ; q n'est atteint qu'après la méiose II."
+        },
+        {
+          "t": "À l'issue de la méiose II, chaque gamète contient q d'ADN.",
+          "v": true,
+          "e": "Le gamète final est à n chromosomes monochromatidiens, soit une quantité q d'ADN."
+        },
+        {
+          "t": "La quantité d'ADN est divisée par deux à chacune des deux divisions méiotiques.",
+          "v": true,
+          "e": "L'ADN passe de 4q à 2q en méiose I puis de 2q à q en méiose II, sans réplication intermédiaire."
+        }
+      ],
+      "notion": "Divisions méiotiques",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q05",
+      "enonce": "Concernant les stades de la prophase I :",
+      "props": [
+        {
+          "t": "L'appariement des chromosomes homologues (synapsis) débute au stade zygotène.",
+          "v": true,
+          "e": "Au zygotène, les homologues s'apparient grâce à la mise en place du complexe synaptonémal."
+        },
+        {
+          "t": "Le crossing-over a lieu au stade pachytène.",
+          "v": true,
+          "e": "Les échanges de segments entre chromatides homologues se produisent au pachytène, sur des bivalents complètement appariés."
+        },
+        {
+          "t": "Les chiasmas deviennent visibles au stade diplotène.",
+          "v": true,
+          "e": "Au diplotène, les homologues se désolidarisent partiellement et restent unis aux points d'échange, les chiasmas."
+        },
+        {
+          "t": "Le stade leptotène succède au stade diacinèse.",
+          "v": false,
+          "e": "L'ordre est leptotène → zygotène → pachytène → diplotène → diacinèse ; le leptotène est le premier stade."
+        },
+        {
+          "t": "Le complexe synaptonémal se met en place au stade diacinèse.",
+          "v": false,
+          "e": "Le complexe synaptonémal s'assemble au zygotène et se désassemble dès le diplotène."
+        }
+      ],
+      "notion": "Prophase I et brassage génétique",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch08-q06",
+      "enonce": "Concernant le crossing-over :",
+      "props": [
+        {
+          "t": "Le crossing-over échange des segments entre chromatides de chromosomes homologues.",
+          "v": true,
+          "e": "Le crossing-over est un échange réciproque de segments entre chromatides non sœurs de deux homologues appariés."
+        },
+        {
+          "t": "Le crossing-over se produit entre les deux chromatides sœurs d'un même chromosome.",
+          "v": false,
+          "e": "L'échange se fait entre chromatides non sœurs de chromosomes homologues ; un échange entre chromatides sœurs est sans effet génétique."
+        },
+        {
+          "t": "Le crossing-over est à l'origine du brassage intrachromosomique.",
+          "v": true,
+          "e": "Le crossing-over recombine les allèles portés par un même chromosome : c'est le brassage intrachromosomique."
+        },
+        {
+          "t": "Le crossing-over a lieu pendant l'anaphase II.",
+          "v": false,
+          "e": "Le crossing-over se produit au pachytène de la prophase I, pas en anaphase II."
+        },
+        {
+          "t": "Les chiasmas contribuent au maintien de la cohésion des bivalents jusqu'à l'anaphase I.",
+          "v": true,
+          "e": "Les chiasmas, avec la cohésion des chromatides, maintiennent les bivalents unis et assurent une ségrégation correcte en anaphase I."
+        }
+      ],
+      "notion": "Prophase I et brassage génétique",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q07",
+      "enonce": "Concernant le brassage génétique au cours de la méiose :",
+      "props": [
+        {
+          "t": "Le brassage interchromosomique résulte de la ségrégation indépendante des homologues en anaphase I.",
+          "v": true,
+          "e": "Chaque bivalent s'oriente au hasard sur le fuseau, d'où une répartition aléatoire des chromosomes paternels et maternels."
+        },
+        {
+          "t": "Chez l'humain, le seul brassage interchromosomique permet 2²³ combinaisons chromosomiques par gamète.",
+          "v": true,
+          "e": "Avec 23 paires de chromosomes, la ségrégation indépendante génère 2²³ combinaisons possibles, soit plus de 8 millions."
+        },
+        {
+          "t": "Le brassage intrachromosomique a lieu pendant l'anaphase I.",
+          "v": false,
+          "e": "Le brassage intrachromosomique correspond au crossing-over, qui se déroule en prophase I (pachytène)."
+        },
+        {
+          "t": "La fécondation ajoute un troisième niveau de diversité génétique.",
+          "v": true,
+          "e": "La rencontre aléatoire de deux gamètes multiplie les combinaisons possibles, s'ajoutant aux deux brassages méiotiques."
+        },
+        {
+          "t": "Deux gamètes issus d'un même individu sont en pratique toujours génétiquement identiques.",
+          "v": false,
+          "e": "Les brassages intra- et interchromosomiques rendent quasiment impossible l'obtention de deux gamètes identiques."
+        }
+      ],
+      "notion": "Prophase I et brassage génétique",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q08",
+      "enonce": "Concernant l'organisation générale de la spermatogenèse :",
+      "props": [
+        {
+          "t": "La spermatogenèse se déroule dans les tubes séminifères du testicule.",
+          "v": true,
+          "e": "La spermatogenèse a lieu dans l'épithélium des tubes séminifères, de la périphérie vers la lumière."
+        },
+        {
+          "t": "La spermatogenèse débute dès la vie fœtale et s'achève à la naissance.",
+          "v": false,
+          "e": "La spermatogenèse ne commence qu'à la puberté et se poursuit de façon continue jusqu'à un âge avancé."
+        },
+        {
+          "t": "La durée totale de la spermatogenèse humaine est d'environ 74 jours.",
+          "v": true,
+          "e": "Le cycle complet, de la spermatogonie au spermatozoïde, dure environ 74 jours chez l'homme."
+        },
+        {
+          "t": "La spermatogenèse est un processus continu après la puberté.",
+          "v": true,
+          "e": "Contrairement à l'ovogenèse cyclique, la spermatogenèse se déroule en continu à partir de la puberté."
+        },
+        {
+          "t": "Les spermatozoïdes achèvent leur maturation fonctionnelle dans l'épididyme.",
+          "v": true,
+          "e": "Le transit épididymaire confère aux spermatozoïdes leur mobilité et une partie de leur pouvoir fécondant."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q09",
+      "enonce": "Concernant les cellules de la lignée germinale mâle :",
+      "props": [
+        {
+          "t": "Les spermatogonies sont des cellules diploïdes situées contre la lame basale du tube séminifère.",
+          "v": true,
+          "e": "Les spermatogonies (2n) reposent à la périphérie du tube et assurent le renouvellement de la lignée par mitoses."
+        },
+        {
+          "t": "Les spermatocytes I effectuent la première division de méiose.",
+          "v": true,
+          "e": "Le spermatocyte I (2n, après réplication) réalise la méiose I, dont la longue prophase I."
+        },
+        {
+          "t": "Les spermatocytes II sont des cellules diploïdes.",
+          "v": false,
+          "e": "Les spermatocytes II sont haploïdes (n chromosomes à deux chromatides) et effectuent rapidement la méiose II."
+        },
+        {
+          "t": "Les spermatides se divisent par mitose pour donner les spermatozoïdes.",
+          "v": false,
+          "e": "Les spermatides ne se divisent plus : elles se différencient en spermatozoïdes au cours de la spermiogenèse."
+        },
+        {
+          "t": "Un spermatocyte I donne théoriquement quatre spermatozoïdes.",
+          "v": true,
+          "e": "Les deux divisions méiotiques d'un spermatocyte I aboutissent à quatre spermatides puis quatre spermatozoïdes."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q10",
+      "enonce": "Concernant la spermiogenèse :",
+      "props": [
+        {
+          "t": "La spermiogenèse transforme les spermatides en spermatozoïdes sans division cellulaire.",
+          "v": true,
+          "e": "La spermiogenèse est une différenciation morphologique de la spermatide, sans nouvelle division."
+        },
+        {
+          "t": "L'acrosome dérive de l'appareil de Golgi.",
+          "v": true,
+          "e": "Les vésicules golgiennes fusionnent en une vésicule acrosomique qui coiffe le noyau : c'est l'acrosome."
+        },
+        {
+          "t": "Le flagelle se développe à partir du centriole distal de la spermatide.",
+          "v": true,
+          "e": "Le centriole distal engendre l'axonème du flagelle du spermatozoïde."
+        },
+        {
+          "t": "La chromatine du spermatozoïde se décondense grâce au remplacement des protamines par des histones.",
+          "v": false,
+          "e": "C'est l'inverse : les histones sont largement remplacées par des protamines, ce qui condense fortement la chromatine."
+        },
+        {
+          "t": "L'excès de cytoplasme est éliminé sous forme de corps résiduels phagocytés par les cellules de Sertoli.",
+          "v": true,
+          "e": "Les corps résiduels cytoplasmiques sont phagocytés par les cellules de Sertoli en fin de spermiogenèse."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q11",
+      "enonce": "Concernant les cellules de Sertoli :",
+      "props": [
+        {
+          "t": "Les cellules de Sertoli sont des cellules somatiques de soutien des tubes séminifères.",
+          "v": true,
+          "e": "Les cellules de Sertoli, non germinales, soutiennent et nourrissent les cellules de la lignée germinale."
+        },
+        {
+          "t": "Les jonctions serrées entre cellules de Sertoli forment la barrière hémato-testiculaire.",
+          "v": true,
+          "e": "Ces jonctions séparent un compartiment basal et un compartiment adluminal, protégeant les cellules méiotiques haploïdes du système immunitaire."
+        },
+        {
+          "t": "Les cellules de Sertoli sécrètent la testostérone.",
+          "v": false,
+          "e": "La testostérone est produite par les cellules de Leydig, situées dans le tissu interstitiel, sous contrôle de la LH."
+        },
+        {
+          "t": "Les cellules de Sertoli sécrètent l'ABP (androgen binding protein) sous contrôle de la FSH.",
+          "v": true,
+          "e": "Sous l'effet de la FSH, les cellules de Sertoli produisent l'ABP qui concentre la testostérone dans le tube séminifère."
+        },
+        {
+          "t": "Les cellules de Sertoli sécrètent l'inhibine, qui freine la sécrétion de FSH.",
+          "v": true,
+          "e": "L'inhibine sertolienne exerce un rétrocontrôle négatif sur la FSH hypophysaire."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch08-q12",
+      "enonce": "Concernant la chronologie de l'ovogenèse :",
+      "props": [
+        {
+          "t": "L'ovogenèse débute pendant la vie fœtale.",
+          "v": true,
+          "e": "Les ovogonies se multiplient et entrent en méiose pendant la vie fœtale."
+        },
+        {
+          "t": "Les ovocytes I restent bloqués en prophase I jusqu'à la puberté au moins.",
+          "v": true,
+          "e": "Les ovocytes I sont bloqués au stade diplotène (dictyotène) de la prophase I, parfois pendant plusieurs décennies."
+        },
+        {
+          "t": "Les ovogonies continuent de se multiplier après la naissance.",
+          "v": false,
+          "e": "La multiplication des ovogonies cesse avant la naissance ; le stock d'ovocytes est définitivement constitué."
+        },
+        {
+          "t": "La méiose II de l'ovocyte n'est achevée qu'en cas de fécondation.",
+          "v": true,
+          "e": "L'ovocyte II, bloqué en métaphase II, ne termine sa méiose que si un spermatozoïde le féconde."
+        },
+        {
+          "t": "L'ovogenèse est un processus continu de la puberté à la ménopause.",
+          "v": false,
+          "e": "L'ovogenèse est cyclique et discontinue, rythmée par les cycles ovariens, contrairement à la spermatogenèse continue."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q13",
+      "enonce": "Concernant le stock folliculaire ovarien :",
+      "props": [
+        {
+          "t": "Le stock de cellules germinales atteint son maximum, d'environ 7 millions, vers le 7ᵉ mois de vie fœtale.",
+          "v": true,
+          "e": "Le pic du stock germinal, environ 7 millions de cellules, est atteint vers le 7ᵉ mois de la vie fœtale."
+        },
+        {
+          "t": "À la naissance, le stock est d'environ 1 à 2 millions d'ovocytes.",
+          "v": true,
+          "e": "Une atrésie massive réduit le stock à environ 1 à 2 millions d'ovocytes à la naissance."
+        },
+        {
+          "t": "Le stock folliculaire augmente à chaque cycle après la puberté.",
+          "v": false,
+          "e": "Le stock ne fait que diminuer par atrésie et ovulation : il n'existe pas de renouvellement des ovocytes."
+        },
+        {
+          "t": "Environ 400 ovocytes seront ovulés au cours de la vie génitale.",
+          "v": true,
+          "e": "Sur l'ensemble des cycles, seuls 400 à 500 ovocytes environ parviennent à l'ovulation."
+        },
+        {
+          "t": "L'atrésie folliculaire est un phénomène pathologique rare.",
+          "v": false,
+          "e": "L'atrésie est le devenir physiologique de l'immense majorité des follicules, par apoptose."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q14",
+      "enonce": "Concernant la reprise de la méiose ovocytaire :",
+      "props": [
+        {
+          "t": "Le pic de LH déclenche la reprise de la méiose I de l'ovocyte.",
+          "v": true,
+          "e": "Le pic préovulatoire de LH lève le blocage en prophase I et déclenche l'achèvement de la méiose I."
+        },
+        {
+          "t": "La méiose I de l'ovocyte donne deux cellules de tailles identiques.",
+          "v": false,
+          "e": "La division est très inégale : elle donne un ovocyte II volumineux et un premier globule polaire réduit."
+        },
+        {
+          "t": "L'ovocyte est ovulé au stade ovocyte II bloqué en métaphase II.",
+          "v": true,
+          "e": "L'ovulation libère un ovocyte II bloqué en métaphase II, entouré de sa zone pellucide et de la corona radiata."
+        },
+        {
+          "t": "Le premier globule polaire contient l'essentiel du cytoplasme.",
+          "v": false,
+          "e": "L'ovocyte II conserve la quasi-totalité du cytoplasme ; le globule polaire n'en reçoit qu'une quantité minime."
+        },
+        {
+          "t": "L'expulsion du deuxième globule polaire suit la fécondation.",
+          "v": true,
+          "e": "La pénétration du spermatozoïde permet l'achèvement de la méiose II et l'émission du 2ᵉ globule polaire."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q15",
+      "enonce": "Concernant la folliculogenèse :",
+      "props": [
+        {
+          "t": "Le follicule primordial associe un ovocyte I et une couche de cellules folliculaires aplaties.",
+          "v": true,
+          "e": "Le follicule primordial comprend un ovocyte I bloqué en prophase I entouré de quelques cellules folliculaires aplaties."
+        },
+        {
+          "t": "La zone pellucide apparaît autour de l'ovocyte au cours de la croissance folliculaire.",
+          "v": true,
+          "e": "La zone pellucide, glycoprotéique (ZP1 à ZP4), se constitue dès le follicule primaire entre ovocyte et cellules folliculaires."
+        },
+        {
+          "t": "Le follicule antral (tertiaire) se caractérise par une cavité remplie de liquide folliculaire.",
+          "v": true,
+          "e": "L'antrum, cavité liquidienne creusée dans la granulosa, définit le follicule tertiaire dit antral ou cavitaire."
+        },
+        {
+          "t": "La thèque interne est une couche de cellules sécrétant des androgènes.",
+          "v": true,
+          "e": "Sous l'effet de la LH, la thèque interne produit des androgènes, aromatisés en œstrogènes par la granulosa."
+        },
+        {
+          "t": "Le follicule de De Graaf contient un ovocyte ayant achevé sa méiose II.",
+          "v": false,
+          "e": "Le follicule mûr contient un ovocyte bloqué (prophase I puis métaphase II juste avant l'ovulation) ; la méiose II ne s'achève qu'à la fécondation."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch08-q16",
+      "enonce": "Concernant la comparaison entre spermatogenèse et ovogenèse :",
+      "props": [
+        {
+          "t": "Un spermatocyte I donne quatre gamètes alors qu'un ovocyte I ne donne qu'un seul gamète fonctionnel.",
+          "v": true,
+          "e": "La méiose mâle est symétrique (4 spermatozoïdes) alors que la méiose femelle, asymétrique, produit un ovocyte et des globules polaires."
+        },
+        {
+          "t": "La méiose masculine se déroule sans interruption prolongée, contrairement à la méiose féminine.",
+          "v": true,
+          "e": "La méiose mâle dure quelques semaines sans blocage, alors que la méiose féminine subit deux blocages (prophase I puis métaphase II)."
+        },
+        {
+          "t": "Les deux gamétogenèses débutent à la puberté.",
+          "v": false,
+          "e": "L'ovogenèse débute pendant la vie fœtale ; seule la spermatogenèse commence à la puberté."
+        },
+        {
+          "t": "Le gamète féminin est une cellule volumineuse riche en réserves cytoplasmiques.",
+          "v": true,
+          "e": "L'ovocyte, d'environ 120 µm, accumule réserves et ARNm nécessaires au début du développement embryonnaire."
+        },
+        {
+          "t": "La production de gamètes s'arrête à la ménopause chez la femme mais persiste chez l'homme âgé.",
+          "v": true,
+          "e": "L'épuisement du stock folliculaire arrête l'ovogenèse à la ménopause, tandis que la spermatogenèse persiste, quoique ralentie."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q17",
+      "enonce": "Concernant les non-disjonctions méiotiques :",
+      "props": [
+        {
+          "t": "Une non-disjonction en méiose I concerne une paire de chromosomes homologues.",
+          "v": true,
+          "e": "En méiose I, l'anomalie est la non-séparation des deux homologues d'un bivalent, qui migrent du même côté."
+        },
+        {
+          "t": "Une non-disjonction en méiose II concerne les chromatides sœurs.",
+          "v": true,
+          "e": "En méiose II, la non-disjonction correspond à l'absence de séparation des chromatides sœurs."
+        },
+        {
+          "t": "Une non-disjonction produit des gamètes disomiques et des gamètes nullosomiques.",
+          "v": true,
+          "e": "Le gamète recevant les deux éléments est disomique (n+1), celui qui n'en reçoit aucun est nullosomique (n−1)."
+        },
+        {
+          "t": "Après une non-disjonction en méiose I, les quatre gamètes issus de la méiose sont tous normaux.",
+          "v": false,
+          "e": "Après non-disjonction en méiose I, les quatre gamètes sont anormaux : deux disomiques et deux nullosomiques."
+        },
+        {
+          "t": "La fécondation d'un gamète disomique par un gamète normal donne un zygote trisomique.",
+          "v": true,
+          "e": "Un gamète n+1 fusionnant avec un gamète n donne un zygote 2n+1, c'est-à-dire trisomique pour le chromosome concerné."
+        }
+      ],
+      "notion": "Anomalies chromosomiques",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q18",
+      "enonce": "Concernant les principales anomalies chromosomiques de nombre :",
+      "props": [
+        {
+          "t": "La trisomie 21 est l'aneuploïdie autosomique viable la plus fréquente.",
+          "v": true,
+          "e": "La trisomie 21, ou syndrome de Down, est la plus fréquente des trisomies autosomiques compatibles avec la vie."
+        },
+        {
+          "t": "Le syndrome de Turner correspond au caryotype 47,XXY.",
+          "v": false,
+          "e": "Le syndrome de Turner est une monosomie X (45,X) ; le caryotype 47,XXY définit le syndrome de Klinefelter."
+        },
+        {
+          "t": "Le risque de trisomie 21 augmente avec l'âge maternel.",
+          "v": true,
+          "e": "La fréquence des non-disjonctions méiotiques ovocytaires augmente nettement avec l'âge de la mère."
+        },
+        {
+          "t": "La plupart des trisomies 21 résultent d'une non-disjonction lors de la méiose I maternelle.",
+          "v": true,
+          "e": "L'origine la plus fréquente de la trisomie 21 est une non-disjonction en méiose I dans l'ovogenèse."
+        },
+        {
+          "t": "Les monosomies autosomiques complètes sont généralement viables.",
+          "v": false,
+          "e": "Les monosomies autosomiques sont léthales très précocement ; seule la monosomie X est viable."
+        }
+      ],
+      "notion": "Anomalies chromosomiques",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q19",
+      "enonce": "Concernant le vieillissement ovocytaire et les anomalies méiotiques :",
+      "props": [
+        {
+          "t": "Le long blocage en prophase I fragilise la cohésion des chromatides des ovocytes.",
+          "v": true,
+          "e": "La dégradation progressive des cohésines pendant les décennies de blocage favorise les erreurs de ségrégation."
+        },
+        {
+          "t": "Les aneuploïdies d'origine paternelle sont plus fréquentes que celles d'origine maternelle.",
+          "v": false,
+          "e": "La majorité des aneuploïdies, notamment la trisomie 21, sont d'origine maternelle."
+        },
+        {
+          "t": "Une fécondation par deux spermatozoïdes (dispermie) peut produire un zygote triploïde.",
+          "v": true,
+          "e": "La dispermie apporte un lot chromosomique surnuméraire et donne un zygote 3n, non viable."
+        },
+        {
+          "t": "Les anomalies chromosomiques sont une cause majeure de fausses couches spontanées précoces.",
+          "v": true,
+          "e": "Plus de la moitié des fausses couches spontanées du premier trimestre comportent une anomalie chromosomique."
+        },
+        {
+          "t": "Une triploïdie correspond à 69 chromosomes chez l'humain.",
+          "v": true,
+          "e": "La triploïdie 3n correspond à 3 × 23 = 69 chromosomes."
+        }
+      ],
+      "notion": "Anomalies chromosomiques",
+      "diff": 3
+    },
+    {
+      "id": "ue2-ch08-q20",
+      "enonce": "Concernant la comparaison entre mitose et méiose :",
+      "props": [
+        {
+          "t": "La mitose conserve le nombre de chromosomes alors que la méiose le réduit de moitié.",
+          "v": true,
+          "e": "La mitose produit deux cellules 2n identiques ; la méiose produit quatre cellules n."
+        },
+        {
+          "t": "L'appariement des chromosomes homologues est propre à la méiose.",
+          "v": true,
+          "e": "La formation de bivalents avec complexe synaptonémal n'existe qu'en prophase I de méiose."
+        },
+        {
+          "t": "En mitose, les chromosomes homologues s'apparient en métaphase.",
+          "v": false,
+          "e": "En mitose, les chromosomes s'alignent individuellement sur la plaque équatoriale, sans appariement des homologues."
+        },
+        {
+          "t": "L'anaphase de mitose et l'anaphase II de méiose séparent toutes deux des chromatides sœurs.",
+          "v": true,
+          "e": "La séparation des chromatides sœurs est commune à la mitose et à la méiose II ; l'anaphase I sépare les homologues."
+        },
+        {
+          "t": "La mitose engendre une diversité génétique équivalente à celle de la méiose.",
+          "v": false,
+          "e": "La mitose est conservatrice (cellules filles identiques) tandis que la méiose crée de la diversité par ses brassages."
+        }
+      ],
+      "notion": "Mitose vs méiose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q21",
+      "enonce": "Concernant les cellules haploïdes et diploïdes chez l'humain :",
+      "props": [
+        {
+          "t": "Les cellules somatiques humaines contiennent 46 chromosomes.",
+          "v": true,
+          "e": "Les cellules somatiques sont diploïdes à 2n = 46 chromosomes."
+        },
+        {
+          "t": "Les gamètes humains normaux contiennent 23 chromosomes.",
+          "v": true,
+          "e": "Spermatozoïdes et ovocytes matures sont haploïdes à n = 23 chromosomes."
+        },
+        {
+          "t": "Un spermatozoïde normal contient soit un chromosome X, soit un chromosome Y.",
+          "v": true,
+          "e": "La méiose sépare X et Y : chaque spermatozoïde est 23,X ou 23,Y, déterminant le sexe génétique du zygote."
+        },
+        {
+          "t": "Un ovocyte normal peut contenir un chromosome Y.",
+          "v": false,
+          "e": "La femme étant 46,XX, tous les ovocytes normaux portent un chromosome X."
+        },
+        {
+          "t": "Le spermatocyte II contient 23 chromosomes à deux chromatides.",
+          "v": true,
+          "e": "Issu de la méiose I, le spermatocyte II est haploïde avec des chromosomes encore bichromatidiens."
+        }
+      ],
+      "notion": "Mitose vs méiose",
+      "diff": 1
+    },
+    {
+      "id": "ue2-ch08-q22",
+      "enonce": "Concernant la prophase I de méiose comparée à la prophase de mitose :",
+      "props": [
+        {
+          "t": "La prophase I de méiose est beaucoup plus longue que la prophase mitotique.",
+          "v": true,
+          "e": "La prophase I, subdivisée en cinq stades, est de loin la phase la plus longue de la méiose."
+        },
+        {
+          "t": "Des échanges génétiques programmés entre homologues ont lieu en prophase I mais pas en prophase de mitose.",
+          "v": true,
+          "e": "Le crossing-over est un événement programmé de la prophase I, absent de la mitose normale."
+        },
+        {
+          "t": "Le complexe synaptonémal est une structure protéique unissant les homologues appariés.",
+          "v": true,
+          "e": "Le complexe synaptonémal est l'armature protéique tripartite qui maintient le synapsis au pachytène."
+        },
+        {
+          "t": "Chez la femme, la prophase I peut durer plusieurs dizaines d'années.",
+          "v": true,
+          "e": "Les ovocytes restent bloqués en prophase I (dictyotène) de la vie fœtale jusqu'à leur ovulation, parfois après 40 ans."
+        },
+        {
+          "t": "Les crossing-over débutent en prophase de mitose puis s'achèvent en prophase I de méiose.",
+          "v": false,
+          "e": "Le crossing-over est exclusivement méiotique : il se déroule entièrement au pachytène de la prophase I."
+        }
+      ],
+      "notion": "Prophase I et brassage génétique",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q23",
+      "enonce": "Concernant le contrôle hormonal de la gamétogenèse :",
+      "props": [
+        {
+          "t": "La LH stimule la sécrétion de testostérone par les cellules de Leydig.",
+          "v": true,
+          "e": "La LH agit sur les cellules de Leydig interstitielle pour stimuler la production de testostérone."
+        },
+        {
+          "t": "La FSH agit sur les cellules de Sertoli.",
+          "v": true,
+          "e": "Les récepteurs de la FSH sont portés par les cellules de Sertoli, qui soutiennent la spermatogenèse."
+        },
+        {
+          "t": "La testostérone est indispensable au déroulement normal de la spermatogenèse.",
+          "v": true,
+          "e": "Une concentration intratesticulaire élevée de testostérone est nécessaire à la spermatogenèse."
+        },
+        {
+          "t": "La FSH stimule la croissance des follicules ovariens.",
+          "v": true,
+          "e": "La FSH recrute et fait croître les follicules antraux au début de chaque cycle ovarien."
+        },
+        {
+          "t": "Le pic de LH déclenche l'ovulation environ 10 jours après son début.",
+          "v": false,
+          "e": "L'ovulation survient environ 36 heures après le début du pic de LH."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q24",
+      "enonce": "Concernant la structure du spermatozoïde mature :",
+      "props": [
+        {
+          "t": "L'acrosome contient des enzymes hydrolytiques nécessaires à la fécondation.",
+          "v": true,
+          "e": "L'acrosome renferme hyaluronidase et acrosine, indispensables à la traversée des enveloppes de l'ovocyte."
+        },
+        {
+          "t": "La pièce intermédiaire contient les mitochondries disposées en hélice.",
+          "v": true,
+          "e": "Les mitochondries de la pièce intermédiaire fournissent l'ATP nécessaire au battement flagellaire."
+        },
+        {
+          "t": "L'axonème du flagelle a une structure en 9 doublets périphériques + 2 microtubules centraux.",
+          "v": true,
+          "e": "L'axonème flagellaire présente la structure classique 9+2 avec des bras de dynéine assurant la motilité."
+        },
+        {
+          "t": "Le noyau du spermatozoïde contient une chromatine décondensée transcriptionnellement active.",
+          "v": false,
+          "e": "La chromatine spermatique, compactée par les protamines, est très condensée et transcriptionnellement inactive."
+        },
+        {
+          "t": "Le spermatozoïde conserve un cytoplasme abondant riche en réserves.",
+          "v": false,
+          "e": "Le spermatozoïde est une cellule réduite au minimum, ayant éliminé l'essentiel de son cytoplasme dans les corps résiduels."
+        }
+      ],
+      "notion": "Spermatogenèse",
+      "diff": 2
+    },
+    {
+      "id": "ue2-ch08-q25",
+      "enonce": "Concernant les blocages méiotiques de l'ovocyte :",
+      "props": [
+        {
+          "t": "Le premier blocage a lieu au stade diplotène de la prophase I.",
+          "v": true,
+          "e": "L'ovocyte I s'arrête au diplotène (dictyotène) dès la vie fœtale."
+        },
+        {
+          "t": "Le deuxième blocage a lieu en métaphase II.",
+          "v": true,
+          "e": "Après l'expulsion du 1ᵉʳ globule polaire, l'ovocyte II se bloque en métaphase II jusqu'à la fécondation."
+        },
+        {
+          "t": "Le deuxième blocage est levé par le pic de LH.",
+          "v": false,
+          "e": "Le pic de LH lève le premier blocage (prophase I) ; le blocage en métaphase II est levé par la fécondation."
+        },
+        {
+          "t": "Le maintien du blocage en métaphase II fait intervenir le facteur cytostatique CSF.",
+          "v": true,
+          "e": "Le CSF stabilise le MPF et maintient l'arrêt en métaphase II jusqu'à la vague calcique de la fécondation."
+        },
+        {
+          "t": "Un ovocyte non fécondé achève spontanément sa méiose II dans la trompe.",
+          "v": false,
+          "e": "Sans fécondation, l'ovocyte II reste bloqué en métaphase II puis dégénère en 24 à 48 heures."
+        }
+      ],
+      "notion": "Ovogenèse et folliculogenèse",
+      "diff": 3
+    }
+  ]
+}
