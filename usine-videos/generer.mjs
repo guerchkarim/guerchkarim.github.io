@@ -43,6 +43,16 @@ function synthese(texte, fichier) {
   execFileSync('bash', ['-c',
     `echo ${JSON.stringify(texte)} | python3 -m piper -m "${join(VOIX_DIR, VOIX + '.onnx')}" -c "${join(VOIX_DIR, VOIX + '.onnx.json')}" -f "${fichier}"`],
     { stdio: ['pipe', 'pipe', 'pipe'] });
+  return lirePcm(fichier);
+}
+
+// Charge un WAV externe (voix clonée, enregistrement…) converti en PCM 16 bits mono 22050 Hz.
+function chargerVoix(source, fichier) {
+  execFileSync(ffmpegPath(), ['-y', '-v', 'error', '-i', source, '-ar', '22050', '-ac', '1', '-c:a', 'pcm_s16le', fichier]);
+  return lirePcm(fichier);
+}
+
+function lirePcm(fichier) {
   const buf = readFileSync(fichier);
   const dataIdx = buf.indexOf(Buffer.from('data'));
   const taille = buf.readUInt32LE(dataIdx + 4);
@@ -64,20 +74,26 @@ async function main() {
     console.error('Usage : node generer.mjs <spec.json> [dossier-sortie]');
     process.exit(1);
   }
-  const sortieDir = resolve(process.argv[3] || join(ICI, 'sorties'));
+  const positionnels = process.argv.slice(3).filter((a, i, t) => a !== '--voix' && t[i - 1] !== '--voix');
+  const sortieDir = resolve(positionnels[0] || join(ICI, 'sorties'));
   mkdirSync(sortieDir, { recursive: true });
   const spec = JSON.parse(readFileSync(specPath, 'utf8'));
   const travail = join(sortieDir, '.travail-' + spec.slug);
   mkdirSync(travail, { recursive: true });
 
-  assurerVoix();
+  // Dossier de voix externes (ex. voix clonée) : scene1.wav … sceneN.wav, via --voix <dossier>
+  const idxVoix = process.argv.indexOf('--voix');
+  const dossierVoix = idxVoix > -1 ? resolve(process.argv[idxVoix + 1]) : null;
+  if (!dossierVoix) assurerVoix();
 
   // 1. Voix off scène par scène, et calcul du minutage
   const RATE = 22050;
   const morceaux = [];
   let t = 0;
   spec.scenes.forEach((scene, i) => {
-    const pcm = synthese(scene.narration, join(travail, `scene${i}.wav`));
+    const pcm = dossierVoix
+      ? chargerVoix(join(dossierVoix, `scene${i + 1}.wav`), join(travail, `scene${i}.wav`))
+      : synthese(scene.narration, join(travail, `scene${i}.wav`));
     const dureeAudio = pcm.length / 2 / RATE;
     const pause = scene.pause ?? PAUSE_DEFAUT;
     scene.index = i;
