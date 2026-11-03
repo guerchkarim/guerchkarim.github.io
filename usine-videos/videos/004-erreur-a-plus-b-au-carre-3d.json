@@ -2,19 +2,166 @@
   "slug": "004-erreur-a-plus-b-au-carre-3d",
   "titre": "[Erreur] (a+b)² = a²+b² ? L'erreur que fait toute la classe ❌",
   "description": "Le double produit : l'oubli qui coûte des points du brevet au bac. Exercices corrigés gratuits : https://guerchkarim.github.io",
-  "hashtags": ["#maths", "#lycée", "#seconde", "#brevet", "#bac", "#calcullittéral", "#mathstiktok"],
+  "hashtags": [
+    "#maths",
+    "#lycée",
+    "#seconde",
+    "#brevet",
+    "#bac",
+    "#calcullittéral",
+    "#mathstiktok"
+  ],
   "ecrans": [
-    { "lines": [ { "text": "(a + b)²", "style": "math" }, { "text": "= a² + b² ?", "style": "etape" } ] },
-    { "lines": [ { "text": "FAUX ❌", "style": "accent" }, { "text": "et ça coûte des points", "style": "note" } ] },
-    { "lines": [ { "text": "LA PREUVE 👇", "style": "kicker" }, { "text": "a = 2 · b = 3", "style": "note" } ] },
-    { "lines": [ { "text": "(2 + 3)²", "style": "etape" }, { "text": "= 25", "style": "math" } ] },
-    { "lines": [ { "text": "2² + 3²", "style": "etape" }, { "text": "= 13", "style": "math" } ] },
-    { "lines": [ { "text": "25 ≠ 13", "style": "accent" } ], "ding": true },
-    { "lines": [ { "text": "LA VRAIE FORMULE", "style": "kicker" } ] },
-    { "lines": [ { "text": "a² + 2ab + b²", "style": "etape" }, { "text": "⬆ le double produit", "style": "note" } ], "x2": true, "ding": true },
-    { "lines": [ { "text": "« le carré du 1ᵉʳ, PLUS", "style": "note" }, { "text": "le double produit, PLUS", "style": "note" }, { "text": "le carré du 2ᵉ »", "style": "note" } ] },
-    { "lines": [ { "text": "À TOI 🎯", "style": "kicker" }, { "text": "(x + 5)² = ?", "style": "math" } ], "x2": true },
-    { "lines": [ { "text": "💬", "style": "emoji" }, { "text": "réponds en commentaire", "style": "note" } ] },
-    { "lines": [ { "text": "ABONNE-TOI", "style": "cta" }, { "text": "un jour · une notion", "style": "note" }, { "text": "guerchkarim.github.io", "style": "note" } ], "x2": true, "ding": true }
-  ]
+    {
+      "lines": [
+        {
+          "text": "(a + b)²",
+          "style": "math"
+        },
+        {
+          "text": "= a² + b² ?",
+          "style": "etape"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "FAUX ❌",
+          "style": "accent"
+        },
+        {
+          "text": "et ça coûte des points",
+          "style": "note"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "LA PREUVE 👇",
+          "style": "kicker"
+        },
+        {
+          "text": "a = 2 · b = 3",
+          "style": "note"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "(2 + 3)²",
+          "style": "etape"
+        },
+        {
+          "text": "= 25",
+          "style": "math"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "2² + 3²",
+          "style": "etape"
+        },
+        {
+          "text": "= 13",
+          "style": "math"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "25 ≠ 13",
+          "style": "accent"
+        }
+      ],
+      "ding": true
+    },
+    {
+      "lines": [
+        {
+          "text": "LA VRAIE FORMULE",
+          "style": "kicker"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "a² + 2ab + b²",
+          "style": "etape"
+        },
+        {
+          "text": "⬆ le double produit",
+          "style": "note"
+        }
+      ],
+      "x2": true,
+      "ding": true
+    },
+    {
+      "lines": [
+        {
+          "text": "« le carré du 1ᵉʳ, PLUS",
+          "style": "note"
+        },
+        {
+          "text": "le double produit, PLUS",
+          "style": "note"
+        },
+        {
+          "text": "le carré du 2ᵉ »",
+          "style": "note"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "À TOI 🎯",
+          "style": "kicker"
+        },
+        {
+          "text": "(x + 5)² = ?",
+          "style": "math"
+        }
+      ],
+      "x2": true
+    },
+    {
+      "lines": [
+        {
+          "text": "💬",
+          "style": "emoji"
+        },
+        {
+          "text": "réponds en commentaire",
+          "style": "note"
+        }
+      ]
+    },
+    {
+      "lines": [
+        {
+          "text": "ABONNE-TOI",
+          "style": "cta"
+        },
+        {
+          "text": "un jour · une notion",
+          "style": "note"
+        },
+        {
+          "text": "guerchkarim.github.io",
+          "style": "note"
+        }
+      ],
+      "x2": true,
+      "ding": true
+    }
+  ],
+  "theme": "copie"
 }

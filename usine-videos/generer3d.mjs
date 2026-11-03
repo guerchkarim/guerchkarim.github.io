@@ -14,9 +14,9 @@ const { chromium } = require('playwright');
 const ICI = dirname(fileURLToPath(import.meta.url));
 const FPS = 30;
 const SR = 44100;
-const BPM = 126;
-const BEAT = 60 / BPM;              // 0.476 s
-const ECRAN = 4 * BEAT;             // 4 temps par écran ≈ 1,9 s
+
+
+
 
 function ffmpegPath() {
   try { execFileSync('ffmpeg', ['-version']); return 'ffmpeg'; } catch { return execFileSync('python3', ['-c', 'import imageio_ffmpeg; print(imageio_ffmpeg.get_ffmpeg_exe())']).toString().trim(); }
@@ -24,11 +24,23 @@ function ffmpegPath() {
 
 /* ============================ MUSIQUE ============================ */
 const TAU = Math.PI * 2;
-// gammes : basse (la mineur) et arpège pentatonique
-const BASSE = [55.0, 55.0, 65.41, 49.0];                 // A1 A1 C2 G1 (une note par écran, en boucle)
-const ARPEGE = [220.0, 261.63, 329.63, 392.0, 440.0, 392.0, 329.63, 261.63]; // A3 C4 E4 G4 A4…
+// Une ambiance musicale par thème : tempo, gamme de basse, arpège, dosage des percussions.
+const MUSIQUES = {
+  neon:    { bpm: 126, basse: [55.0, 55.0, 65.41, 49.0], // la mineur, électro
+             arpege: [220.0, 261.63, 329.63, 392.0, 440.0, 392.0, 329.63, 261.63],
+             kick: 0.95, clap: 0.3, hat: 0.16, arpg: 0.13 },
+  tableau: { bpm: 112, basse: [65.41, 65.41, 87.31, 98.0], // do majeur, ludique
+             arpege: [261.63, 329.63, 392.0, 523.25, 392.0, 329.63],
+             kick: 0.7, clap: 0.2, hat: 0.12, arpg: 0.16 },
+  soldes:  { bpm: 134, basse: [61.74, 61.74, 73.42, 82.41], // si mineur, frénétique
+             arpege: [246.94, 293.66, 369.99, 440.0, 493.88, 440.0, 369.99, 293.66],
+             kick: 1.0, clap: 0.38, hat: 0.2, arpg: 0.12 },
+  copie:   { bpm: 104, basse: [73.42, 73.42, 98.0, 110.0], // ré majeur, posé
+             arpege: [293.66, 369.99, 440.0, 587.33, 440.0, 369.99],
+             kick: 0.55, clap: 0.12, hat: 0.08, arpg: 0.17 },
+};
 
-function synthMusique(total, ecrans) {
+function synthMusique(total, ecrans, M, BEAT) {
   const n = Math.ceil(total * SR);
   const m = new Float32Array(n);
   const pose = (t0, gen, dur) => {
@@ -42,16 +54,16 @@ function synthMusique(total, ecrans) {
   for (let b = 0; b < nbBeats; b++) {
     const t0 = b * BEAT;
     // grosse caisse à chaque temps
-    pose(t0, t => Math.sin(TAU * (52 + 95 * Math.exp(-t * 32)) * t) * 0.95 * Math.exp(-t * 14), 0.3);
+    pose(t0, t => Math.sin(TAU * (52 + 95 * Math.exp(-t * 32)) * t) * M.kick * Math.exp(-t * 14), 0.3);
     // clap sur 2 et 4
-    if (b % 4 === 1 || b % 4 === 3) pose(t0, t => bruit() * 0.3 * Math.exp(-t * 26), 0.18);
+    if (b % 4 === 1 || b % 4 === 3) pose(t0, t => bruit() * M.clap * Math.exp(-t * 26), 0.18);
     // charleston en croches (contretemps plus fort)
-    for (const [dec, g] of [[0.5 * BEAT, 0.16], [0.25 * BEAT, 0.05], [0.75 * BEAT, 0.05]])
+    for (const [dec, g] of [[0.5 * BEAT, M.hat], [0.25 * BEAT, M.hat * 0.3], [0.75 * BEAT, M.hat * 0.3]])
       pose(t0 + dec, t => bruit() * g * Math.exp(-t * 90), 0.05);
   }
   // basse + arpège alignés sur les écrans
   ecrans.forEach((e, idx) => {
-    const f = BASSE[idx % BASSE.length];
+    const f = M.basse[idx % M.basse.length];
     const nb = Math.round(e.dur / (BEAT / 2));
     for (let k = 0; k < nb; k++) {
       const t0 = e.start + k * BEAT / 2;
@@ -61,9 +73,9 @@ function synthMusique(total, ecrans) {
     }
     const na = Math.round(e.dur / (BEAT / 4));
     for (let k = 0; k < na; k++) {
-      const f2 = ARPEGE[(k + idx * 3) % ARPEGE.length];
+      const f2 = M.arpege[(k + idx * 3) % M.arpege.length];
       pose(e.start + k * BEAT / 4, t => Math.sin(TAU * f2 * t + 2.5 * Math.sin(TAU * f2 * 2 * t) * Math.exp(-t * 9))
-        * 0.13 * Math.exp(-t * 11), 0.14);
+        * M.arpg * Math.exp(-t * 11), 0.14);
     }
     // whoosh d'entrée d'écran
     pose(Math.max(0, e.start - 0.18), t => bruit() * 0.32 * Math.pow(Math.sin(Math.PI * Math.min(1, t / 0.3)), 2) * (t / 0.3), 0.3);
@@ -97,16 +109,19 @@ async function main() {
   const travail = join(sortieDir, '.travail-' + spec.slug);
   mkdirSync(travail, { recursive: true });
 
-  // minutage : chaque écran dure 4 temps (8 si x2)
+  // ambiance musicale du thème, minutage : chaque écran dure 4 temps (8 si x2)
+  const M = MUSIQUES[spec.theme] || MUSIQUES.neon;
+  const BEAT = 60 / M.bpm;
+  const ECRAN = 4 * BEAT;
   let t = 0;
   spec.ecrans.forEach((e, i) => {
     e.index = i; e.start = t; e.dur = ECRAN * (e.x2 ? 2 : 1); t += e.dur;
   });
   spec.total = t + 0.8;
   spec.beat = BEAT;
-  console.log(`Écrans : ${spec.ecrans.length}, durée totale : ${spec.total.toFixed(1)} s`);
+  console.log(`Thème : ${spec.theme || 'neon'} (${M.bpm} BPM), écrans : ${spec.ecrans.length}, durée : ${spec.total.toFixed(1)} s`);
 
-  const pcm = synthMusique(spec.total, spec.ecrans);
+  const pcm = synthMusique(spec.total, spec.ecrans, M, BEAT);
   const musiquePath = join(travail, 'musique.wav');
   writeFileSync(musiquePath, Buffer.concat([wavHeader(pcm.length, SR), pcm]));
   console.log('Musique générée.');
