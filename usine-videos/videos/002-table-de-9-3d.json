@@ -1,0 +1,21 @@
+{
+  "slug": "002-table-de-9-3d",
+  "titre": "[Astuce] La table de 9 avec les doigts 🖐️",
+  "description": "La table de 9 sans rien apprendre par cœur, avec tes 10 doigts. Exercices corrigés gratuits : https://guerchkarim.github.io",
+  "hashtags": ["#maths", "#primaire", "#tablesdemultiplication", "#astuce", "#école", "#apprendre", "#mathstiktok"],
+  "ecrans": [
+    { "lines": [ { "text": "LA TABLE DE 9", "style": "kicker" }, { "text": "🖐️🖐️", "style": "emoji" } ] },
+    { "lines": [ { "text": "zéro par cœur ⚡", "style": "note" }, { "text": "9 × 7 = ?", "style": "math" } ] },
+    { "lines": [ { "text": "baisse le 7ᵉ doigt", "style": "kicker" } ] },
+    { "lines": [ { "text": "à gauche : 6", "style": "etape" }, { "text": "= les dizaines", "style": "note" } ] },
+    { "lines": [ { "text": "à droite : 3", "style": "etape" }, { "text": "= les unités", "style": "note" } ] },
+    { "lines": [ { "text": "63", "style": "accent" } ], "ding": true },
+    { "lines": [ { "text": "9 × 4 ?", "style": "math" }, { "text": "baisse le 4ᵉ doigt", "style": "note" } ] },
+    { "lines": [ { "text": "3 … et 6", "style": "etape" } ] },
+    { "lines": [ { "text": "36", "style": "accent" } ], "ding": true },
+    { "lines": [ { "text": "ça marche de 9×1 à 9×10", "style": "kicker" } ] },
+    { "lines": [ { "text": "À TOI 🎯", "style": "kicker" }, { "text": "9 × 8 = ?", "style": "math" } ], "x2": true },
+    { "lines": [ { "text": "💬", "style": "emoji" }, { "text": "réponds en commentaire", "style": "note" } ] },
+    { "lines": [ { "text": "ABONNE-TOI", "style": "cta" }, { "text": "un jour · une notion", "style": "note" }, { "text": "guerchkarim.github.io", "style": "note" } ], "x2": true, "ding": true }
+  ]
+}

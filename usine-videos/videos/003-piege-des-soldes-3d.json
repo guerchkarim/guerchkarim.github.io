@@ -1,0 +1,19 @@
+{
+  "slug": "003-piege-des-soldes-3d",
+  "titre": "[Piège] +20 % puis −20 % ≠ retour au départ 😱",
+  "description": "Le piège des pourcentages que presque tout le monde rate. Exercices corrigés gratuits : https://guerchkarim.github.io",
+  "hashtags": ["#maths", "#pourcentages", "#collège", "#brevet", "#astuce", "#apprendre", "#mathstiktok"],
+  "ecrans": [
+    { "lines": [ { "text": "+20 % puis −20 %", "style": "etape" }, { "text": "retour au départ ? 🤔", "style": "kicker" } ] },
+    { "lines": [ { "text": "FAUX ❌", "style": "accent" } ] },
+    { "lines": [ { "text": "LA PREUVE 👇", "style": "kicker" } ] },
+    { "lines": [ { "text": "100 € + 20 %", "style": "etape" }, { "text": "→ 120 €", "style": "math" } ] },
+    { "lines": [ { "text": "120 € − 20 %", "style": "etape" }, { "text": "20 % de 120 = 24", "style": "note" } ] },
+    { "lines": [ { "text": "96 €", "style": "accent" }, { "text": "😱", "style": "emoji" } ], "ding": true },
+    { "lines": [ { "text": "tu as perdu 4 %", "style": "kicker" } ] },
+    { "lines": [ { "text": "le − 20 % s'applique", "style": "note" }, { "text": "sur un prix PLUS GROS", "style": "etape" } ] },
+    { "lines": [ { "text": "À TOI 🎯", "style": "kicker" }, { "text": "+50 % puis −50 %", "style": "etape" }, { "text": "= ?", "style": "math" } ], "x2": true },
+    { "lines": [ { "text": "💬", "style": "emoji" }, { "text": "réponds en commentaire", "style": "note" } ] },
+    { "lines": [ { "text": "ABONNE-TOI", "style": "cta" }, { "text": "un jour · une notion", "style": "note" }, { "text": "guerchkarim.github.io", "style": "note" } ], "x2": true, "ding": true }
+  ]
+}
