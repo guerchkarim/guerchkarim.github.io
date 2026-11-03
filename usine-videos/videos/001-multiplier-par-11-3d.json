@@ -1,0 +1,23 @@
+{
+  "slug": "001-multiplier-par-11-3d",
+  "titre": "[Astuce] Multiplier par 11 en 2 secondes 🤯",
+  "description": "Multiplie n'importe quel nombre à deux chiffres par 11, de tête, en 2 secondes. Exercices corrigés gratuits : https://guerchkarim.github.io",
+  "hashtags": ["#maths", "#astuce", "#calculmental", "#collège", "#apprendre", "#école", "#mathstiktok"],
+  "ecrans": [
+    { "lines": [ { "text": "23 × 11", "style": "math" }, { "text": "en 2 SECONDES ⚡", "style": "kicker" } ] },
+    { "lines": [ { "text": "253", "style": "accent" }, { "text": "de tête, sans calculatrice", "style": "note" } ], "ding": true },
+    { "lines": [ { "text": "LE SECRET 👇", "style": "kicker" } ] },
+    { "lines": [ { "text": "2 _ 3", "style": "math" }, { "text": "écarte les chiffres", "style": "note" } ] },
+    { "lines": [ { "text": "2 + 3 = 5", "style": "etape" }, { "text": "la somme au milieu", "style": "note" } ] },
+    { "lines": [ { "text": "253", "style": "accent" } ], "ding": true },
+    { "lines": [ { "text": "45 × 11 ?", "style": "math" } ] },
+    { "lines": [ { "text": "4 + 5 = 9", "style": "etape" } ] },
+    { "lines": [ { "text": "495", "style": "accent" } ], "ding": true },
+    { "lines": [ { "text": "LE PIÈGE ⚠️", "style": "kicker" } ] },
+    { "lines": [ { "text": "67 × 11", "style": "math" }, { "text": "6 + 7 = 13 …", "style": "etape" } ] },
+    { "lines": [ { "text": "retenue sur le 6 !", "style": "note" }, { "text": "737", "style": "accent" } ], "ding": true },
+    { "lines": [ { "text": "À TOI 🎯", "style": "kicker" }, { "text": "52 × 11 = ?", "style": "math" } ], "x2": true },
+    { "lines": [ { "text": "💬", "style": "emoji" }, { "text": "réponds en commentaire", "style": "note" } ] },
+    { "lines": [ { "text": "ABONNE-TOI", "style": "cta" }, { "text": "un jour · une notion", "style": "note" }, { "text": "guerchkarim.github.io", "style": "note" } ], "x2": true, "ding": true }
+  ]
+}

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<style>
+  @font-face { font-family: 'Manuscrit'; src: url('polices/caveat.ttf'); }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1080px; height: 1920px; overflow: hidden; background: #070d1f; }
+  body { font-family: "DejaVu Sans", Arial, sans-serif; color: #fff; }
+
+  #monde { position: absolute; inset: 0; perspective: 1150px; perspective-origin: 50% 42%; overflow: hidden; }
+  #ciel {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 1000px 800px at 50% 30%, rgba(47,97,183,.38), transparent 65%),
+      radial-gradient(ellipse 800px 500px at 50% 105%, rgba(240,177,42,.17), transparent 70%);
+  }
+  /* Sol 3D : grille Seyès à l'infini, avec la marge rouge */
+  #sol {
+    position: absolute; left: -1500px; right: -1500px; top: 58%; height: 2800px;
+    transform-origin: top center; transform: rotateX(76deg);
+    background-color: #0b1430;
+    background-image:
+      linear-gradient(rgba(124,170,255,.5) 4px, transparent 4px),
+      linear-gradient(90deg, rgba(124,170,255,.28) 3px, transparent 3px),
+      linear-gradient(90deg, rgba(235,60,60,.55) 6px, transparent 6px);
+    background-size: 100% 160px, 160px 100%, 2040px 100%;
+  }
+  #voile-sol { position: absolute; left: 0; right: 0; top: 58%; height: 350px;
+    background: linear-gradient(#070d1f, transparent); }
+
+  .part { position: absolute; border-radius: 50%; background: #9db4d4; }
+
+  #entete { position: absolute; top: 84px; left: 0; right: 0; text-align: center; z-index: 5; }
+  #entete .nom { font-family: 'Manuscrit'; font-weight: 700; font-size: 64px; color: #cfe0f5; }
+  #entete .nom b { color: #f0b12a; }
+
+  #ecran {
+    position: absolute; top: 420px; bottom: 560px; left: 40px; right: 40px; z-index: 4;
+    display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 64px;
+    text-align: center; transform-style: preserve-3d;
+  }
+  .ligne { opacity: 0; will-change: transform, opacity; transform-style: preserve-3d; position: relative; }
+  .ligne.kicker {
+    font-family: 'Manuscrit'; font-weight: 700; font-size: 100px; color: #0b1430;
+    background: linear-gradient(100deg, #ffe066, #ffb53b); padding: 2px 56px 14px;
+    border-radius: 14px; transform: rotate(-2deg);
+    box-shadow: 0 0 70px rgba(255,205,70,.45);
+  }
+  .ligne.math {
+    font-size: 200px; font-weight: 800; letter-spacing: 6px; color: #fff;
+    text-shadow: 0 0 26px rgba(124,170,255,.9), 0 0 90px rgba(47,97,183,.8);
+  }
+  .ligne.accent {
+    font-size: 250px; font-weight: 800; letter-spacing: 6px; color: #ffd43b;
+    text-shadow: 0 0 30px rgba(255,190,40,.95), 0 0 110px rgba(255,150,20,.65);
+    padding: 10px 70px;
+  }
+  .ligne.accent::before {
+    content: ''; position: absolute; inset: -34px -26px;
+    border: 10px solid rgba(235,60,60,.9); border-radius: 50% 50% 48% 52% / 58% 44% 56% 42%;
+    box-shadow: 0 0 46px rgba(235,60,60,.55), inset 0 0 30px rgba(235,60,60,.3);
+    transform: rotate(-2deg);
+  }
+  .ligne.etape { font-size: 130px; font-weight: 700; color: #cfe0f5;
+    text-shadow: 0 0 40px rgba(124,170,255,.6); }
+  .ligne.note { font-family: 'Manuscrit'; font-weight: 700; font-size: 86px; color: #9db4d4; }
+  .ligne.emoji { font-size: 190px; }
+  .ligne.cta {
+    font-size: 96px; font-weight: 800; color: #0b1430; letter-spacing: 3px; white-space: nowrap;
+    background: linear-gradient(100deg, #ffe066, #ff9f1c); padding: 26px 80px; border-radius: 999px;
+    box-shadow: 0 0 90px rgba(255,180,40,.75);
+  }
+
+  #pied { position: absolute; bottom: 150px; left: 0; right: 0; text-align: center; z-index: 5;
+    font-family: 'Manuscrit'; font-weight: 700; font-size: 52px; color: #9db4d4; }
+  #barre-fond { position: absolute; bottom: 86px; left: 90px; right: 90px; height: 12px; z-index: 5;
+    background: rgba(255,255,255,.12); border-radius: 999px; }
+  #barre { height: 100%; width: 0%; border-radius: 999px;
+    background: linear-gradient(90deg, #ffe066, #ff9f1c); box-shadow: 0 0 18px rgba(255,180,40,.8); }
+</style>
+</head>
+<body>
+<div id="monde">
+  <div id="ciel"></div>
+  <div id="sol"></div>
+  <div id="voile-sol"></div>
+  <div id="particules"></div>
+  <div id="entete"><div class="nom"><b>&#8721;</b> L'Atelier des Maths</div></div>
+  <div id="ecran"></div>
+  <div id="pied">@latelierdesmaths</div>
+  <div id="barre-fond"><div id="barre"></div></div>
+</div>
+<script>
+  let SPEC = null;
+  // Particules fixes (déterministes)
+  function alea(n){ const x = Math.sin(n*127.1)*43758.5453; return x - Math.floor(x); }
+  function initSpec(spec){
+    SPEC = spec;
+    const P = document.getElementById('particules');
+    for (let i=0;i<26;i++){
+      const d = document.createElement('div'); d.className='part';
+      const taille = 4 + alea(i)*9;
+      d.style.width = d.style.height = taille+'px';
+      d.style.left = (alea(i+40)*1040)+'px';
+      d.style.opacity = .12 + alea(i+80)*.3;
+      d.dataset.v = 30 + alea(i+120)*90; d.dataset.y0 = alea(i+160)*1920;
+      P.appendChild(d);
+    }
+    setTime(0);
+  }
+  const clamp = (x,a,b)=>Math.max(a,Math.min(b,x));
+  // entrée avec rebond (overshoot)
+  function rebond(p){ const c4=(2*Math.PI)/3; return p===0?0:p===1?1:Math.pow(2,-10*p)*Math.sin((p*10-0.75)*c4)+1; }
+
+  function setTime(t){
+    document.getElementById('barre').style.width = (100*clamp(t/SPEC.total,0,1))+'%';
+    // sol qui défile + légère respiration caméra
+    document.getElementById('sol').style.backgroundPosition =
+      `0px ${(t*210)%160}px, ${(t*-34)%160}px 0px, ${540 - t*34}px 0px`;
+    document.getElementById('monde').style.transform =
+      `rotate(${Math.sin(t*0.9)*0.5}deg) scale(${1.012+Math.sin(t*0.5)*0.008})`;
+    for (const d of document.querySelectorAll('.part')){
+      const y = (parseFloat(d.dataset.y0) - t*parseFloat(d.dataset.v)) % 2000;
+      d.style.top = (y<0?y+2000:y)+'px';
+    }
+    // écran courant
+    let e = SPEC.ecrans[SPEC.ecrans.length-1];
+    for (const s of SPEC.ecrans){ if (t < s.start + s.dur){ e = s; break; } }
+    const cont = document.getElementById('ecran');
+    if (cont.dataset.e !== String(e.index)){
+      cont.dataset.e = String(e.index);
+      cont.innerHTML = '';
+      for (const l of e.lines){
+        const div = document.createElement('div');
+        div.className = 'ligne ' + (l.style||'math');
+        div.textContent = l.text;
+        cont.appendChild(div);
+      }
+    }
+    const local = t - e.start;
+    const dernier = e.index === SPEC.ecrans.length-1;
+    e.lines.forEach((l,i)=>{
+      const div = cont.children[i];
+      const debut = i * 0.14;
+      const p = clamp((local-debut)/0.42, 0, 1);
+      const r = rebond(p);
+      // sortie : aspiré vers la caméra (jamais pour le dernier écran)
+      const sortie = dernier ? 0 : 1 - clamp((e.start+e.dur-t)/0.16, 0, 1);
+      const sc = (0.35 + 0.65*r) * (1 + sortie*1.9);
+      div.style.opacity = (Math.min(1,p*2.2) * (1-sortie)).toFixed(3);
+      div.style.transform =
+        `translateZ(${(1-p)*-500 + sortie*600}px) rotateY(${(1-r)*-55}deg) rotate(${(l.style==='kicker')?-2:0}deg) scale(${sc.toFixed(3)})`;
+      // pulsation sur le beat pour l'accent
+      if (l.style==='accent' && p>=1 && !sortie){
+        const beat = SPEC.beat || 0.476;
+        const ph = ((t - e.start) % beat) / beat;
+        div.style.transform += ` scale(${(1+0.045*Math.exp(-ph*7)).toFixed(3)})`;
+      }
+    });
+  }
+  window.initSpec = initSpec; window.setTime = setTime;
+</script>
+</body>
+</html>
