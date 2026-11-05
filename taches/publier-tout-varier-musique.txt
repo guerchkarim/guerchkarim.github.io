@@ -1,0 +1,11 @@
+Dans le dossier AstucesMaths (C:\Users\pc\Downloads\AstucesMaths) :
+
+1. INVENTAIRE : liste tous les .mp4 de sorties/*/ et compare avec youtube_publie.json. Compte combien de vidéos ne sont pas encore publiées sur YouTube.
+
+2. VARIER LA MUSIQUE : télécharge le catalogue FreePD si absent — pages https://freepd.com/upbeat.php et https://freepd.com/electronic.php, extrais les URL https://freepd.com/music/*.mp3 dans musiques/catalogue.txt (FreePD = domaine public CC0, utilisable sur YouTube sans droits). Pour CHAQUE vidéo non publiée : prends un morceau différent (rotation dans le catalogue), télécharge-le, et remplace la bande son sans re-rendu :
+   ffmpeg -y -i video.mp4 -i morceau.mp3 -map 0:v -map 1:a -c:v copy -c:a aac -b:a 160k -shortest nouvelle.mp4
+   puis remplace l'original. Note dans musiques/journal.txt quel morceau est allé sur quelle vidéo.
+
+3. TOUT PUBLIER : lance publier_youtube.py (--max 4 par appel, plusieurs fois) pour publier toutes les vidéos restantes dans l'ordre chronologique, en privée programmée aux créneaux habituels répartis sur les prochains jours. Si erreur de quota YouTube (quotaExceeded/403), arrête proprement et dis combien il en reste.
+
+4. COMPTE-RENDU en français : vidéos trouvées non publiées, combien ont une nouvelle musique (exemples de titres), combien publiées/programmées avec leurs dates, combien restent.
